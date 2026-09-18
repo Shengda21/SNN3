@@ -1,0 +1,5 @@
+{
+  "weight_bitwise_equal": true,
+  "optimizer_bitwise_equal": true,
+  "sampling_generator_equal": true
+}

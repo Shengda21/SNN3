@@ -1,0 +1,4 @@
+{"configuration": "T4_b1_full", "tag": "formal_T4_seed8623_step4096", "medians": {"eager": 19.007306545972824, "graph": 4.897003993391991, "graph_with_copy": 4.9133263528347015}}
+{"configuration": "T4_b4_full", "tag": "formal_T4_seed8623_step4096", "medians": {"eager": 25.170963257551193, "graph": 10.016106069087982, "graph_with_copy": 10.02727821469307}}
+{"configuration": "T4_b16_full", "tag": "formal_T4_seed8623_step4096", "medians": {"eager": 34.134356305003166, "graph": 31.87655843794346, "graph_with_copy": 31.90147504210472}}
+{"configuration": "T4_b64_full", "tag": "formal_T4_seed8623_step4096", "medians": {"eager": 151.2133590877056, "graph": 149.5776679366827, "graph_with_copy": 149.81123059988022}}

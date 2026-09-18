@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "epochs": 30,
+  "seed": 12550,
+  "best_validation_accuracy": 66.94,
+  "training_seconds": 2732.9263570308685,
+  "checkpoint": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt",
+  "source": "independent random initialization; original AMP/TF32 initialization procedure",
+  "post_training_test_profile_timing_omitted": true
+}

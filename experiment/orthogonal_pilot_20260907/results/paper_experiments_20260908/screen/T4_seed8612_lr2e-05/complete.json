@@ -1,0 +1,60 @@
+{
+  "config": {
+    "T": 4,
+    "seed": 8612,
+    "lr": 2e-05,
+    "max_steps": 2048,
+    "stage": "screen",
+    "batch": 8,
+    "microbatch": 2,
+    "accumulation": 4,
+    "precision": "fp32",
+    "optimizer": "AdamW",
+    "weight_decay": 0,
+    "clip": 1,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "visible_devices": "1",
+    "cpu_threads": 4
+  },
+  "training_seconds": 1149.9764018394053,
+  "process_seconds": 1174.543722063303,
+  "peak_allocated_gib": 2.6372103691101074,
+  "evaluations": [
+    {
+      "step": 512,
+      "training_seconds": 297.71157494559884,
+      "tune": {
+        "ce": 2.527027687440416,
+        "accuracy": 0.5252525252525253,
+        "texts": 128,
+        "masked_tokens": 1188
+      },
+      "evaluation_seconds": 2.226009216159582
+    },
+    {
+      "step": 1024,
+      "training_seconds": 580.3679874949157,
+      "tune": {
+        "ce": 2.4731260119664547,
+        "accuracy": 0.5286195286195287,
+        "texts": 128,
+        "masked_tokens": 1188
+      },
+      "evaluation_seconds": 1.2593336775898933
+    },
+    {
+      "step": 2048,
+      "training_seconds": 1149.9764018394053,
+      "tune": {
+        "ce": 2.490929318397535,
+        "accuracy": 0.5395622895622896,
+        "texts": 128,
+        "masked_tokens": 1188
+      },
+      "evaluation_seconds": 1.19622191041708
+    }
+  ],
+  "checkpoint": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/screen/T4_seed8612_lr2e-05/step2048.pt"
+}

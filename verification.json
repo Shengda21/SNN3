@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "original": {
+    "status": "passed",
+    "quality_rows": 96,
+    "locked_models": 48,
+    "paired_differences": 26,
+    "timing_units": 100,
+    "timing_calls": 9240,
+    "unavailable_timing_units": [],
+    "figure_source_tables_match": true,
+    "locked_analysis_code_identities": {
+      "paper_analyze.py": true,
+      "paper_confirm.py": true
+    },
+    "checkpoint_weights_included": false,
+    "checkpoint_identity_source": "confirm_manifest.json; weights are external assets",
+    "ABA_checks": 300,
+    "all_ABA_bitwise_equal": true,
+    "primary_differences": {
+      "matched": 0.13335979212795376,
+      "unmatched": -0.28303465222045343
+    },
+    "figures_redrawn": true
+  },
+  "revision_round2": {
+    "status": "passed",
+    "scoring_paths": 126,
+    "paired_quality_rows": 26,
+    "graph_full_score_comparisons": 16,
+    "timing_processes": 24,
+    "timing_model_units": 48,
+    "distinct_timing_process_identities": 24,
+    "timing_calls": 2880,
+    "all_scores_recomputed": true,
+    "uncertainty_units": "training seeds are paired; budgets are repeated observations; process and call variation remain nested"
+  },
+  "revision_tables_compared": [
+    "bn_contrast_change_intervals.csv",
+    "bn_contrast_changes.csv",
+    "contrast_intervals.csv",
+    "engine_quality_comparison.csv",
+    "paired_budget_changes.csv",
+    "paired_contrasts.csv",
+    "quality_scores.csv",
+    "timing_checkpoint_summary.csv",
+    "timing_paired_ratios.csv",
+    "timing_process_medians.csv"
+  ],
+  "original_and_revision_execution_code_identities_match": true,
+  "figures_regenerated": true,
+  "scope": "offline analysis from raw scores and calls; no model execution or network access"
+}

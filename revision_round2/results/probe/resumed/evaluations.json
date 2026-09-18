@@ -1,0 +1,26 @@
+[
+  {
+    "step": 2,
+    "validation": {
+      "ce": 1.368123439228069,
+      "accuracy": 0.6744,
+      "samples": 5000,
+      "precision": "fp32",
+      "batch": 64,
+      "split": "validation"
+    },
+    "training_seconds": 1.6489164493978024
+  },
+  {
+    "step": 4,
+    "validation": {
+      "ce": 1.371424717174843,
+      "accuracy": 0.669,
+      "samples": 5000,
+      "precision": "fp32",
+      "batch": 64,
+      "split": "validation"
+    },
+    "training_seconds": 3.3426604010164738
+  }
+]

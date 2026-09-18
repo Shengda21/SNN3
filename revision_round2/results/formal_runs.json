@@ -1,0 +1,1592 @@
+[
+  {
+    "gpu": 0,
+    "tag": "s9621_T2_lr2e-05",
+    "T": 2,
+    "seed": 9621,
+    "lr": 2e-05,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9621_T2_lr2e-05/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 549.2216491103172,
+      "peak_allocated_gib": 6.793207168579102,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.4655529386465904,
+            "accuracy": 0.648,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 138.3116975352168
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.449723999747308,
+            "accuracy": 0.6548,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 275.32408605888486
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.465042495484231,
+            "accuracy": 0.6566,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 549.2216491103172
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9621_T2_lr2e-05/step2048.pt",
+      "config": {
+        "T": 2,
+        "seed": 9621,
+        "lr": 2e-05,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "d694c06acc4a27ea4687fd6c4695ffc8da4eb10c24f2054bf9ae4cad30798521",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "0",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 0,
+    "tag": "s9621_T4_lr5e-06",
+    "T": 4,
+    "seed": 9621,
+    "lr": 5e-06,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9621_T4_lr5e-06/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 1106.820295535028,
+      "peak_allocated_gib": 12.636407852172852,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.3835452541519888,
+            "accuracy": 0.6726,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 277.4645564816892
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.372367122994084,
+            "accuracy": 0.6716,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 554.1305885538459
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.37912815737091,
+            "accuracy": 0.674,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 1106.820295535028
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9621_T4_lr5e-06/step2048.pt",
+      "config": {
+        "T": 4,
+        "seed": 9621,
+        "lr": 5e-06,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "d694c06acc4a27ea4687fd6c4695ffc8da4eb10c24f2054bf9ae4cad30798521",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "0",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 0,
+    "tag": "s9623_T4_lr5e-06",
+    "T": 4,
+    "seed": 9623,
+    "lr": 5e-06,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9623_T4_lr5e-06/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 1106.7652336098254,
+      "peak_allocated_gib": 12.636407852172852,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.4291131968284958,
+            "accuracy": 0.66,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 276.899181060493
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.3600383289908058,
+            "accuracy": 0.6722,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 553.6318035461009
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.3485233339674771,
+            "accuracy": 0.6718,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 1106.7652336098254
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9623_T4_lr5e-06/step2048.pt",
+      "config": {
+        "T": 4,
+        "seed": 9623,
+        "lr": 5e-06,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "0edc149dd96205840604df59bb846410d08c9353937223c3917d3ea597dcce04",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "0",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 0,
+    "tag": "s9623_T2_lr2e-05",
+    "T": 2,
+    "seed": 9623,
+    "lr": 2e-05,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9623_T2_lr2e-05/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 548.3672539964318,
+      "peak_allocated_gib": 6.793207168579102,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.5277882074333728,
+            "accuracy": 0.6426,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 137.71562329679728
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.43770990584502,
+            "accuracy": 0.6492,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 274.0995356105268
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.4251912878089585,
+            "accuracy": 0.657,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 548.3672539964318
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9623_T2_lr2e-05/step2048.pt",
+      "config": {
+        "T": 2,
+        "seed": 9623,
+        "lr": 2e-05,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "0edc149dd96205840604df59bb846410d08c9353937223c3917d3ea597dcce04",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "0",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 0,
+    "tag": "s9625_T2_lr2e-05",
+    "T": 2,
+    "seed": 9625,
+    "lr": 2e-05,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9625_T2_lr2e-05/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 549.735154222697,
+      "peak_allocated_gib": 6.793207168579102,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.4664564638570883,
+            "accuracy": 0.646,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 137.68825233355165
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.443406741213333,
+            "accuracy": 0.6512,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 274.7038382925093
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.4454252636698075,
+            "accuracy": 0.6536,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 549.735154222697
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9625_T2_lr2e-05/step2048.pt",
+      "config": {
+        "T": 2,
+        "seed": 9625,
+        "lr": 2e-05,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "6b5ed9e30689b418bd7c6d735cf3a6c295a68fadb8ffa5907f809da786bb05c9",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "0",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 0,
+    "tag": "s9625_T4_lr5e-06",
+    "T": 4,
+    "seed": 9625,
+    "lr": 5e-06,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9625_T4_lr5e-06/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 1107.3157653845847,
+      "peak_allocated_gib": 12.636407852172852,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.358070452189073,
+            "accuracy": 0.668,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 277.4028547219932
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.3692543298210949,
+            "accuracy": 0.6708,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 554.0832241624594
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.3723855480522849,
+            "accuracy": 0.6722,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 1107.3157653845847
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9625_T4_lr5e-06/step2048.pt",
+      "config": {
+        "T": 4,
+        "seed": 9625,
+        "lr": 5e-06,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "6b5ed9e30689b418bd7c6d735cf3a6c295a68fadb8ffa5907f809da786bb05c9",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "0",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 1,
+    "tag": "s9622_T4_lr5e-06",
+    "T": 4,
+    "seed": 9622,
+    "lr": 5e-06,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9622_T4_lr5e-06/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 1111.3116661533713,
+      "peak_allocated_gib": 12.636407852172852,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.3965503465340008,
+            "accuracy": 0.6672,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 278.162844479084
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.3891154206738807,
+            "accuracy": 0.6698,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 555.974028352648
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.3916456964136101,
+            "accuracy": 0.6696,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 1111.3116661533713
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9622_T4_lr5e-06/step2048.pt",
+      "config": {
+        "T": 4,
+        "seed": 9622,
+        "lr": 5e-06,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "f97d678934971cf66a4b06e0e670e6ac783345310879b2613d415a7bb6f57ce5",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "1",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 1,
+    "tag": "s9622_T2_lr2e-05",
+    "T": 2,
+    "seed": 9622,
+    "lr": 2e-05,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9622_T2_lr2e-05/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 550.6053807884455,
+      "peak_allocated_gib": 6.793207168579102,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.4984035175641999,
+            "accuracy": 0.643,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 137.84001453593373
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.4586394535297529,
+            "accuracy": 0.6522,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 274.7529364824295
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.4610601485997905,
+            "accuracy": 0.6548,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 550.6053807884455
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9622_T2_lr2e-05/step2048.pt",
+      "config": {
+        "T": 2,
+        "seed": 9622,
+        "lr": 2e-05,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "f97d678934971cf66a4b06e0e670e6ac783345310879b2613d415a7bb6f57ce5",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "1",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 1,
+    "tag": "s9624_T2_lr2e-05",
+    "T": 2,
+    "seed": 9624,
+    "lr": 2e-05,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9624_T2_lr2e-05/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 550.7841682769358,
+      "peak_allocated_gib": 6.793207168579102,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.4908199984319042,
+            "accuracy": 0.6438,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 137.19125110283494
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.443417612052383,
+            "accuracy": 0.6456,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 274.6701443605125
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.4485419384761713,
+            "accuracy": 0.6476,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 550.7841682769358
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9624_T2_lr2e-05/step2048.pt",
+      "config": {
+        "T": 2,
+        "seed": 9624,
+        "lr": 2e-05,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "b6e68200e3b82dc7ad8153319187e26bb2c6dc9ebc33c323d45d53e05ef058ec",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "1",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  },
+  {
+    "gpu": 1,
+    "tag": "s9624_T4_lr5e-06",
+    "T": 4,
+    "seed": 9624,
+    "lr": 5e-06,
+    "exit_code": 0,
+    "complete_path": "/root/snn_revision_round2/results/formal/s9624_T4_lr5e-06/complete.json",
+    "result": {
+      "status": "complete",
+      "step": 2048,
+      "training_seconds": 1114.625956159085,
+      "peak_allocated_gib": 12.636407852172852,
+      "evaluations": [
+        {
+          "step": 512,
+          "validation": {
+            "ce": 1.392871674774261,
+            "accuracy": 0.6658,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 279.62437154352665
+        },
+        {
+          "step": 1024,
+          "validation": {
+            "ce": 1.3571714508533943,
+            "accuracy": 0.6754,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 558.0298037566245
+        },
+        {
+          "step": 2048,
+          "validation": {
+            "ce": 1.3731034007115754,
+            "accuracy": 0.6738,
+            "samples": 5000,
+            "precision": "fp32",
+            "batch": 64,
+            "split": "validation"
+          },
+          "training_seconds": 1114.625956159085
+        }
+      ],
+      "checkpoint": "/root/snn_revision_round2/models/formal/s9624_T4_lr5e-06/step2048.pt",
+      "config": {
+        "T": 4,
+        "seed": 9624,
+        "lr": 5e-06,
+        "updates": 2048,
+        "stage": "formal",
+        "precision": "fp32",
+        "tf32": false,
+        "effective_batch": 128,
+        "microbatch": 64,
+        "accumulation": 2,
+        "optimizer": "AdamW",
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.01,
+        "clip_norm": 1.0,
+        "learning_rate_schedule": "constant",
+        "workers": 6,
+        "mean": [
+          0.5071,
+          0.4867,
+          0.4408
+        ],
+        "std": [
+          0.2675,
+          0.2565,
+          0.2761
+        ],
+        "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+        "hflip": 0.5,
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "ratio": [
+          1.0,
+          1.0
+        ],
+        "mixup_alpha": 0.8,
+        "cutmix_alpha": 1.0,
+        "mixup_prob": 1.0,
+        "switch_prob": 0.5,
+        "mixup_mode": "batch",
+        "label_smoothing": 0.1,
+        "sample_plan_sha256": "b6e68200e3b82dc7ad8153319187e26bb2c6dc9ebc33c323d45d53e05ef058ec",
+        "initial_checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+        "initial_config": {
+          "id": "reconstructed_identity_p0.0",
+          "phase": "screening",
+          "dataset": "CIFAR100",
+          "kind": "identity",
+          "penalty": 0.0,
+          "seed": 12450,
+          "epochs": 30,
+          "T": 4,
+          "batch_size": 64,
+          "accumulation": 2,
+          "workers": 6,
+          "group": 32,
+          "lr": 0.0005,
+          "weight_decay": 0.01
+        },
+        "initial_buffer_dtype_changes": [
+          {
+            "name": "layers.0.0.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.1.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.1.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.3.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          },
+          {
+            "name": "layers.2.5.firing_rate_x",
+            "constructor_dtype": "torch.float32",
+            "checkpoint_dtype": "torch.float16"
+          }
+        ],
+        "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "visible_devices": "1",
+        "torch": "2.6.0+cu124",
+        "cuda": "12.4",
+        "cpu_threads": 4,
+        "validation_batch": 64
+      }
+    }
+  }
+]

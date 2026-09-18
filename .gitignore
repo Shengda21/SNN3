@@ -1,0 +1,9 @@
+recomputed/
+__pycache__/
+*.pyc
+*.pdf
+*.tex
+*.zip
+*.safetensors
+*.parquet
+.DS_Store

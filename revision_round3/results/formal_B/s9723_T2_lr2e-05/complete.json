@@ -1,0 +1,150 @@
+{
+  "status": "complete",
+  "step": 2048,
+  "training_seconds": 609.7633779793978,
+  "peak_allocated_gib": 6.793231964111328,
+  "evaluations": [
+    {
+      "step": 512,
+      "validation": {
+        "ce": 1.5311447318850084,
+        "accuracy": 0.6414,
+        "samples": 5000,
+        "precision": "fp32",
+        "batch": 64,
+        "split": "validation"
+      },
+      "training_seconds": 153.5992897823453
+    },
+    {
+      "step": 1024,
+      "validation": {
+        "ce": 1.477853001920134,
+        "accuracy": 0.6416,
+        "samples": 5000,
+        "precision": "fp32",
+        "batch": 64,
+        "split": "validation"
+      },
+      "training_seconds": 304.6886102501303
+    },
+    {
+      "step": 2048,
+      "validation": {
+        "ce": 1.4988422798987477,
+        "accuracy": 0.6438,
+        "samples": 5000,
+        "precision": "fp32",
+        "batch": 64,
+        "split": "validation"
+      },
+      "training_seconds": 609.7633779793978
+    }
+  ],
+  "checkpoint": "/root/autodl-tmp/snn_revision_round3/models/formal_B/s9723_T2_lr2e-05/step2048.pt",
+  "config": {
+    "T": 2,
+    "seed": 9723,
+    "lr": 2e-05,
+    "updates": 2048,
+    "stage": "formal_B",
+    "precision": "fp32",
+    "tf32": false,
+    "effective_batch": 128,
+    "microbatch": 64,
+    "accumulation": 2,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "learning_rate_schedule": "constant",
+    "workers": 6,
+    "mean": [
+      0.5071,
+      0.4867,
+      0.4408
+    ],
+    "std": [
+      0.2675,
+      0.2565,
+      0.2761
+    ],
+    "auto_augment": "rand-m7-n1-mstd0.5-inc1",
+    "hflip": 0.5,
+    "scale": [
+      1.0,
+      1.0
+    ],
+    "ratio": [
+      1.0,
+      1.0
+    ],
+    "mixup_alpha": 0.8,
+    "cutmix_alpha": 1.0,
+    "mixup_prob": 1.0,
+    "switch_prob": 0.5,
+    "mixup_mode": "batch",
+    "label_smoothing": 0.1,
+    "sample_plan_sha256": "86ab76472df62402a694818872ad67edf1d18141e2c9db4828f0a92f17a533d5",
+    "initial_checkpoint": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt",
+    "initial_config": {
+      "id": "independent12550",
+      "phase": "screening",
+      "dataset": "CIFAR100",
+      "kind": "identity",
+      "penalty": 0.0,
+      "seed": 12550,
+      "epochs": 30,
+      "T": 4,
+      "batch_size": 64,
+      "accumulation": 2,
+      "workers": 6,
+      "group": 32,
+      "lr": 0.0005,
+      "weight_decay": 0.01
+    },
+    "initial_buffer_dtype_changes": [
+      {
+        "name": "layers.0.0.firing_rate_x",
+        "constructor_dtype": "torch.float32",
+        "checkpoint_dtype": "torch.float16"
+      },
+      {
+        "name": "layers.1.1.firing_rate_x",
+        "constructor_dtype": "torch.float32",
+        "checkpoint_dtype": "torch.float16"
+      },
+      {
+        "name": "layers.1.3.firing_rate_x",
+        "constructor_dtype": "torch.float32",
+        "checkpoint_dtype": "torch.float16"
+      },
+      {
+        "name": "layers.2.1.firing_rate_x",
+        "constructor_dtype": "torch.float32",
+        "checkpoint_dtype": "torch.float16"
+      },
+      {
+        "name": "layers.2.3.firing_rate_x",
+        "constructor_dtype": "torch.float32",
+        "checkpoint_dtype": "torch.float16"
+      },
+      {
+        "name": "layers.2.5.firing_rate_x",
+        "constructor_dtype": "torch.float32",
+        "checkpoint_dtype": "torch.float16"
+      }
+    ],
+    "mixup_seed_rule": "(seed*100003+step*1009+micro) modulo (2**32-1)",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "visible_devices": "0",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "cpu_threads": 4,
+    "validation_batch": 64
+  }
+}

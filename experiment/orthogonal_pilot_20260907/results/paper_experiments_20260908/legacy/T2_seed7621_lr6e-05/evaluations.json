@@ -1,0 +1,13 @@
+[
+  {
+    "step": 512,
+    "training_seconds": 221.63319550454617,
+    "tune": {
+      "ce": 2.652447511250724,
+      "accuracy": 0.5033670033670034,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 1.0864023566246033
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "step": 512,
+    "training_seconds": 283.8626194819808,
+    "tune": {
+      "ce": 2.650965142531026,
+      "accuracy": 0.5067340067340067,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 1.8058539815247059
+  },
+  {
+    "step": 1024,
+    "training_seconds": 597.1548559963703,
+    "tune": {
+      "ce": 2.642740238595892,
+      "accuracy": 0.5151515151515151,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 0.9003524333238602
+  },
+  {
+    "step": 2048,
+    "training_seconds": 1206.259683035314,
+    "tune": {
+      "ce": 2.6077296128277023,
+      "accuracy": 0.5311447811447811,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 0.999219436198473
+  }
+]

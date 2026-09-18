@@ -1,0 +1,36 @@
+{
+  "queue_row": {
+    "id": "vision_initial_e4_bn_only_eager",
+    "task": "vision",
+    "state": "shared_initial",
+    "updates": 0,
+    "infer_T": 4,
+    "calibration": "bn_only",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+    "identity_path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+    "gpu": 1,
+    "checkpoint_sha256": "3d453ec2677252d88eccd90e665e492c03082209b9584dc2649757f84b5eba63"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "visible_devices": "1",
+  "precision": "fp32",
+  "tf32": false,
+  "batch": 4,
+  "tail_rule": "repeat first valid row, score only original rows",
+  "bn_check": {
+    "bn_layers": 33,
+    "protected_state_entries": 118,
+    "protected_values_and_dtypes_unchanged": true,
+    "samples": 2048,
+    "batches": 32
+  },
+  "status": "complete",
+  "ce": 1.3147708837514511,
+  "accuracy": 0.6689,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 36.547573518007994
+}

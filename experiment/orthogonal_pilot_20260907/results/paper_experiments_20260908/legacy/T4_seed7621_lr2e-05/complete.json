@@ -1,0 +1,38 @@
+{
+  "config": {
+    "T": 4,
+    "seed": 7621,
+    "lr": 2e-05,
+    "max_steps": 512,
+    "stage": "legacy",
+    "batch": 8,
+    "microbatch": 2,
+    "accumulation": 4,
+    "precision": "fp32",
+    "optimizer": "AdamW",
+    "weight_decay": 0,
+    "clip": 1,
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "visible_devices": "0",
+    "cpu_threads": 4
+  },
+  "training_seconds": 216.12414605543017,
+  "process_seconds": 220.90764774009585,
+  "peak_allocated_gib": 2.6372103691101074,
+  "evaluations": [
+    {
+      "step": 512,
+      "training_seconds": 216.12414605543017,
+      "tune": {
+        "ce": 2.57273387808591,
+        "accuracy": 0.5303030303030303,
+        "texts": 128,
+        "masked_tokens": 1188
+      },
+      "evaluation_seconds": 1.1588341817259789
+    }
+  ],
+  "checkpoint": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/legacy/T4_seed7621_lr2e-05/step512.pt"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "step": 64,
+    "validation": {
+      "ce": 1.5549236552251502,
+      "accuracy": 0.636,
+      "samples": 5000,
+      "precision": "fp32",
+      "batch": 64,
+      "split": "validation"
+    },
+    "training_seconds": 19.81622771732509
+  }
+]

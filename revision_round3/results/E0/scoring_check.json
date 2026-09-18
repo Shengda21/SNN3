@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "split": "training",
+  "images": 128,
+  "both_off_diagonal_operations_checked": true,
+  "all_loss_prediction_count_arrays_equal_between_engines": true,
+  "protected_parameters_and_non_BN_buffers_verified": true,
+  "rows": [
+    {
+      "cal_T": 2,
+      "infer_T": 4,
+      "engine": "eager",
+      "recorded_engine": "eager"
+    },
+    {
+      "cal_T": 2,
+      "infer_T": 4,
+      "engine": "graph",
+      "recorded_engine": "graph"
+    },
+    {
+      "cal_T": 4,
+      "infer_T": 2,
+      "engine": "eager",
+      "recorded_engine": "eager"
+    },
+    {
+      "cal_T": 4,
+      "infer_T": 2,
+      "engine": "graph",
+      "recorded_engine": "graph"
+    }
+  ]
+}

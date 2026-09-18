@@ -1,0 +1,12 @@
+{
+  "state": "ready",
+  "dataset": "CIFAR100",
+  "train_count": 45000,
+  "validation_count": 5000,
+  "split_seed": 20260907,
+  "archive_md5": "eb9058c3a382ffc7106e4002c42a8d85",
+  "source": "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz",
+  "integrity_checked_by": "torchvision CIFAR100",
+  "test_evaluated": false,
+  "time": 1788868487.15696
+}

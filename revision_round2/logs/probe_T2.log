@@ -1,0 +1,2 @@
+{"tag": "throughput_T2", "step": 40, "loss": 3.49459707736969, "gradient_norm": 4.36068868637085, "seconds": 0.26267798244953156, "training_seconds": 11.115987457334995, "examples": 128, "sample_plan_start": 4992}
+{"tag": "throughput_T2", "step": 40, "validation": {"ce": 1.5565783714653925, "accuracy": 0.6352, "samples": 5000, "precision": "fp32", "batch": 64, "split": "validation"}}

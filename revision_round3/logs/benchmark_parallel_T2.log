@@ -1,0 +1,2 @@
+{"tag": "parallel_T2", "step": 64, "loss": 3.2803280353546143, "gradient_norm": 3.042602300643921, "seconds": 0.29485559836030006, "training_seconds": 19.81622771732509, "examples": 128, "sample_plan_start": 8064}
+{"tag": "parallel_T2", "step": 64, "validation": {"ce": 1.5549236552251502, "accuracy": 0.636, "samples": 5000, "precision": "fp32", "batch": 64, "split": "validation"}}

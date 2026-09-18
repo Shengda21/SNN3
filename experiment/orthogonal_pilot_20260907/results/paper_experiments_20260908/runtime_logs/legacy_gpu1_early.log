@@ -1,0 +1,2 @@
+{"gpu": 1, "stage": "legacy", "run": "T2_seed7622_lr6e-05", "success": true}
+{"gpu": 1, "stage": "legacy", "run": "T4_seed7622_lr2e-05", "success": true}

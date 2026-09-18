@@ -1,0 +1,57 @@
+{
+  "row": {
+    "task": "vision",
+    "checkpoint": "/root/autodl-tmp/snn_revision_round3/models/formal/s9624_T4_lr2e-05/step512.pt",
+    "checkpoint_sha256": "cac8455e9ad3123f6a9a8c00322fc8d4dc8fb15b5e51d3a34fb2285726356603",
+    "source_id": "A_s9624_a4_K512",
+    "init_id": "A",
+    "initialization_seed": 12450,
+    "state": "adapted",
+    "seed": 9624,
+    "adapt_T": 4,
+    "lr": 2e-05,
+    "updates": 512,
+    "role": "primary",
+    "engine": "graph",
+    "id": "A_s9624_a4_K512_e2_raw",
+    "infer_T": 2,
+    "calibration": "raw"
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "graph_check": {
+    "ABA": [
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 64,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      }
+    ],
+    "warmup_capture_seconds": 0.1703041736036539
+  },
+  "engine": "graph",
+  "ce": 1.6619454802052118,
+  "accuracy": 0.6146,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 13.509973401203752
+}

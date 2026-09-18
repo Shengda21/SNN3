@@ -1,0 +1,42 @@
+{
+  "row": {
+    "id": "legacy_vision_s9624_K512_a4_e4_raw_eager",
+    "task": "vision",
+    "state": "adapted",
+    "seed": 9624,
+    "updates": 512,
+    "adapt_T": 4,
+    "infer_T": 4,
+    "calibration": "raw",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/snn_revision_round2/models/formal/s9624_T4_lr5e-06/step512.pt",
+    "identity_path": "/root/snn_revision_round2/models/formal/s9624_T4_lr5e-06/step512.pt",
+    "gpu": 1,
+    "checkpoint_sha256": "0676efc02c5e0f99598dd0ca3a1c3f6d6c9136d831955bac05a52899023b8733",
+    "legacy_id": "vision_s9624_K512_a4_e4_raw_eager",
+    "role": "legacy_replay",
+    "init_id": "legacy"
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "engine": "eager",
+  "ce": 1.409978385930741,
+  "accuracy": 0.6661,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 37.9196216724813,
+  "legacy_comparison": {
+    "mean_ce_change": 0.000277969093248176,
+    "max_item_loss_change": 0.768805742263794,
+    "prediction_changes": 5,
+    "targets_and_labels_equal": true
+  }
+}

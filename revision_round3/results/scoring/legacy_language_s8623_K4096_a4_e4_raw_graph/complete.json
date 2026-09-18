@@ -1,0 +1,65 @@
+{
+  "row": {
+    "id": "legacy_language_s8623_K4096_a4_e4_raw_graph",
+    "task": "language",
+    "state": "adapted",
+    "seed": 8623,
+    "updates": 4096,
+    "adapt_T": 4,
+    "infer_T": 4,
+    "calibration": "raw",
+    "engine": "graph",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8623_lr2e-05/step4096.pt",
+    "identity_path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8623_lr2e-05/step4096.pt",
+    "gpu": 0,
+    "checkpoint_sha256": "b37dbcf94a342e80b072b0ee31dd3b92fbc0698b028a393cf8ea1c831e9e95c0",
+    "legacy_id": "language_s8623_K4096_a4_e4_raw_graph",
+    "role": "legacy_replay",
+    "init_id": "legacy"
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "graph_check": {
+    "ABA": [
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 64,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      }
+    ],
+    "warmup_capture_seconds": 0.2762019857764244
+  },
+  "engine": "graph",
+  "ce": 2.5427993183712605,
+  "accuracy": 0.5276964372864812,
+  "items": 4406,
+  "targets": 40980,
+  "process_seconds": 23.483915178105235,
+  "legacy_comparison": {
+    "mean_ce_change": 0.0005049767615088463,
+    "max_item_loss_change": 6.548198699951172,
+    "prediction_changes": 2211,
+    "targets_and_labels_equal": true
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "RQ1": {
+    "observed_reversal": true,
+    "matched": {
+      "split": "test",
+      "stage": "formal",
+      "step": 4096,
+      "comparison": "matched",
+      "ce_difference_mean": 0.13335979212795376,
+      "ce_difference_each_seed": [
+        0.1376018791832666,
+        0.12756696012308125,
+        0.13491053707751346
+      ],
+      "ce_difference_sd": 0.0051940838999824145,
+      "conditional_block_ci95": [
+        0.12805473527745306,
+        0.13880077362762444
+      ],
+      "original_order_8block_cluster_ci95": [
+        0.12836914358026044,
+        0.1384351645915226
+      ],
+      "paired_seed_t_ci95": [
+        0.12045697243401221,
+        0.14626261182189532
+      ],
+      "accuracy_difference_pp_each": [
+        -1.8374816983894582,
+        -1.593460224499756,
+        -1.9399707174231333
+      ],
+      "accuracy_difference_pp_mean": -1.7903042134374492,
+      "all_seeds_positive": true,
+      "all_seeds_negative": false,
+      "stable_positive_conditional": true,
+      "stable_negative_conditional": false
+    },
+    "unmatched": {
+      "split": "test",
+      "stage": "formal",
+      "step": 4096,
+      "comparison": "unmatched",
+      "ce_difference_mean": -0.28303465222045343,
+      "ce_difference_each_seed": [
+        -0.27672988784897334,
+        -0.2860754726675849,
+        -0.28629859614480213
+      ],
+      "ce_difference_sd": 0.005461225719235113,
+      "conditional_block_ci95": [
+        -0.30229128475062766,
+        -0.2643426880738455
+      ],
+      "original_order_8block_cluster_ci95": [
+        -0.3065565038578451,
+        -0.26024992064644736
+      ],
+      "paired_seed_t_ci95": [
+        -0.29660108898198617,
+        -0.2694682154589207
+      ],
+      "accuracy_difference_pp_each": [
+        2.7354807223035627,
+        3.0209858467545145,
+        2.850170815031723
+      ],
+      "accuracy_difference_pp_mean": 2.868879128029933,
+      "all_seeds_positive": false,
+      "all_seeds_negative": true,
+      "stable_positive_conditional": false,
+      "stable_negative_conditional": true
+    }
+  },
+  "RQ2": "Scope limited to declared learning-rate grid and 4096 updates; consult full budget curves.",
+  "RQ3": "Equal-time rows include actual checkpoint slack and GPU assignment; approximate points labeled.",
+  "RQ4": {
+    "language_batch1_cross_ratios": [
+      4.393850271032535,
+      2.785379047133634,
+      2.7515872880537033
+    ],
+    "unavailable_units": 0
+  },
+  "RQ5": "Only same-checkpoint measured latency joins in quality_latency.csv."
+}

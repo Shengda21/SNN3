@@ -1,0 +1,31 @@
+{
+  "queue_row": {
+    "id": "vision_s9623_K512_a4_e4_raw_eager",
+    "task": "vision",
+    "state": "adapted",
+    "seed": 9623,
+    "updates": 512,
+    "adapt_T": 4,
+    "infer_T": 4,
+    "calibration": "raw",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/snn_revision_round2/models/formal/s9623_T4_lr5e-06/step512.pt",
+    "identity_path": "/root/snn_revision_round2/models/formal/s9623_T4_lr5e-06/step512.pt",
+    "gpu": 0,
+    "checkpoint_sha256": "fe9255f79dbe2d2b1d9b4c5eeb0a1bc6cf4acd79ffda3cbe3b64a91a4fc4eaf7"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "visible_devices": "0",
+  "precision": "fp32",
+  "tf32": false,
+  "batch": 4,
+  "tail_rule": "repeat first valid row, score only original rows",
+  "status": "complete",
+  "ce": 1.448275964939408,
+  "accuracy": 0.6563,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 35.964197404682636
+}

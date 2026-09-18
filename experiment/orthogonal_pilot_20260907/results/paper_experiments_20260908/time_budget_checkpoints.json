@@ -1,0 +1,203 @@
+{
+  "h": 1713.954446054995,
+  "points": [
+    {
+      "T": 2,
+      "seed": 8621,
+      "threshold": 428.48861151374876,
+      "fraction": 0.25,
+      "step": 512,
+      "actual_seconds": 278.1541559584439,
+      "slack_fraction": 0.3508481941310152,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 2,
+      "seed": 8621,
+      "threshold": 856.9772230274975,
+      "fraction": 0.5,
+      "step": 1280,
+      "actual_seconds": 715.8896336108446,
+      "slack_fraction": 0.16463400149449,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 2,
+      "seed": 8621,
+      "threshold": 1713.954446054995,
+      "fraction": 1.0,
+      "step": 2816,
+      "actual_seconds": 1653.4962848983705,
+      "slack_fraction": 0.035274077030332376,
+      "strict_time_match": true,
+      "gpu": "0"
+    },
+    {
+      "T": 2,
+      "seed": 8622,
+      "threshold": 428.48861151374876,
+      "fraction": 0.25,
+      "step": 768,
+      "actual_seconds": 427.28966726362705,
+      "slack_fraction": 0.002798077283515486,
+      "strict_time_match": true,
+      "gpu": "1"
+    },
+    {
+      "T": 2,
+      "seed": 8622,
+      "threshold": 856.9772230274975,
+      "fraction": 0.5,
+      "step": 1280,
+      "actual_seconds": 712.4918558038771,
+      "slack_fraction": 0.16859884176756512,
+      "strict_time_match": false,
+      "gpu": "1"
+    },
+    {
+      "T": 2,
+      "seed": 8622,
+      "threshold": 1713.954446054995,
+      "fraction": 1.0,
+      "step": 2816,
+      "actual_seconds": 1640.1250940300524,
+      "slack_fraction": 0.04307544590515546,
+      "strict_time_match": true,
+      "gpu": "1"
+    },
+    {
+      "T": 2,
+      "seed": 8623,
+      "threshold": 428.48861151374876,
+      "fraction": 0.25,
+      "step": 768,
+      "actual_seconds": 328.8222716599703,
+      "slack_fraction": 0.2325997405197793,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 2,
+      "seed": 8623,
+      "threshold": 856.9772230274975,
+      "fraction": 0.5,
+      "step": 1792,
+      "actual_seconds": 765.5755442343652,
+      "slack_fraction": 0.10665590209064346,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 2,
+      "seed": 8623,
+      "threshold": 1713.954446054995,
+      "fraction": 1.0,
+      "step": 3840,
+      "actual_seconds": 1659.4260549619794,
+      "slack_fraction": 0.031814375941276354,
+      "strict_time_match": true,
+      "gpu": "0"
+    },
+    {
+      "T": 4,
+      "seed": 8621,
+      "threshold": 428.48861151374876,
+      "fraction": 0.25,
+      "step": 768,
+      "actual_seconds": 323.54549047350883,
+      "slack_fraction": 0.24491460967772455,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 4,
+      "seed": 8621,
+      "threshold": 856.9772230274975,
+      "fraction": 0.5,
+      "step": 1792,
+      "actual_seconds": 751.5173023864627,
+      "slack_fraction": 0.12306035423960268,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 4,
+      "seed": 8621,
+      "threshold": 1713.954446054995,
+      "fraction": 1.0,
+      "step": 4096,
+      "actual_seconds": 1713.954446054995,
+      "slack_fraction": 0.0,
+      "strict_time_match": true,
+      "gpu": "0"
+    },
+    {
+      "T": 4,
+      "seed": 8622,
+      "threshold": 428.48861151374876,
+      "fraction": 0.25,
+      "step": 768,
+      "actual_seconds": 323.3317961394787,
+      "slack_fraction": 0.24541332616233594,
+      "strict_time_match": false,
+      "gpu": "1"
+    },
+    {
+      "T": 4,
+      "seed": 8622,
+      "threshold": 856.9772230274975,
+      "fraction": 0.5,
+      "step": 1792,
+      "actual_seconds": 750.6158318556845,
+      "slack_fraction": 0.12411227313144148,
+      "strict_time_match": false,
+      "gpu": "1"
+    },
+    {
+      "T": 4,
+      "seed": 8622,
+      "threshold": 1713.954446054995,
+      "fraction": 1.0,
+      "step": 3840,
+      "actual_seconds": 1614.1847401559353,
+      "slack_fraction": 0.05821024364369746,
+      "strict_time_match": true,
+      "gpu": "1"
+    },
+    {
+      "T": 4,
+      "seed": 8623,
+      "threshold": 428.48861151374876,
+      "fraction": 0.25,
+      "step": 768,
+      "actual_seconds": 327.17193314805627,
+      "slack_fraction": 0.23645127465060198,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 4,
+      "seed": 8623,
+      "threshold": 856.9772230274975,
+      "fraction": 0.5,
+      "step": 1792,
+      "actual_seconds": 761.5732863396406,
+      "slack_fraction": 0.11132610543698863,
+      "strict_time_match": false,
+      "gpu": "0"
+    },
+    {
+      "T": 4,
+      "seed": 8623,
+      "threshold": 1713.954446054995,
+      "fraction": 1.0,
+      "step": 3840,
+      "actual_seconds": 1619.2292301394045,
+      "slack_fraction": 0.055267055745629255,
+      "strict_time_match": true,
+      "gpu": "0"
+    }
+  ]
+}

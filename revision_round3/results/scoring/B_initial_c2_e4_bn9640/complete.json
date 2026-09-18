@@ -1,0 +1,66 @@
+{
+  "row": {
+    "task": "vision",
+    "checkpoint": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt",
+    "checkpoint_sha256": "2c2fce3091f2a39040ceeb1c3b50aa09feb8b110e41baa0cd6bba56bf3a6dca3",
+    "source_id": "B_initial",
+    "init_id": "B",
+    "initialization_seed": 12550,
+    "state": "shared_initial",
+    "seed": null,
+    "adapt_T": null,
+    "lr": null,
+    "updates": 0,
+    "role": "primary",
+    "engine": "graph",
+    "id": "B_initial_c2_e4_bn9640",
+    "infer_T": 4,
+    "cal_T": 2,
+    "cal_seed": 9640,
+    "calibration": "bn_cross"
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "bn_check": {
+    "loaded_saved_statistics": true,
+    "protected_values_and_dtypes_unchanged": true,
+    "samples": 2048,
+    "bn_layers": 33
+  },
+  "bn_state_file": "/root/autodl-tmp/snn_revision_round3/models/calibration/2c2fce3091f2a390_c2_subset9640.pt",
+  "graph_check": {
+    "ABA": [
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 64,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      }
+    ],
+    "warmup_capture_seconds": 0.1785647701472044
+  },
+  "engine": "graph",
+  "ce": 1.4418288928307592,
+  "accuracy": 0.6426,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 19.242272986099124
+}

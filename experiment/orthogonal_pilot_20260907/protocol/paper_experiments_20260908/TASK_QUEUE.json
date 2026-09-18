@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "plan_date": "2026-09-08",
+  "project": "timestep_compression_two_controls",
+  "source": "../../results/research_target_round10/RESEARCH_TARGET.md",
+  "status": "planning_complete_waiting_for_user_cloud_server",
+  "execution_started": false,
+  "protocol": "EXPERIMENT_PROTOCOL.md",
+  "handoff": "CLOUD_HANDOFF.md",
+  "future_output_root": "../../results/paper_experiments_20260908",
+  "current_turn_stop": "No new model training, inference, timing, remote access or confirmation evaluation.",
+  "execution_policy": {
+    "gpu_jobs_serial": true,
+    "final_confirmation_last": true,
+    "stop_on_resource_deadline": true,
+    "no_auto_purchase_or_renewal": true,
+    "failed_scientific_hypothesis_is_valid_result": true,
+    "documented_unavailable_branch": "May continue independent language branch after recording unavailable vision assets and narrowing claims; do not mark unavailable task complete."
+  },
+  "training": {
+    "precision": "fp32",
+    "tf32": false,
+    "optimizer": "AdamW",
+    "weight_decay": 0,
+    "clip_norm": 1,
+    "batch": 8,
+    "microbatch": 2,
+    "accumulation": 4,
+    "schedule": "constant",
+    "save_every_updates": 256,
+    "tune_steps": [
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "total_planned_updates": 57344,
+    "screening_selection": "per T, minimum mean tune CE across two screening seeds at step 2048; exact tie lower lr",
+    "time_budget_rule": "h=min(final cumulative training seconds of six formal trajectories); thresholds=h*[0.25,0.5,1]; last saved checkpoint <= threshold; >10% slack labeled approximate"
+  },
+  "data": {
+    "train_split_seed": 7600,
+    "tune_mask_seed": 7601,
+    "validation_split_seed": 6101,
+    "old_confirmation_mask_seed": 7602,
+    "supplementary_validation": {
+      "order_range": [
+        3616,
+        3849
+      ],
+      "mask_seed": 8701,
+      "n_blocks": 233,
+      "independence": "not established; 104 blocks overlap historical context ranges"
+    },
+    "primary_confirmation": {
+      "split": "official wikitext-2-raw-v1 test, subject to full project use-history audit",
+      "mask_seed": 8702,
+      "n_blocks": null,
+      "downloaded_this_turn": false
+    }
+  },
+  "statistics": {
+    "training_seeds": 3,
+    "paired_block_bootstrap_replicates": 10000,
+    "bootstrap_seed": 8901,
+    "block_ci_scope": "conditional on trained seeds",
+    "cluster_sensitivity": "document if available, otherwise original-order groups of 8 blocks",
+    "training_randomness": "paired seed differences with SD and df=2 t interval"
+  },
+  "tasks": [
+    {
+      "id": "E0",
+      "title": "恢复资产、迁移入口并固定数据角色",
+      "depends_on": [],
+      "requires": [
+        "cloud_access",
+        "historical_language_checkpoint_or_verified_rebuild"
+      ],
+      "outputs": [
+        "environment.json",
+        "asset_inventory.json",
+        "data_roles.json",
+        "runtime_config.json"
+      ],
+      "gate": "模型身份、原始数据和迁移代码已核对；最终确认数据未参与选择",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E1",
+      "title": "一次关键路径检查",
+      "depends_on": [
+        "E0"
+      ],
+      "outputs": [
+        "reproduction_checks.json",
+        "resume_check.json",
+        "initial_graph_checks.json"
+      ],
+      "gate": "训练恢复与数据访问正确；明确各架构图执行输出保持状态",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E2",
+      "title": "对称学习率筛选",
+      "depends_on": [
+        "E1"
+      ],
+      "grid": {
+        "T": [
+          2,
+          4
+        ],
+        "lr": [
+          6e-06,
+          2e-05,
+          6e-05,
+          0.0002
+        ],
+        "seed": [
+          8611,
+          8612
+        ],
+        "max_steps": 2048
+      },
+      "run_count": 16,
+      "update_count": 32768,
+      "outputs": [
+        "lr_selection.json",
+        "screening_runs/"
+      ],
+      "gate": "按2048步train留出两seed平均CE选lr，无最终确认访问",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E3",
+      "title": "三seed正式训练与等时间checkpoint选取",
+      "depends_on": [
+        "E2"
+      ],
+      "grid": {
+        "T": [
+          2,
+          4
+        ],
+        "seed": [
+          8621,
+          8622,
+          8623
+        ],
+        "max_steps": 4096,
+        "lr": "selected_per_T_from_E2"
+      },
+      "run_count": 6,
+      "update_count": 24576,
+      "outputs": [
+        "formal_runs/",
+        "time_budget_checkpoints.json"
+      ],
+      "gate": "六条完整轨迹与可恢复状态齐全，固定更新和时间终点已选定",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E4a",
+      "title": "历史模型跨环境执行复测",
+      "depends_on": [
+        "E1"
+      ],
+      "grid": {
+        "architecture": [
+          "SmoothSpike_frozen",
+          "SpikingResformer_30epoch"
+        ],
+        "T": [
+          2,
+          4
+        ],
+        "batch": [
+          1,
+          4,
+          16,
+          64
+        ],
+        "session": [
+          8801,
+          8802,
+          8803
+        ],
+        "engine": [
+          "eager",
+          "graph",
+          "graph_with_copy"
+        ],
+        "rounds": 3,
+        "repeats": 10
+      },
+      "timed_calls": 4320,
+      "outputs": [
+        "latency_historical/"
+      ],
+      "gate": "各共同shape正确性与会话记录完整；缺失分支明确",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E4b",
+      "title": "新4096步模型直接时延",
+      "depends_on": [
+        "E3"
+      ],
+      "grid": {
+        "T": [
+          2,
+          4
+        ],
+        "seed": [
+          8621,
+          8622,
+          8623
+        ],
+        "batch": [
+          1,
+          4,
+          16,
+          64
+        ],
+        "engine": [
+          "eager",
+          "graph",
+          "graph_with_copy"
+        ],
+        "rounds": 3,
+        "repeats": 10
+      },
+      "timed_calls": 2160,
+      "outputs": [
+        "latency_formal/"
+      ],
+      "gate": "六权重各自计时，输出保持检查通过或单元明确不可用",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E4b_legacy",
+      "title": "旧六份512步权重新GPU直接时延",
+      "depends_on": [
+        "E1"
+      ],
+      "conditional_on": "six_historical_512_checkpoints_restored_or_labeled_rebuild",
+      "grid": {
+        "T": [
+          2,
+          4
+        ],
+        "seed": [
+          7621,
+          7622,
+          7623
+        ],
+        "batch": [
+          1,
+          4
+        ],
+        "engine": [
+          "eager",
+          "graph",
+          "graph_with_copy"
+        ],
+        "rounds": 3,
+        "repeats": 10
+      },
+      "timed_calls": 1080,
+      "outputs": [
+        "latency_legacy512/"
+      ],
+      "gate": "旧checkpoint身份与质量参照一致；重建单列",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E4c",
+      "title": "必要mask输出位置控制",
+      "depends_on": [
+        "E1"
+      ],
+      "grid": {
+        "T": [
+          2,
+          4
+        ],
+        "batch": [
+          1,
+          4,
+          16,
+          64
+        ],
+        "route": [
+          "full_head",
+          "masked_head"
+        ],
+        "engine": [
+          "eager",
+          "graph"
+        ],
+        "rounds": 3,
+        "repeats": 10
+      },
+      "timed_calls": 960,
+      "outputs": [
+        "masked_readout/"
+      ],
+      "gate": "同route图输出保持；跨route差异真实记录",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E4d",
+      "title": "匹配D2D复制口径补充",
+      "depends_on": [
+        "E1"
+      ],
+      "grid": {
+        "architecture": [
+          "SmoothSpike_frozen",
+          "SpikingResformer_30epoch"
+        ],
+        "T": [
+          2,
+          4
+        ],
+        "batch": [
+          1,
+          4
+        ],
+        "session": [
+          8801,
+          8802,
+          8803
+        ],
+        "engine": [
+          "eager_with_copy"
+        ],
+        "rounds": 3,
+        "repeats": 10
+      },
+      "timed_calls": 720,
+      "outputs": [
+        "latency_copy_control/"
+      ],
+      "gate": "与E4a graph_with_copy匹配同样输入复制",
+      "status": "planned_not_started",
+      "coexecute_with": "E4a in same processes and alternating rounds"
+    },
+    {
+      "id": "E5",
+      "title": "锁定清单后一次性确认",
+      "depends_on": [
+        "E3",
+        "E4a",
+        "E4b",
+        "E4c",
+        "E4d"
+      ],
+      "requires": [
+        "independent_split_history_cleared",
+        "confirm_manifest_locked"
+      ],
+      "outputs": [
+        "confirm_manifest.json",
+        "confirmation_predictions/",
+        "quality.csv",
+        "quality_differences.csv"
+      ],
+      "gate": "完整预定模型列表评分，官方test和233块分别报告",
+      "status": "planned_not_started"
+    },
+    {
+      "id": "E6",
+      "title": "汇总证据与论文写作交接",
+      "depends_on": [
+        "E5"
+      ],
+      "outputs": [
+        "latency.csv",
+        "figures/",
+        "claim_ledger.md",
+        "EXPERIMENT_REPORT.md",
+        "PAPER_HANDOFF.md"
+      ],
+      "gate": "论断与数值来源对应，缺失或反向证据完整报告",
+      "status": "planned_not_started"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+{"configuration": "T4_b1_full", "tag": "legacy_reconstructed_T4_seed7621_step512", "medians": {"eager": 19.421590492129326, "graph": 4.899119958281517, "graph_with_copy": 4.908079281449318}}
+{"configuration": "T4_b4_full", "tag": "legacy_reconstructed_T4_seed7621_step512", "medians": {"eager": 22.97784574329853, "graph": 10.029610246419907, "graph_with_copy": 10.038793087005615}}

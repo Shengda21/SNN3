@@ -1,0 +1,2 @@
+{"tag": "single_T2", "step": 64, "loss": 3.2803280353546143, "gradient_norm": 3.042602300643921, "seconds": 0.16504126973450184, "training_seconds": 12.318329935893416, "examples": 128, "sample_plan_start": 8064}
+{"tag": "single_T2", "step": 64, "validation": {"ce": 1.5549236552251502, "accuracy": 0.636, "samples": 5000, "precision": "fp32", "batch": 64, "split": "validation"}}

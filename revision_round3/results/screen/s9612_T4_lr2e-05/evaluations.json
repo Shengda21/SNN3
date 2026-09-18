@@ -1,0 +1,38 @@
+[
+  {
+    "step": 512,
+    "validation": {
+      "ce": 1.3888586864004844,
+      "accuracy": 0.6658,
+      "samples": 5000,
+      "precision": "fp32",
+      "batch": 64,
+      "split": "validation"
+    },
+    "training_seconds": 297.5683529023081
+  },
+  {
+    "step": 1024,
+    "validation": {
+      "ce": 1.3655246241495014,
+      "accuracy": 0.6744,
+      "samples": 5000,
+      "precision": "fp32",
+      "batch": 64,
+      "split": "validation"
+    },
+    "training_seconds": 571.3754343148321
+  },
+  {
+    "step": 2048,
+    "validation": {
+      "ce": 1.3890671997022814,
+      "accuracy": 0.6692,
+      "samples": 5000,
+      "precision": "fp32",
+      "batch": 64,
+      "split": "validation"
+    },
+    "training_seconds": 1132.1980078928173
+  }
+]

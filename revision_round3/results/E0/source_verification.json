@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": {
+    "orthogonal_pilot_20260907/code/common.py": true,
+    "orthogonal_pilot_20260907/code/paper_train.py": true,
+    "orthogonal_pilot_20260907/code/paper_bench.py": true,
+    "orthogonal_pilot_20260907/code/paper_confirm.py": true,
+    "orthogonal_pilot_20260907/code/paper_analyze.py": true,
+    "orthogonal_pilot_20260907/vendor/SmoothSpike/convertor.py": true,
+    "orthogonal_pilot_20260907/vendor/SmoothSpike/spikingbert_rot_inf.py": true,
+    "direction1_budget_rotation_20260907/code/train.py": true,
+    "direction1_budget_rotation_20260907/code/rotations.py": true,
+    "direction1_budget_rotation_20260907/code/checkpoint_io.py": true,
+    "direction1_budget_rotation_20260907/vendor/SpikingResformer/models/spikingresformer.py": true,
+    "direction1_budget_rotation_20260907/vendor/SpikingResformer/models/submodules/layers.py": true
+  }
+}

@@ -1,0 +1,9 @@
+{"tag": "s9612_T4_lr8e-05", "step": 64, "loss": 3.213038682937622, "gradient_norm": 6.6443562507629395, "seconds": 0.5404809229075909, "training_seconds": 35.412726778537035, "examples": 128, "sample_plan_start": 8064}
+{"tag": "s9612_T4_lr8e-05", "step": 128, "loss": 2.748549461364746, "gradient_norm": 5.756604194641113, "seconds": 0.5410757847130299, "training_seconds": 70.02151819691062, "examples": 128, "sample_plan_start": 16256}
+{"tag": "s9612_T4_lr8e-05", "step": 192, "loss": 3.3119845390319824, "gradient_norm": 8.44845962524414, "seconds": 0.5420405901968479, "training_seconds": 104.64554994180799, "examples": 128, "sample_plan_start": 24448}
+{"tag": "s9612_T4_lr8e-05", "step": 256, "loss": 3.5065616369247437, "gradient_norm": 7.250785827636719, "seconds": 0.54175765812397, "training_seconds": 139.40020084753633, "examples": 128, "sample_plan_start": 32640}
+{"tag": "s9612_T4_lr8e-05", "step": 320, "loss": 3.031307816505432, "gradient_norm": 5.373518943786621, "seconds": 0.5409213751554489, "training_seconds": 174.06385199725628, "examples": 128, "sample_plan_start": 40832}
+{"tag": "s9612_T4_lr8e-05", "step": 384, "loss": 2.158334732055664, "gradient_norm": 7.35092306137085, "seconds": 0.5413734801113605, "training_seconds": 208.7639738470316, "examples": 128, "sample_plan_start": 49024}
+{"tag": "s9612_T4_lr8e-05", "step": 448, "loss": 2.5918381214141846, "gradient_norm": 4.896336555480957, "seconds": 0.5412051975727081, "training_seconds": 243.4143323637545, "examples": 128, "sample_plan_start": 57216}
+{"tag": "s9612_T4_lr8e-05", "step": 512, "loss": 3.101353406906128, "gradient_norm": 6.326597690582275, "seconds": 0.541601374745369, "training_seconds": 278.0826882980764, "examples": 128, "sample_plan_start": 65408}
+{"tag": "s9612_T4_lr8e-05", "step": 512, "validation": {"ce": 1.4178820786203257, "accuracy": 0.6564, "samples": 5000, "precision": "fp32", "batch": 64, "split": "validation"}}

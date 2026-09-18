@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.2
+scipy>=1.12
+matplotlib>=3.8
+reportlab>=4.0
+svglib>=1.5
+PyMuPDF>=1.24

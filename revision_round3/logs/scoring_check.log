@@ -1,0 +1,5 @@
+{"id": "training_probe_c2_e4_eager", "ce": 1.1504902734304778, "accuracy": 0.7734375, "engine": "eager", "seconds": 9.802584519609809}
+{"id": "training_probe_c2_e4_graph", "ce": 1.1504902734304778, "accuracy": 0.7734375, "engine": "graph", "seconds": 2.772404368966818}
+{"id": "training_probe_c4_e2_eager", "ce": 1.177344779483974, "accuracy": 0.765625, "engine": "eager", "seconds": 9.544382940977812}
+{"id": "training_probe_c4_e2_graph", "ce": 1.177344779483974, "accuracy": 0.765625, "engine": "graph", "seconds": 2.4857116248458624}
+TRAINING_SIDE_SCORING_CHECK_PASSED

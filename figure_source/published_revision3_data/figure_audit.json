@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "support/revision3_data/summary.json": "0786050cf09e4684dcc285b58459580bde45e4c6fb1ac482fcce0153ab208532",
+    "support/revision3_data/contrasts_by_seed.csv": "5a2f8d6b7905d191ca802cf218fe5b13a1220d1d6a0282548c00d15d109ae69b",
+    "support/revision3_data/contrast_intervals.csv": "0a1b82560aa5f241c8abc82d4282a52fca6c23f486998654dbe8d9b08e67e8c2",
+    "support/revision3_data/bn_transfer_penalty_intervals.csv": "e7c26d571e02d9449d7870aff9a6c9935541ade142bcc186a1d9540a0ad6ce80",
+    "support/revision3_data/bn_transfer_penalty_by_seed.csv": "598248b00f8e6efe437a8b04b57d37e5e8bebd7790a590999947be253af45fc9",
+    "support/revision2_data/paired_contrasts.csv": "8602a22010a59c78f071e2afb52a22bafff10b385be20a42266e5d50d8a1031a",
+    "support/revision2_data/contrast_intervals.csv": "f421bfa7e7452f1e8956f0a4f463b2e3c23589b69e07baa187be0d0d4a16437a"
+  },
+  "generated_figures": [
+    "revision3_target_effects",
+    "revision3_bn_effects",
+    "revision3_robustness"
+  ],
+  "language_source": "Retained R2.1 results, three paired adaptation seeds",
+  "vision_source": "R3, initialization A n=5 and initialization B n=3 analyzed separately",
+  "calibration": "Matched inference window; C1=9640, C2=9740, C3=9840, 2048 training images each",
+  "uncertainty": "Pointwise paired Student 95% intervals; fixed initialization and calibration subset",
+  "no_extra_n_from_calibration": true,
+  "initial_state_uncertainty": "Single checkpoint, no interval",
+  "numerical_checks": "Every plotted P and BN-transfer interval rederived from paired seed values and compared to source intervals",
+  "budget_interpretation": "1024 is a measured intermediate checkpoint; J still compares 512 and 2048",
+  "no_synthetic_result_data": true,
+  "render_qa": "PNG previews and all three standalone PGF PDFs visually inspected; zero embedded raster images in compiled PGF PDFs"
+}

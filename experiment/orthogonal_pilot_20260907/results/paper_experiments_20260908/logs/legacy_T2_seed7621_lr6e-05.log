@@ -1,0 +1,6 @@
+{"run": "T2_seed7621_lr6e-05", "loss": 2.50897279381752, "gradient_norm": 3.846273183822632, "seconds": 0.43159369379282, "step": 128, "cumulative_training_seconds": 55.433616269379854}
+{"run": "T2_seed7621_lr6e-05", "loss": 2.419600397348404, "gradient_norm": 3.5454795360565186, "seconds": 0.5010062381625175, "step": 256, "cumulative_training_seconds": 110.69547416269779}
+{"run": "T2_seed7621_lr6e-05", "loss": 2.9934043884277344, "gradient_norm": 3.898679733276367, "seconds": 0.4157465063035488, "step": 384, "cumulative_training_seconds": 166.7495615966618}
+{"run": "T2_seed7621_lr6e-05", "loss": 2.2447603046894073, "gradient_norm": 3.7626636028289795, "seconds": 0.41714654490351677, "step": 512, "cumulative_training_seconds": 221.63319550454617}
+{"run": "T2_seed7621_lr6e-05", "step": 512, "tune": {"ce": 2.652447511250724, "accuracy": 0.5033670033670034, "texts": 128, "masked_tokens": 1188}}
+COMPLETE T2_seed7621_lr6e-05
