@@ -1,0 +1,23 @@
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple
+Processing ./setup/wheels/torch-2.6.0+cu124-cp312-cp312-linux_x86_64.whl
+Processing ./setup/wheels/torchvision-0.21.0+cu124-cp312-cp312-linux_x86_64.whl
+Installing collected packages: torchvision, torch
+  Attempting uninstall: torchvision
+    Found existing installation: torchvision 0.20.1+cu124
+    Uninstalling torchvision-0.20.1+cu124:
+      Successfully uninstalled torchvision-0.20.1+cu124
+  Attempting uninstall: torch
+    Found existing installation: torch 2.5.1+cu124
+    Uninstalling torch-2.5.1+cu124:
+      Successfully uninstalled torch-2.5.1+cu124
+Successfully installed torch-2.6.0+cu124 torchvision-0.21.0+cu124
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Traceback (most recent call last):
+  File "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/code/paper_train.py", line 2, in <module>
+    from common import *
+  File "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/code/common.py", line 7, in <module>
+    import torch
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/__init__.py", line 405, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: libcusparseLt.so.0: cannot open shared object file: No such file or directory

@@ -1,0 +1,9 @@
+{
+  "state": "complete",
+  "epoch": 30,
+  "total_epochs": 30,
+  "best_validation_accuracy": 66.94,
+  "last_epoch_seconds": 92.81887483596802,
+  "pid": 3254,
+  "training_seconds": 2732.9263570308685
+}

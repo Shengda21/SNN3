@@ -1,0 +1,5 @@
+{"tag": "resumed", "step": 2, "loss": 2.6558473110198975, "gradient_norm": 6.485349655151367, "seconds": 0.5322311744093895, "training_seconds": 1.6489164493978024, "examples": 128, "sample_plan_start": 128}
+{"tag": "resumed", "step": 2, "validation": {"ce": 1.368123439228069, "accuracy": 0.6744, "samples": 5000, "precision": "fp32", "batch": 64, "split": "validation"}}
+{"tag": "resumed", "step": 4, "loss": 2.427635908126831, "gradient_norm": 5.193883895874023, "seconds": 0.5422617644071579, "training_seconds": 3.3426604010164738, "examples": 128, "sample_plan_start": 384}
+{"tag": "resumed", "step": 4, "validation": {"ce": 1.371424717174843, "accuracy": 0.669, "samples": 5000, "precision": "fp32", "batch": 64, "split": "validation"}}
+VISION_CHECKS_PASSED

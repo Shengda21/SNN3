@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scoring_paths": 126,
+  "paired_quality_rows": 26,
+  "graph_full_score_comparisons": 16,
+  "timing_processes": 24,
+  "timing_model_units": 48,
+  "distinct_timing_process_identities": 24,
+  "timing_calls": 2880,
+  "all_scores_recomputed": true,
+  "uncertainty_units": "training seeds are paired; budgets are repeated observations; process and call variation remain nested"
+}

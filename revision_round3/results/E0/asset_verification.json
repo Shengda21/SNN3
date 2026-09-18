@@ -1,0 +1,218 @@
+{
+  "status": "passed",
+  "checked": 42,
+  "all_match": true,
+  "rows": [
+    {
+      "path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+      "matches": true,
+      "bytes": 44357929
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/fused_state.pt",
+      "matches": true,
+      "bytes": 440526834
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8621_lr2e-05/step4096.pt",
+      "matches": true,
+      "bytes": 440557790
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8621_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 440556994
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8622_lr2e-05/step4096.pt",
+      "matches": true,
+      "bytes": 440557790
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8622_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 440556994
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8623_lr2e-05/step4096.pt",
+      "matches": true,
+      "bytes": 440557790
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8623_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 440556994
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8621_lr2e-05/step4096.pt",
+      "matches": true,
+      "bytes": 440557790
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8621_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 440556994
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8622_lr2e-05/step4096.pt",
+      "matches": true,
+      "bytes": 440557790
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8622_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 440556994
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8623_lr2e-05/step4096.pt",
+      "matches": true,
+      "bytes": 440557790
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8623_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 440556994
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9621_T2_lr2e-05/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9621_T2_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9621_T4_lr5e-06/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9621_T4_lr5e-06/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9622_T2_lr2e-05/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9622_T2_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9622_T4_lr5e-06/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9622_T4_lr5e-06/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9623_T2_lr2e-05/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9623_T2_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9623_T4_lr5e-06/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9623_T4_lr5e-06/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9624_T2_lr2e-05/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9624_T2_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9624_T4_lr5e-06/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9624_T4_lr5e-06/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9625_T2_lr2e-05/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9625_T2_lr2e-05/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9625_T4_lr5e-06/step2048.pt",
+      "matches": true,
+      "bytes": 44372125
+    },
+    {
+      "path": "/root/snn_revision_round2/models/formal/s9625_T4_lr5e-06/step512.pt",
+      "matches": true,
+      "bytes": 44371392
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/model.safetensors",
+      "matches": true,
+      "bytes": 582041928
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/test.parquet",
+      "matches": true,
+      "bytes": 732610
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/train.parquet",
+      "matches": true,
+      "bytes": 6357543
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/validation.parquet",
+      "matches": true,
+      "bytes": 657209
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/confirmation_inputs.pt",
+      "matches": true,
+      "bytes": 4818944
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/train_tune.pt",
+      "matches": true,
+      "bytes": 19388584
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/data/cifar-100-python.tar.gz",
+      "matches": true,
+      "bytes": 169001437
+    },
+    {
+      "path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/data/CIFAR100_split.json",
+      "matches": true,
+      "bytes": 338935
+    }
+  ],
+  "at": 1789453601.1865792
+}

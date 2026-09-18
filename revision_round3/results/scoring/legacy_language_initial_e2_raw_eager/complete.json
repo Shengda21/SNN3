@@ -1,0 +1,40 @@
+{
+  "row": {
+    "id": "legacy_language_initial_e2_raw_eager",
+    "task": "language",
+    "state": "shared_initial",
+    "updates": 0,
+    "infer_T": 2,
+    "calibration": "raw",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": null,
+    "identity_path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/fused_state.pt",
+    "gpu": 0,
+    "checkpoint_sha256": "4ded420a0784025eb039a83d8e83b799dce23c0d99ec0f1a202eee539a02a79c",
+    "legacy_id": "language_initial_e2_raw_eager",
+    "role": "legacy_replay",
+    "init_id": "legacy"
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "engine": "eager",
+  "ce": 3.1998100274612424,
+  "accuracy": 0.451610541727672,
+  "items": 4406,
+  "targets": 40980,
+  "process_seconds": 28.26508290320635,
+  "legacy_comparison": {
+    "mean_ce_change": -0.0001988425299983554,
+    "max_item_loss_change": 14.407367706298828,
+    "prediction_changes": 2091,
+    "targets_and_labels_equal": true
+  }
+}

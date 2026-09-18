@@ -1,0 +1,40 @@
+{
+  "single": [
+    {
+      "tag": "single_T2",
+      "returncode": 0,
+      "median_update_seconds_after_warmup": 0.17830287385731936,
+      "peak_allocated_gib": 6.793231964111328,
+      "training_seconds": 12.318329935893416
+    },
+    {
+      "tag": "single_T4",
+      "returncode": 0,
+      "median_update_seconds_after_warmup": 0.27257847879081964,
+      "peak_allocated_gib": 12.638782501220703,
+      "training_seconds": 18.220518546178937
+    }
+  ],
+  "parallel": [
+    {
+      "tag": "parallel_T2",
+      "returncode": 0,
+      "median_update_seconds_after_warmup": 0.2995698666200042,
+      "peak_allocated_gib": 6.793231964111328,
+      "training_seconds": 19.81622771732509
+    },
+    {
+      "tag": "parallel_T4",
+      "returncode": 0,
+      "median_update_seconds_after_warmup": 0.5357566373422742,
+      "peak_allocated_gib": 12.638782501220703,
+      "training_seconds": 30.341859117150307
+    }
+  ],
+  "sequential_wall_seconds": 50.81873763538897,
+  "parallel_wall_seconds": 41.22221162728965,
+  "speedup": 1.232799882133114,
+  "chosen_concurrency": 2,
+  "scientific_batch_and_precision_changed": false,
+  "status": "passed"
+}

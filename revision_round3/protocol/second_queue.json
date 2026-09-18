@@ -1,0 +1,56 @@
+[
+  {
+    "stage": "formal_B",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9721,
+    "steps": 2048,
+    "tag": "s9721_T2_lr2e-05",
+    "initial": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt"
+  },
+  {
+    "stage": "formal_B",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9721,
+    "steps": 2048,
+    "tag": "s9721_T4_lr2e-05",
+    "initial": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt"
+  },
+  {
+    "stage": "formal_B",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9722,
+    "steps": 2048,
+    "tag": "s9722_T2_lr2e-05",
+    "initial": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt"
+  },
+  {
+    "stage": "formal_B",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9722,
+    "steps": 2048,
+    "tag": "s9722_T4_lr2e-05",
+    "initial": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt"
+  },
+  {
+    "stage": "formal_B",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9723,
+    "steps": 2048,
+    "tag": "s9723_T2_lr2e-05",
+    "initial": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt"
+  },
+  {
+    "stage": "formal_B",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9723,
+    "steps": 2048,
+    "tag": "s9723_T4_lr2e-05",
+    "initial": "/root/autodl-tmp/snn_revision_round3/initialization/results/independent12550/best.pt"
+  }
+]

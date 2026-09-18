@@ -1,0 +1,31 @@
+{
+  "status": "running",
+  "completed": 0,
+  "total": 21,
+  "running": [
+    {
+      "pid": 3254,
+      "job": {
+        "kind": "initial",
+        "stage": "initialization",
+        "tag": "independent12550"
+      },
+      "started": 1789453453.31426
+    },
+    {
+      "pid": 3255,
+      "job": {
+        "stage": "screen",
+        "T": 2,
+        "lr": 1.25e-06,
+        "seed": 9611,
+        "steps": 2048,
+        "tag": "s9611_T2_lr1.25e-06"
+      },
+      "started": 1789453453.3148267
+    }
+  ],
+  "pending": 19,
+  "updated": 1789453768.3720672,
+  "concurrency": 2
+}

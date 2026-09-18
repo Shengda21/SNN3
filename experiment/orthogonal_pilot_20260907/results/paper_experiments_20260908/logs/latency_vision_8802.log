@@ -1,0 +1,8 @@
+{"configuration": "T4_b1_full", "tag": "ready_reconstructed", "medians": {"eager": 12.087292969226837, "graph": 3.085460513830185, "graph_with_copy": 3.0953343957662582, "eager_with_copy": 12.216083705425262}}
+{"configuration": "T4_b4_full", "tag": "ready_reconstructed", "medians": {"eager": 13.109728693962097, "graph": 4.69757616519928, "graph_with_copy": 4.702283069491386, "eager_with_copy": 13.304274529218674}}
+{"configuration": "T4_b16_full", "tag": "ready_reconstructed", "medians": {"eager": 17.65730418264866, "graph": 15.03688097000122, "graph_with_copy": 15.050536021590233}}
+{"configuration": "T4_b64_full", "tag": "ready_reconstructed", "medians": {"eager": 74.73594881594181, "graph": 72.86196574568748, "graph_with_copy": 72.87139818072319}}
+{"configuration": "T2_b1_full", "tag": "ready_reconstructed", "medians": {"eager": 9.432623162865639, "graph": 2.228396013379097, "graph_with_copy": 2.2350717335939407, "eager_with_copy": 9.797565639019012}}
+{"configuration": "T2_b4_full", "tag": "ready_reconstructed", "medians": {"eager": 10.245976969599724, "graph": 3.1103119254112244, "graph_with_copy": 3.1139031052589417, "eager_with_copy": 10.251706466078758}}
+{"configuration": "T2_b16_full", "tag": "ready_reconstructed", "medians": {"eager": 10.1820919662714, "graph": 8.061939850449562, "graph_with_copy": 8.064782246947289}}
+{"configuration": "T2_b64_full", "tag": "ready_reconstructed", "medians": {"eager": 37.06658631563187, "graph": 35.59260070323944, "graph_with_copy": 35.609081387519836}}

@@ -1,0 +1,23 @@
+{"gpu": 1, "tag": "s9612_T4_lr5e-06", "T": 4, "seed": 9612, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9612_T4_lr5e-06/complete.json"}
+{"gpu": 0, "tag": "s9611_T2_lr5e-06", "T": 2, "seed": 9611, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9611_T2_lr5e-06/complete.json"}
+{"gpu": 1, "tag": "s9612_T2_lr5e-06", "T": 2, "seed": 9612, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9612_T2_lr5e-06/complete.json"}
+{"gpu": 0, "tag": "s9611_T4_lr5e-06", "T": 4, "seed": 9611, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9611_T4_lr5e-06/complete.json"}
+{"gpu": 1, "tag": "s9612_T2_lr2e-05", "T": 2, "seed": 9612, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9612_T2_lr2e-05/complete.json"}
+{"gpu": 0, "tag": "s9611_T4_lr2e-05", "T": 4, "seed": 9611, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9611_T4_lr2e-05/complete.json"}
+{"gpu": 1, "tag": "s9612_T4_lr2e-05", "T": 4, "seed": 9612, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9612_T4_lr2e-05/complete.json"}
+{"gpu": 0, "tag": "s9611_T2_lr2e-05", "T": 2, "seed": 9611, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9611_T2_lr2e-05/complete.json"}
+{"gpu": 0, "tag": "s9611_T2_lr8e-05", "T": 2, "seed": 9611, "lr": 8e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9611_T2_lr8e-05/complete.json"}
+{"gpu": 1, "tag": "s9612_T4_lr8e-05", "T": 4, "seed": 9612, "lr": 8e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9612_T4_lr8e-05/complete.json"}
+{"gpu": 1, "tag": "s9612_T2_lr8e-05", "T": 2, "seed": 9612, "lr": 8e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9612_T2_lr8e-05/complete.json"}
+{"gpu": 0, "tag": "s9611_T4_lr8e-05", "T": 4, "seed": 9611, "lr": 8e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/screen/s9611_T4_lr8e-05/complete.json"}
+{"gpu": 0, "tag": "s9621_T2_lr2e-05", "T": 2, "seed": 9621, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9621_T2_lr2e-05/complete.json"}
+{"gpu": 1, "tag": "s9622_T4_lr5e-06", "T": 4, "seed": 9622, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9622_T4_lr5e-06/complete.json"}
+{"gpu": 0, "tag": "s9621_T4_lr5e-06", "T": 4, "seed": 9621, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9621_T4_lr5e-06/complete.json"}
+{"gpu": 1, "tag": "s9622_T2_lr2e-05", "T": 2, "seed": 9622, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9622_T2_lr2e-05/complete.json"}
+{"gpu": 1, "tag": "s9624_T2_lr2e-05", "T": 2, "seed": 9624, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9624_T2_lr2e-05/complete.json"}
+{"gpu": 0, "tag": "s9623_T4_lr5e-06", "T": 4, "seed": 9623, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9623_T4_lr5e-06/complete.json"}
+{"gpu": 0, "tag": "s9623_T2_lr2e-05", "T": 2, "seed": 9623, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9623_T2_lr2e-05/complete.json"}
+{"gpu": 1, "tag": "s9624_T4_lr5e-06", "T": 4, "seed": 9624, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9624_T4_lr5e-06/complete.json"}
+{"gpu": 0, "tag": "s9625_T2_lr2e-05", "T": 2, "seed": 9625, "lr": 2e-05, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9625_T2_lr2e-05/complete.json"}
+{"gpu": 0, "tag": "s9625_T4_lr5e-06", "T": 4, "seed": 9625, "lr": 5e-06, "exit_code": 0, "complete_path": "/root/snn_revision_round2/results/formal/s9625_T4_lr5e-06/complete.json"}
+training_complete

@@ -1,0 +1,585 @@
+{
+  "architecture": "language",
+  "checkpoint": "original_frozen",
+  "tag": "frozen",
+  "T": 4,
+  "batch": 1,
+  "route": "masked",
+  "session": 8801,
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "gpu_id": "0",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "fp32": true,
+  "tf32": false,
+  "copy_scope": "D2D input ids/image; attention mask constant",
+  "selected_tokens": 6,
+  "warmup_capture_seconds": 0.19425130635499954,
+  "checks": [
+    {
+      "offset": 0,
+      "bitwise_equal": true,
+      "max_abs_logit_error": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "offset": 64,
+      "bitwise_equal": true,
+      "max_abs_logit_error": 0.0,
+      "prediction_changes": 0
+    },
+    {
+      "offset": 0,
+      "bitwise_equal": true,
+      "max_abs_logit_error": 0.0,
+      "prediction_changes": 0
+    }
+  ],
+  "status": "complete",
+  "measurements": [
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 0,
+      "wall_ms": 4.915084689855576,
+      "cuda_ms": 4.886528015136719,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 1,
+      "wall_ms": 4.897702485322952,
+      "cuda_ms": 4.883456230163574,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 2,
+      "wall_ms": 4.889488220214844,
+      "cuda_ms": 4.877312183380127,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 3,
+      "wall_ms": 4.896990954875946,
+      "cuda_ms": 4.884416103363037,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 4,
+      "wall_ms": 4.8925988376140594,
+      "cuda_ms": 4.8803839683532715,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 5,
+      "wall_ms": 4.892740398645401,
+      "cuda_ms": 4.8803839683532715,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 6,
+      "wall_ms": 4.892483353614807,
+      "cuda_ms": 4.881311893463135,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 7,
+      "wall_ms": 4.892237484455109,
+      "cuda_ms": 4.879360198974609,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 8,
+      "wall_ms": 4.892241209745407,
+      "cuda_ms": 4.880224227905273,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 0,
+      "repeat": 9,
+      "wall_ms": 4.886314272880554,
+      "cuda_ms": 4.8752641677856445,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 0,
+      "wall_ms": 18.431801348924637,
+      "cuda_ms": 18.408191680908203,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 1,
+      "wall_ms": 19.236113876104355,
+      "cuda_ms": 19.218528747558594,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 2,
+      "wall_ms": 18.30771192908287,
+      "cuda_ms": 18.289663314819336,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 3,
+      "wall_ms": 18.44436675310135,
+      "cuda_ms": 18.4268798828125,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 4,
+      "wall_ms": 18.567588180303574,
+      "cuda_ms": 18.549760818481445,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 5,
+      "wall_ms": 18.698330968618393,
+      "cuda_ms": 18.680831909179688,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 6,
+      "wall_ms": 18.22437345981598,
+      "cuda_ms": 18.207744598388672,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 7,
+      "wall_ms": 18.405895680189133,
+      "cuda_ms": 18.388992309570312,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 8,
+      "wall_ms": 18.053703010082245,
+      "cuda_ms": 18.03545570373535,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 0,
+      "repeat": 9,
+      "wall_ms": 17.789442092180252,
+      "cuda_ms": 17.772544860839844,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 0,
+      "wall_ms": 4.914175719022751,
+      "cuda_ms": 4.896448135375977,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 1,
+      "wall_ms": 4.894182085990906,
+      "cuda_ms": 4.882336139678955,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 2,
+      "wall_ms": 4.897039383649826,
+      "cuda_ms": 4.884479999542236,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 3,
+      "wall_ms": 4.8881955444812775,
+      "cuda_ms": 4.876287937164307,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 4,
+      "wall_ms": 4.890788346529007,
+      "cuda_ms": 4.879327774047852,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 5,
+      "wall_ms": 4.891581833362579,
+      "cuda_ms": 4.881279945373535,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 6,
+      "wall_ms": 4.8898085951805115,
+      "cuda_ms": 4.877312183380127,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 7,
+      "wall_ms": 4.893749952316284,
+      "cuda_ms": 4.882431983947754,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 8,
+      "wall_ms": 4.896365106105804,
+      "cuda_ms": 4.885503768920898,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 1,
+      "repeat": 9,
+      "wall_ms": 4.88894060254097,
+      "cuda_ms": 4.876992225646973,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 0,
+      "wall_ms": 17.87884160876274,
+      "cuda_ms": 17.85683250427246,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 1,
+      "wall_ms": 17.908621579408646,
+      "cuda_ms": 17.89116859436035,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 2,
+      "wall_ms": 17.22412183880806,
+      "cuda_ms": 17.207168579101562,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 3,
+      "wall_ms": 17.20072701573372,
+      "cuda_ms": 17.184608459472656,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 4,
+      "wall_ms": 17.76028424501419,
+      "cuda_ms": 17.743871688842773,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 5,
+      "wall_ms": 17.50478893518448,
+      "cuda_ms": 17.487871170043945,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 6,
+      "wall_ms": 18.686849623918533,
+      "cuda_ms": 18.669567108154297,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 7,
+      "wall_ms": 18.87798309326172,
+      "cuda_ms": 18.859840393066406,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 8,
+      "wall_ms": 18.136315047740936,
+      "cuda_ms": 18.118656158447266,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 1,
+      "repeat": 9,
+      "wall_ms": 18.301431089639664,
+      "cuda_ms": 18.281471252441406,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 0,
+      "wall_ms": 4.906412214040756,
+      "cuda_ms": 4.886528015136719,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 1,
+      "wall_ms": 4.899080842733383,
+      "cuda_ms": 4.884479999542236,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 2,
+      "wall_ms": 4.898190498352051,
+      "cuda_ms": 4.883456230163574,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 3,
+      "wall_ms": 4.893098026514053,
+      "cuda_ms": 4.8803839683532715,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 4,
+      "wall_ms": 4.897173494100571,
+      "cuda_ms": 4.882431983947754,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 5,
+      "wall_ms": 4.892610013484955,
+      "cuda_ms": 4.880159854888916,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 6,
+      "wall_ms": 4.892803728580475,
+      "cuda_ms": 4.8803839683532715,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 7,
+      "wall_ms": 4.892800003290176,
+      "cuda_ms": 4.8803839683532715,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 8,
+      "wall_ms": 4.895612597465515,
+      "cuda_ms": 4.882400035858154,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "graph",
+      "round": 2,
+      "repeat": 9,
+      "wall_ms": 4.8909783363342285,
+      "cuda_ms": 4.879104137420654,
+      "peak_allocated_gib": 0.5309123992919922,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 0,
+      "wall_ms": 19.53214406967163,
+      "cuda_ms": 19.505247116088867,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 1,
+      "wall_ms": 19.017212092876434,
+      "cuda_ms": 18.999296188354492,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 2,
+      "wall_ms": 19.252456724643707,
+      "cuda_ms": 19.234752655029297,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 3,
+      "wall_ms": 18.657509237527847,
+      "cuda_ms": 18.63884735107422,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 4,
+      "wall_ms": 18.619392067193985,
+      "cuda_ms": 18.601696014404297,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 5,
+      "wall_ms": 18.699944019317627,
+      "cuda_ms": 18.68182373046875,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 6,
+      "wall_ms": 18.442753702402115,
+      "cuda_ms": 18.42483139038086,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 7,
+      "wall_ms": 17.59902387857437,
+      "cuda_ms": 17.582080841064453,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 8,
+      "wall_ms": 17.566468566656113,
+      "cuda_ms": 17.549312591552734,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    },
+    {
+      "engine": "eager",
+      "round": 2,
+      "repeat": 9,
+      "wall_ms": 18.414970487356186,
+      "cuda_ms": 18.39910316467285,
+      "peak_allocated_gib": 0.5425701141357422,
+      "reserved_gib": 0.8125
+    }
+  ],
+  "medians": {
+    "eager": 18.41043308377266,
+    "graph": 4.892801865935326
+  }
+}

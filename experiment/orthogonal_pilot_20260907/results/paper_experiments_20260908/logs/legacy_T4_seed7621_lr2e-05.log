@@ -1,0 +1,6 @@
+{"run": "T4_seed7621_lr2e-05", "loss": 2.31301948428154, "gradient_norm": 4.464145660400391, "seconds": 0.41281282529234886, "step": 128, "cumulative_training_seconds": 54.11468927189708}
+{"run": "T4_seed7621_lr2e-05", "loss": 2.1379148215055466, "gradient_norm": 4.059353828430176, "seconds": 0.42486758902668953, "step": 256, "cumulative_training_seconds": 108.00615366175771}
+{"run": "T4_seed7621_lr2e-05", "loss": 2.7770435214042664, "gradient_norm": 4.504543304443359, "seconds": 0.4124102555215359, "step": 384, "cumulative_training_seconds": 161.9730098247528}
+{"run": "T4_seed7621_lr2e-05", "loss": 2.173136204481125, "gradient_norm": 4.189442157745361, "seconds": 0.4321412406861782, "step": 512, "cumulative_training_seconds": 216.12414605543017}
+{"run": "T4_seed7621_lr2e-05", "step": 512, "tune": {"ce": 2.57273387808591, "accuracy": 0.5303030303030303, "texts": 128, "masked_tokens": 1188}}
+COMPLETE T4_seed7621_lr2e-05

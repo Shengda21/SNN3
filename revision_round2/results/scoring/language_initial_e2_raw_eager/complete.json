@@ -1,0 +1,29 @@
+{
+  "queue_row": {
+    "id": "language_initial_e2_raw_eager",
+    "task": "language",
+    "state": "shared_initial",
+    "updates": 0,
+    "infer_T": 2,
+    "calibration": "raw",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": null,
+    "identity_path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/fused_state.pt",
+    "gpu": 0,
+    "checkpoint_sha256": "4ded420a0784025eb039a83d8e83b799dce23c0d99ec0f1a202eee539a02a79c"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "visible_devices": "0",
+  "precision": "fp32",
+  "tf32": false,
+  "batch": 4,
+  "tail_rule": "repeat first valid row, score only original rows",
+  "status": "complete",
+  "ce": 3.200008869991241,
+  "accuracy": 0.45165934602244995,
+  "items": 4406,
+  "targets": 40980,
+  "process_seconds": 22.40953205525875
+}

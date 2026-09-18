@@ -1,0 +1,7 @@
+{
+  "test_blocks": 4406,
+  "exact_train_overlap_blocks": [],
+  "exact_validation_overlap_blocks": [],
+  "policy": "Full predefined test is reported; overlap identities logged before model scoring. No favorable subset selection.",
+  "upstream_pretraining_exposure": "unknown"
+}

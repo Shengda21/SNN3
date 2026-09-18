@@ -1,0 +1,19 @@
+{
+  "T": 4,
+  "seed": 8612,
+  "lr": 6e-05,
+  "max_steps": 2048,
+  "stage": "screen",
+  "batch": 8,
+  "microbatch": 2,
+  "accumulation": 4,
+  "precision": "fp32",
+  "optimizer": "AdamW",
+  "weight_decay": 0,
+  "clip": 1,
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "visible_devices": "1",
+  "cpu_threads": 4
+}

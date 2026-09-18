@@ -1,0 +1,20 @@
+{"run": "T2_seed8612_lr2e-05", "loss": 3.1801809668540955, "gradient_norm": 4.129238605499268, "seconds": 0.6725329644978046, "step": 128, "cumulative_training_seconds": 72.41915027052164}
+{"run": "T2_seed8612_lr2e-05", "loss": 3.867716670036316, "gradient_norm": 4.166787624359131, "seconds": 0.5192636772990227, "step": 256, "cumulative_training_seconds": 142.21816996857524}
+{"run": "T2_seed8612_lr2e-05", "loss": 1.8981296718120575, "gradient_norm": 4.0092973709106445, "seconds": 0.5341577343642712, "step": 384, "cumulative_training_seconds": 210.3252750635147}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.558367669582367, "gradient_norm": 4.019660949707031, "seconds": 0.5163239203393459, "step": 512, "cumulative_training_seconds": 276.9771756157279}
+{"run": "T2_seed8612_lr2e-05", "step": 512, "tune": {"ce": 2.689997967044111, "accuracy": 0.5126262626262627, "texts": 128, "masked_tokens": 1188}}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.3552819192409515, "gradient_norm": 3.5647950172424316, "seconds": 0.47002939879894257, "step": 640, "cumulative_training_seconds": 343.0997884385288}
+{"run": "T2_seed8612_lr2e-05", "loss": 3.621492385864258, "gradient_norm": 4.554323196411133, "seconds": 0.5221763141453266, "step": 768, "cumulative_training_seconds": 419.4739188067615}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.709297299385071, "gradient_norm": 4.5306596755981445, "seconds": 0.5934959463775158, "step": 896, "cumulative_training_seconds": 498.3677762746811}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.0673830807209015, "gradient_norm": 3.9407598972320557, "seconds": 0.5017580352723598, "step": 1024, "cumulative_training_seconds": 576.2126312479377}
+{"run": "T2_seed8612_lr2e-05", "step": 1024, "tune": {"ce": 2.677471116135016, "accuracy": 0.5084175084175084, "texts": 128, "masked_tokens": 1188}}
+{"run": "T2_seed8612_lr2e-05", "loss": 3.062970459461212, "gradient_norm": 5.0128583908081055, "seconds": 0.5173523500561714, "step": 1152, "cumulative_training_seconds": 643.3117920421064}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.208577424287796, "gradient_norm": 3.9806063175201416, "seconds": 0.6267852559685707, "step": 1280, "cumulative_training_seconds": 718.2840722985566}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.4981622993946075, "gradient_norm": 3.8454785346984863, "seconds": 0.6386044360697269, "step": 1408, "cumulative_training_seconds": 798.9368590936065}
+{"run": "T2_seed8612_lr2e-05", "loss": 3.0156110525131226, "gradient_norm": 4.007236480712891, "seconds": 0.6317822895944118, "step": 1536, "cumulative_training_seconds": 877.514708366245}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.6973858177661896, "gradient_norm": 4.485870838165283, "seconds": 0.5948281176388264, "step": 1664, "cumulative_training_seconds": 951.5775845125318}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.744672417640686, "gradient_norm": 3.6826391220092773, "seconds": 0.5660748705267906, "step": 1792, "cumulative_training_seconds": 1025.6700069755316}
+{"run": "T2_seed8612_lr2e-05", "loss": 2.7372929453849792, "gradient_norm": 4.211755275726318, "seconds": 0.6282120123505592, "step": 1920, "cumulative_training_seconds": 1100.8826166652143}
+{"run": "T2_seed8612_lr2e-05", "loss": 3.004980742931366, "gradient_norm": 4.24686861038208, "seconds": 0.487603597342968, "step": 2048, "cumulative_training_seconds": 1168.9614199139178}
+{"run": "T2_seed8612_lr2e-05", "step": 2048, "tune": {"ce": 2.5937614863117537, "accuracy": 0.5185185185185185, "texts": 128, "masked_tokens": 1188}}
+COMPLETE T2_seed8612_lr2e-05

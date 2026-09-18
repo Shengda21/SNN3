@@ -1,0 +1,2 @@
+{"configuration": "T2_b1_full", "tag": "frozen", "medians": {"eager": 13.299910351634026, "graph": 3.2457318156957626, "graph_with_copy": 3.247154876589775, "eager_with_copy": 13.115644454956055}}
+{"configuration": "T4_b1_full", "tag": "frozen", "medians": {"eager": 16.952332109212875, "graph": 4.886556416749954, "graph_with_copy": 4.894362762570381, "eager_with_copy": 16.483277082443237}}

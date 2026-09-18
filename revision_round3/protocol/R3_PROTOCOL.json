@@ -1,0 +1,60 @@
+{
+  "version": "R3",
+  "authorization": "User supplied the paid GPU and authorized execution, automatic implementation/optimization repair, download verification and shutdown.",
+  "primary_comparisons": [
+    "G",
+    "P",
+    "J_512_to_2048",
+    "BN_calibration_by_inference_2x2",
+    "accuracy_contrasts"
+  ],
+  "data_exposure": "supplementary design fixed after prior R2.1 test observations; selection uses validation only",
+  "new_runtime": "torch2.7.1+cu128, torchvision0.22.1, cupy13.6.0 for RTX5090",
+  "fresh_training_reason": "old sm90 CUDA12.4 stack cannot execute on sm120; all R3 screening/formal trajectories use the same new runtime instead of mixing resumed legacy optimization with fresh candidates",
+  "rates": [
+    1.25e-06,
+    2.5e-06,
+    5e-06,
+    2e-05,
+    8e-05
+  ],
+  "windows": [
+    2,
+    4
+  ],
+  "screen_seeds": [
+    9611,
+    9612
+  ],
+  "formal_seeds": [
+    9621,
+    9622,
+    9623,
+    9624,
+    9625
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "effective_batch": 128,
+  "microbatch": 64,
+  "adaptation_precision": "FP32, TF32 off",
+  "initialization_precision": "original AMP FP16 with TF32 enabled, original 30 epochs; independent seed12550",
+  "calibration_seeds": [
+    9640,
+    9740,
+    9840
+  ],
+  "calibration_samples": 2048,
+  "second_adaptation_seeds": [
+    9721,
+    9722,
+    9723
+  ],
+  "new_test_dataset": false,
+  "outcome_rule": "Retain all runs and unfavorable outcomes; adjust parameters for numerical/implementation failures using validation, not to force a chosen test ranking.",
+  "scoring": "fixed batch4; graph replay may accelerate scoring after recorded per-state eager equality checks; fallback to eager if equality fails",
+  "shutdown_rule": "All required server experiments completed, local downloads verified, then provider shutdown; manuscript integration can finish locally."
+}

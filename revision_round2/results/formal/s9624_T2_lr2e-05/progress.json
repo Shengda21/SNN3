@@ -1,0 +1,11 @@
+{
+  "status": "running",
+  "step": 2048,
+  "loss": 3.4310059547424316,
+  "gradient_norm": 3.453993082046509,
+  "seconds": 0.2616078592836857,
+  "training_seconds": 550.7841682769358,
+  "examples": 128,
+  "sample_plan_start": 262016,
+  "peak_allocated_gib": 6.793207168579102
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "step": 512,
+    "training_seconds": 215.83206586167216,
+    "tune": {
+      "ce": 2.528549093489695,
+      "accuracy": 0.5345117845117845,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 1.1412579715251923
+  },
+  {
+    "step": 1024,
+    "training_seconds": 429.8167450539768,
+    "tune": {
+      "ce": 2.513004751117141,
+      "accuracy": 0.5294612794612794,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 0.5753512606024742
+  },
+  {
+    "step": 2048,
+    "training_seconds": 858.536268170923,
+    "tune": {
+      "ce": 2.4669725489034398,
+      "accuracy": 0.5378787878787878,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 0.6081321649253368
+  },
+  {
+    "step": 4096,
+    "training_seconds": 1723.1704816892743,
+    "tune": {
+      "ce": 2.4074546548252553,
+      "accuracy": 0.5387205387205387,
+      "texts": 128,
+      "masked_tokens": 1188
+    },
+    "evaluation_seconds": 0.597386971116066
+  }
+]

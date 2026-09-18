@@ -1,0 +1,7 @@
+{
+  "mirror": "https://mindspore-website.obs.cn-north-4.myhuaweicloud.com/notebook/datasets/cifar-100-python.tar.gz",
+  "official_source": "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz",
+  "sha256": "85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7",
+  "size": 169001437,
+  "seconds": 15.477400064468384
+}

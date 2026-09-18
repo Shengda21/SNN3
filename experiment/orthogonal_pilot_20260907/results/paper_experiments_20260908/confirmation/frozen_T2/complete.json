@@ -1,0 +1,27 @@
+{
+  "model": {
+    "id": "frozen_T2",
+    "T": 2,
+    "seed": null,
+    "stage": "frozen",
+    "step": 0,
+    "training_seconds": 0,
+    "checkpoint": null,
+    "gpu": 0,
+    "checkpoint_sha256": "4ded420a0784025eb039a83d8e83b799dce23c0d99ec0f1a202eee539a02a79c"
+  },
+  "results": {
+    "test": {
+      "ce": 3.200008869944697,
+      "accuracy": 0.45165934602244995,
+      "texts": 4406,
+      "masked_tokens": 40980
+    },
+    "supplementary": {
+      "ce": 3.3331432308980715,
+      "accuracy": 0.44043151969981237,
+      "texts": 233,
+      "masked_tokens": 2132
+    }
+  }
+}

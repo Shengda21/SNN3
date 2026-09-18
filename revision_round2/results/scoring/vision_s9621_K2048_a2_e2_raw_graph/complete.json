@@ -1,0 +1,54 @@
+{
+  "queue_row": {
+    "id": "vision_s9621_K2048_a2_e2_raw_graph",
+    "task": "vision",
+    "state": "adapted",
+    "seed": 9621,
+    "updates": 2048,
+    "adapt_T": 2,
+    "infer_T": 2,
+    "calibration": "raw",
+    "engine": "graph",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/snn_revision_round2/models/formal/s9621_T2_lr2e-05/step2048.pt",
+    "identity_path": "/root/snn_revision_round2/models/formal/s9621_T2_lr2e-05/step2048.pt",
+    "gpu": 0,
+    "checkpoint_sha256": "75a7ce389b4ddd2609c9d5117f89114a6f9c8a32fd468f99aa49221673180f32"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "visible_devices": "0",
+  "precision": "fp32",
+  "tf32": false,
+  "batch": 4,
+  "tail_rule": "repeat first valid row, score only original rows",
+  "graph_check": {
+    "ABA": [
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 64,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      },
+      {
+        "offset": 0,
+        "bitwise_equal": true,
+        "max_logit_error": 0.0,
+        "prediction_changes": 0
+      }
+    ],
+    "warmup_capture_seconds": 0.15283523499965668
+  },
+  "status": "complete",
+  "ce": 1.4923532110852655,
+  "accuracy": 0.6394,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 9.25691955536604
+}

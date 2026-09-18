@@ -1,0 +1,18 @@
+[
+  {
+    "T": 2,
+    "ce": 3.0806319231395825,
+    "accuracy": 0.470299727520436,
+    "max_logit_error": 4.1961669921875e-05,
+    "prediction_changes": 0,
+    "task_preservation_gate": true
+  },
+  {
+    "T": 4,
+    "ce": 2.8493176931906135,
+    "accuracy": 0.4942779291553134,
+    "max_logit_error": 4.9591064453125e-05,
+    "prediction_changes": 0,
+    "task_preservation_gate": true
+  }
+]

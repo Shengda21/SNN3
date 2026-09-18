@@ -1,0 +1,49 @@
+{
+  "row": {
+    "id": "legacy_vision_initial_e2_bn_only_eager",
+    "task": "vision",
+    "state": "shared_initial",
+    "updates": 0,
+    "infer_T": 2,
+    "calibration": "bn_only",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+    "identity_path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+    "gpu": 1,
+    "checkpoint_sha256": "3d453ec2677252d88eccd90e665e492c03082209b9584dc2649757f84b5eba63",
+    "legacy_id": "vision_initial_e2_bn_only_eager",
+    "role": "legacy_replay",
+    "init_id": "legacy",
+    "cal_T": 2,
+    "cal_seed": 9640
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "bn_check": {
+    "loaded_saved_statistics": true,
+    "protected_values_and_dtypes_unchanged": true,
+    "samples": 2048,
+    "bn_layers": 33
+  },
+  "bn_state_file": "/root/autodl-tmp/snn_revision_round3/models/calibration/3d453ec2677252d8_c2_subset9640.pt",
+  "engine": "eager",
+  "ce": 1.564602941122558,
+  "accuracy": 0.6312,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 29.113637425005436,
+  "legacy_comparison": {
+    "mean_ce_change": 0.002349731987016268,
+    "max_item_loss_change": 1.9320738315582275,
+    "prediction_changes": 1569,
+    "targets_and_labels_equal": true
+  }
+}

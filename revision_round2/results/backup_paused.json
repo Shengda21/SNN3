@@ -1,0 +1,10 @@
+{
+  "session": "cec25660-da32-47a9-b32b-1337a0c75a5c",
+  "all_transfer_workers_closed": true,
+  "confirmed_at_unix": 1788997503.7505813,
+  "confirmation": "Agent verified local backup client absent and remote has no SFTP/SCP/rsync workers; only current command SSH connection remains.",
+  "interruption": "Local interactive transport sessions were no longer available; backup pause acknowledgement was not written.",
+  "waiting_since_unix": 1788975310.59855,
+  "wait_seconds": 22193.15203166008,
+  "scientific_code_changed": false
+}

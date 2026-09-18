@@ -1,0 +1,82 @@
+[
+  {
+    "stage": "formal",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9621,
+    "steps": 2048,
+    "tag": "s9621_T2_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9621,
+    "steps": 2048,
+    "tag": "s9621_T4_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9622,
+    "steps": 2048,
+    "tag": "s9622_T2_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9622,
+    "steps": 2048,
+    "tag": "s9622_T4_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9623,
+    "steps": 2048,
+    "tag": "s9623_T2_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9623,
+    "steps": 2048,
+    "tag": "s9623_T4_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9624,
+    "steps": 2048,
+    "tag": "s9624_T2_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9624,
+    "steps": 2048,
+    "tag": "s9624_T4_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 2,
+    "lr": 2e-05,
+    "seed": 9625,
+    "steps": 2048,
+    "tag": "s9625_T2_lr2e-05"
+  },
+  {
+    "stage": "formal",
+    "T": 4,
+    "lr": 2e-05,
+    "seed": 9625,
+    "steps": 2048,
+    "tag": "s9625_T4_lr2e-05"
+  }
+]

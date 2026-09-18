@@ -1,0 +1,112 @@
+[
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/model.safetensors",
+    "bytes": 582041928,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/fused_state.pt",
+    "bytes": 440526834,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+    "bytes": 44357929,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8621_lr2e-05/step4096.pt",
+    "bytes": 440557790,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8622_lr2e-05/step4096.pt",
+    "bytes": 440557790,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8623_lr2e-05/step4096.pt",
+    "bytes": 440557790,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8621_lr2e-05/step4096.pt",
+    "bytes": 440557790,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8622_lr2e-05/step4096.pt",
+    "bytes": 440557790,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8623_lr2e-05/step4096.pt",
+    "bytes": 440557790,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/test.parquet",
+    "bytes": 732610,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/train.parquet",
+    "bytes": 6357543,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/validation.parquet",
+    "bytes": 657209,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/confirmation_inputs.pt",
+    "bytes": 4818944,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/train_tune.pt",
+    "bytes": 19388584,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/data/cifar-100-python.tar.gz",
+    "bytes": 169001437,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/data/CIFAR100_split.json",
+    "bytes": 338935,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8621_lr2e-05/step512.pt",
+    "bytes": 440556994,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8622_lr2e-05/step512.pt",
+    "bytes": 440556994,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8623_lr2e-05/step512.pt",
+    "bytes": 440556994,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8621_lr2e-05/step512.pt",
+    "bytes": 440556994,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8622_lr2e-05/step512.pt",
+    "bytes": 440556994,
+    "matches": true
+  },
+  {
+    "path": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T4_seed8623_lr2e-05/step512.pt",
+    "bytes": 440556994,
+    "matches": true
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "source": "retained R2.1 per-item arrays and screening records",
+  "scoring_paths_recomputed": 126,
+  "interval_scope": "pointwise Student intervals over adaptation seeds; fixed initialization, selected procedure, inputs and calibration subset",
+  "normalization_budget_interaction": {
+    "n": 5,
+    "mean": 0.03306471298568954,
+    "sd": 0.015576914531589967,
+    "low": 0.013723419008717225,
+    "high": 0.05240600696266186,
+    "positive": 5,
+    "negative": 0
+  },
+  "vision_final_bn_accuracy_s4_minus_s2_pp": {
+    "task": "vision",
+    "calibration": "bn_only",
+    "updates": 2048,
+    "n": 5,
+    "mean": 0.47199999999999687,
+    "sd": 0.3721155734445962,
+    "low": 0.009957489282893084,
+    "high": 0.9340425107171006,
+    "positive": 4,
+    "negative": 1
+  },
+  "formal_training_resources": {
+    "2": {
+      "seconds_per_update": {
+        "n": 5,
+        "mean": 0.2684290631244949,
+        "sd": 0.000487809647098984,
+        "low": 0.26782336744771557,
+        "high": 0.2690347588012742,
+        "positive": 5,
+        "negative": 0
+      },
+      "peak_allocated_gib": 6.793207168579102
+    },
+    "4": {
+      "seconds_per_update": {
+        "n": 5,
+        "mean": 0.5416834879728413,
+        "sd": 0.0017072535650074123,
+        "low": 0.5395636526853665,
+        "high": 0.543803323260316,
+        "positive": 5,
+        "negative": 0
+      },
+      "peak_allocated_gib": 12.636407852172852
+    }
+  },
+  "budget_accounting": {
+    "language_screen_updates": 32768,
+    "language_formal_updates": 24576,
+    "vision_screen_updates": 6144,
+    "vision_formal_updates": 20480,
+    "vision_bn_calibrations": 42,
+    "vision_bn_image_presentations": 86016,
+    "vision_bn_forward_batches": 1344
+  }
+}

@@ -1,0 +1,8 @@
+{"configuration": "T2_b1_full", "tag": "frozen", "medians": {"eager": 21.566208451986313, "graph": 3.475550562143326, "graph_with_copy": 3.4802090376615524, "eager_with_copy": 21.55916392803192}}
+{"configuration": "T2_b4_full", "tag": "frozen", "medians": {"eager": 16.611730679869652, "graph": 6.276967003941536, "graph_with_copy": 6.300043314695358, "eager_with_copy": 16.698451712727547}}
+{"configuration": "T2_b16_full", "tag": "frozen", "medians": {"eager": 20.293377339839935, "graph": 18.12618598341942, "graph_with_copy": 18.124764785170555}}
+{"configuration": "T2_b64_full", "tag": "frozen", "medians": {"eager": 76.82973146438599, "graph": 75.25111362338066, "graph_with_copy": 75.20638033747673}}
+{"configuration": "T4_b1_full", "tag": "frozen", "medians": {"eager": 17.966074869036674, "graph": 4.908271133899689, "graph_with_copy": 4.914062097668648, "eager_with_copy": 17.772473394870758}}
+{"configuration": "T4_b4_full", "tag": "frozen", "medians": {"eager": 22.443220019340515, "graph": 10.030712932348251, "graph_with_copy": 10.04701480269432, "eager_with_copy": 22.893961519002914}}
+{"configuration": "T4_b16_full", "tag": "frozen", "medians": {"eager": 34.21835973858833, "graph": 31.93674422800541, "graph_with_copy": 31.946690753102303}}
+{"configuration": "T4_b64_full", "tag": "frozen", "medians": {"eager": 151.39188058674335, "graph": 149.5180558413267, "graph_with_copy": 149.46499094367027}}

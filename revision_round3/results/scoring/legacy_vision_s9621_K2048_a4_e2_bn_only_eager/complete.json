@@ -1,0 +1,52 @@
+{
+  "row": {
+    "id": "legacy_vision_s9621_K2048_a4_e2_bn_only_eager",
+    "task": "vision",
+    "state": "adapted",
+    "seed": 9621,
+    "updates": 2048,
+    "adapt_T": 4,
+    "infer_T": 2,
+    "calibration": "bn_only",
+    "engine": "eager",
+    "batch": 4,
+    "split": "test",
+    "checkpoint": "/root/snn_revision_round2/models/formal/s9621_T4_lr5e-06/step2048.pt",
+    "identity_path": "/root/snn_revision_round2/models/formal/s9621_T4_lr5e-06/step2048.pt",
+    "gpu": 0,
+    "checkpoint_sha256": "13035dc9a9631a424cb1eef9cfe9426fb42299b3d038295ece3b4d0baad36527",
+    "legacy_id": "vision_s9621_K2048_a4_e2_bn_only_eager",
+    "role": "legacy_replay",
+    "init_id": "legacy",
+    "cal_T": 2,
+    "cal_seed": 9640
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "bn_check": {
+    "bn_layers": 33,
+    "protected_state_entries": 118,
+    "protected_values_and_dtypes_unchanged": true,
+    "samples": 2048,
+    "batches": 32
+  },
+  "bn_state_file": "/root/autodl-tmp/snn_revision_round3/models/calibration/13035dc9a9631a42_c2_subset9640.pt",
+  "engine": "eager",
+  "ce": 1.5756833919894415,
+  "accuracy": 0.6307,
+  "items": 10000,
+  "targets": 10000,
+  "process_seconds": 29.79583995230496,
+  "legacy_comparison": {
+    "mean_ce_change": -0.0018381618974963043,
+    "max_item_loss_change": 1.951819658279419,
+    "prediction_changes": 1609,
+    "targets_and_labels_equal": true
+  }
+}

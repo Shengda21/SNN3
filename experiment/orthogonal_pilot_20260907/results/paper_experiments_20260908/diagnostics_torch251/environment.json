@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "torch": "2.5.1+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "lif_backend": "cupy",
+  "tf32": false,
+  "train_chunks": 37028,
+  "tune_chunks": 128,
+  "validation_chunks": 3849,
+  "token_length": 64
+}

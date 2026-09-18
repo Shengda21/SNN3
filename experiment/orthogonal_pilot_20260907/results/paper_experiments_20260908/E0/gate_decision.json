@@ -1,0 +1,10 @@
+{
+  "status": "accepted_for_new_environment_matched_comparison",
+  "historical_exact_reproduction": "unresolved without original fused/trained checkpoint backup",
+  "torch251_vs_torch26_fused_weights_identical": true,
+  "torch251_vs_torch26_old192_predictions_identical": true,
+  "old192_T2_prediction_changes_from_historical": 188,
+  "old192_T4_prediction_changes_from_historical": 208,
+  "final_confirmation_accessed": false,
+  "time": 1788862458.108324
+}

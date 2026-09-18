@@ -1,0 +1,11 @@
+export PATH=/root/autodl-tmp/r3_env/bin:/root/miniconda3/bin:/usr/bin:/bin
+export R2_WORK=/root/autodl-tmp/snn_revision_round3
+export R2_ARCHIVE=/root/autodl-tmp/snn0907
+export R2_THREADS=4
+export OMP_NUM_THREADS=4
+export MKL_NUM_THREADS=4
+export CUDA_VISIBLE_DEVICES=0
+export CUDA_PATH=/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cuda_runtime
+export LD_LIBRARY_PATH=/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cuda_nvrtc/lib:/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cuda_runtime/lib:/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cudnn/lib:/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cublas/lib:/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cusparse/lib:/root/autodl-tmp/r3_env/lib/python3.12/site-packages/nvidia/cusolver/lib
+export CUPY_CACHE_DIR=/root/autodl-tmp/snn_revision_round3/environment/cupy_cache
+export PYTHONUNBUFFERED=1

@@ -1,0 +1,28 @@
+{
+  "model": {
+    "id": "formal_T2_seed8622_step1024",
+    "T": 2,
+    "seed": 8622,
+    "stage": "formal",
+    "step": 1024,
+    "training_seconds": 569.219884634018,
+    "checkpoint": "/root/autodl-tmp/snn0907/orthogonal_pilot_20260907/data/paper_experiments_20260908/formal/T2_seed8622_lr2e-05/step1024.pt",
+    "gpu": 1,
+    "lr": 2e-05,
+    "checkpoint_sha256": "279ee86f14e2c4b41a55e6d87ecc9571fcd59bf0beecdfd78ecc44d91adb52cd"
+  },
+  "results": {
+    "test": {
+      "ce": 2.7441072387705234,
+      "accuracy": 0.4993167398731088,
+      "texts": 4406,
+      "masked_tokens": 40980
+    },
+    "supplementary": {
+      "ce": 2.8294989610926073,
+      "accuracy": 0.50093808630394,
+      "texts": 233,
+      "masked_tokens": 2132
+    }
+  }
+}

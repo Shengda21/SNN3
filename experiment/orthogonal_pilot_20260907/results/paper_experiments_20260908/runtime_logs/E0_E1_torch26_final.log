@@ -1,0 +1,5 @@
+No broken requirements found.
+[{"ce": 3.0806319527145303, "accuracy": 0.470299727520436, "texts": 192, "masked_tokens": 1835, "T": 2, "prediction_changes": 188, "max_chunk_loss_error": 7.810842514038086}, {"ce": 2.84931769887498, "accuracy": 0.4942779291553134, "texts": 192, "masked_tokens": 1835, "T": 4, "prediction_changes": 208, "max_chunk_loss_error": 5.358062744140625}]
+{"weight_bitwise_equal": true, "optimizer_bitwise_equal": true, "sampling_generator_equal": true}
+{"configuration": "T2_b1_full", "tag": "frozen", "medians": {"eager": 22.11114950478077, "graph": 3.475569188594818, "graph_with_copy": 3.267243504524231, "eager_with_copy": 22.834569215774536}}
+{"configuration": "T4_b1_full", "tag": "frozen", "medians": {"eager": 18.155064433813095, "graph": 4.892550408840179, "graph_with_copy": 4.908813163638115, "eager_with_copy": 18.29194836318493}}

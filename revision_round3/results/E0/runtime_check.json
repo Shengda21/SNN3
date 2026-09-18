@@ -1,0 +1,35 @@
+{
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cupy": "13.6.0",
+  "nvrtc": [
+    12,
+    8
+  ],
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "capability": [
+    12,
+    0
+  ],
+  "fp32": true,
+  "tf32": false,
+  "checks": [
+    {
+      "T": 2,
+      "loss": 1.2171692848205566,
+      "gradient_norm": 5.539516448974609,
+      "reset_repeated_forward_equal": true,
+      "peak_allocated_gib": 6.655377388000488,
+      "seconds": 1.9755741450935602
+    },
+    {
+      "T": 4,
+      "loss": 0.8891789317131042,
+      "gradient_norm": 8.580581665039062,
+      "reset_repeated_forward_equal": true,
+      "peak_allocated_gib": 12.507947444915771,
+      "seconds": 0.20560923591256142
+    }
+  ],
+  "status": "passed"
+}

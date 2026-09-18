@@ -1,0 +1,33 @@
+{
+  "redesign": {
+    "BN_metric_points": 20,
+    "timing_process_points": 96,
+    "paired_process_sessions": 24,
+    "accuracy_contrasts": "descriptive; native S4 minus reused S2 at inference T4",
+    "timing_repetitions": "three processes per seed; no independent-training interpretation"
+  },
+  "source_analysis": {
+    "status": "passed",
+    "scoring_paths": 126,
+    "paired_quality_rows": 26,
+    "graph_full_score_comparisons": 16,
+    "timing_processes": 24,
+    "timing_model_units": 48,
+    "distinct_timing_process_identities": 24,
+    "timing_calls": 2880,
+    "all_scores_recomputed": true,
+    "uncertainty_units": "training seeds are paired; budgets are repeated observations; process and call variation remain nested"
+  },
+  "main_figures": [
+    "revision2_target_effects",
+    "revision2_bn_effects",
+    "revision2_quality_latency"
+  ],
+  "quality_latency_points": 32,
+  "quality_source": "actual engine, full fixed test, batch four",
+  "quality_uncertainty": "paired training seeds; sample SD or Student 95% intervals as labeled",
+  "timing_uncertainty": "all three process medians per checkpoint, plus their median; no pooling of calls as models",
+  "BN": "all six state/inference cells at each budget processed symmetrically",
+  "no_omitted_rows": true,
+  "no_synthetic_result_data": true
+}

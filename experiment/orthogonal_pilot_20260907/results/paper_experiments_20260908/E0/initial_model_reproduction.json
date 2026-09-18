@@ -1,0 +1,20 @@
+[
+  {
+    "ce": 3.0806319527145303,
+    "accuracy": 0.470299727520436,
+    "texts": 192,
+    "masked_tokens": 1835,
+    "T": 2,
+    "prediction_changes": 188,
+    "max_chunk_loss_error": 7.810842514038086
+  },
+  {
+    "ce": 2.84931769887498,
+    "accuracy": 0.4942779291553134,
+    "texts": 192,
+    "masked_tokens": 1835,
+    "T": 4,
+    "prediction_changes": 208,
+    "max_chunk_loss_error": 5.358062744140625
+  }
+]

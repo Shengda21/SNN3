@@ -1,0 +1,25 @@
+{
+  "state": "ready_reconstructed",
+  "reason": "Original checkpoint unavailable locally and on the supplied empty cloud instance",
+  "original_config": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/screen_identity_p0.0/config.json",
+  "config": {
+    "id": "reconstructed_identity_p0.0",
+    "phase": "screening",
+    "dataset": "CIFAR100",
+    "kind": "identity",
+    "penalty": 0.0,
+    "seed": 12450,
+    "epochs": 30,
+    "T": 4,
+    "batch_size": 64,
+    "accumulation": 2,
+    "workers": 6,
+    "group": 32,
+    "lr": 0.0005,
+    "weight_decay": 0.01
+  },
+  "exact_historical_weights": false,
+  "started": 1788868487.8201108,
+  "checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+  "completed": 1788870731.8648794
+}

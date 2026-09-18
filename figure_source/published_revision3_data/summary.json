@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scoring_paths": 506,
+  "legacy_paths": 126,
+  "new_primary_paths": 380,
+  "initializations": 2,
+  "adaptation_seed_counts": {
+    "A": 5,
+    "B": 3
+  },
+  "calibration_subsets": 3,
+  "calibration_subset_inflates_training_n": false,
+  "interval_scope": "pointwise Student across adaptation seeds, conditional on initialization and calibration subset",
+  "J": [
+    {
+      "init_id": "A",
+      "n": 5,
+      "mean": 0.03571608167817124,
+      "sd": 0.007381973711548378,
+      "low": 0.026550150684855,
+      "high": 0.044882012671487476,
+      "positive": 5,
+      "negative": 0
+    },
+    {
+      "init_id": "B",
+      "n": 3,
+      "mean": 0.025491772295245612,
+      "sd": 0.006361257506139082,
+      "low": 0.009689532630090661,
+      "high": 0.04129401196040056,
+      "positive": 3,
+      "negative": 0
+    }
+  ],
+  "actual_engines": {
+    "graph": 396,
+    "eager": 110
+  },
+  "legacy_max_absolute_mean_ce_shift": 0.007049475207808298,
+  "legacy_prediction_changes_total": 118755
+}

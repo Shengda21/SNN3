@@ -1,0 +1,4 @@
+{"step": 1, "loss": 2.984108805656433, "gradient_norm": 5.741036891937256, "seconds": 1.1581450924277306, "training_seconds": 1.1581450924277306, "examples": 128, "sample_plan_start": 0}
+{"step": 2, "loss": 2.6558473110198975, "gradient_norm": 6.485349655151367, "seconds": 0.5335848778486252, "training_seconds": 1.6917299702763557, "examples": 128, "sample_plan_start": 128}
+{"step": 3, "loss": 2.724858283996582, "gradient_norm": 5.072545051574707, "seconds": 0.533032201230526, "training_seconds": 2.2247621715068817, "examples": 128, "sample_plan_start": 256}
+{"step": 4, "loss": 2.427635908126831, "gradient_norm": 5.193883895874023, "seconds": 0.5332804247736931, "training_seconds": 2.758042596280575, "examples": 128, "sample_plan_start": 384}

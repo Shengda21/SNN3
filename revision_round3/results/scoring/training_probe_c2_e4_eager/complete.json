@@ -1,0 +1,37 @@
+{
+  "row": {
+    "task": "vision",
+    "checkpoint": "/root/autodl-tmp/snn0907/direction1_budget_rotation_20260907/results/reconstructed_identity_p0.0/best.pt",
+    "checkpoint_sha256": "3d453ec2677252d88eccd90e665e492c03082209b9584dc2649757f84b5eba63",
+    "split": "training_probe",
+    "role": "implementation_check",
+    "id": "training_probe_c2_e4_eager",
+    "infer_T": 4,
+    "cal_T": 2,
+    "cal_seed": 9640,
+    "calibration": "bn_cross",
+    "engine": "eager"
+  },
+  "status": "complete",
+  "batch": 4,
+  "precision": "fp32",
+  "tf32": false,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "tail_rule": "repeat first valid row, count only original rows",
+  "bn_check": {
+    "bn_layers": 33,
+    "protected_state_entries": 118,
+    "protected_values_and_dtypes_unchanged": true,
+    "samples": 2048,
+    "batches": 32
+  },
+  "bn_state_file": "/root/autodl-tmp/snn_revision_round3/models/calibration/3d453ec2677252d8_c2_subset9640.pt",
+  "engine": "eager",
+  "ce": 1.1504902734304778,
+  "accuracy": 0.7734375,
+  "items": 128,
+  "targets": 128,
+  "process_seconds": 9.802584519609809
+}
