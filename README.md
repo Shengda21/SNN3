@@ -10,8 +10,9 @@ Checkpoints are distributed as GitHub Releases of this repository. Each release 
 |---|---|---|
 | [`model-assets-v1`](https://github.com/Shengda21/SNN3/releases/tag/model-assets-v1) | `revision3_model_assets.zip`: the R3 companion (A/B-cohort scoring checkpoints, shared initialization, BN deltas, calibration subsets; 261 files). `vision_model_assets_r2_1.zip`: the vision subset of the earlier R2.1 companion (20 adapted checkpoints and the shared T4 initialization). | `python verify_revision3_assets.py --archive revision3_model_assets.zip`; `assets_vision_subset.json` inside the second archive lists its members. |
 | `model-assets-v2` | The 464-route CIFAR-100 collection (A/B cohorts, C-conf, F-arch, A-cal: 92 checkpoints and 184 BN banks in `public_part_*.zip`, indexed by `public_index.json`) and the six independent replication starts C'1--3 and F'1--3 (42 checkpoints and 126 BN banks in `native42_part_*.zip`, indexed by `native42_index.json`). | `verify_public.py` (inside the shards) and `verify_native42.py` (release asset) check shard hashes and extracted files. |
+| [`model-assets-v3`](https://github.com/Shengda21/SNN3/releases/tag/model-assets-v3) | The four additional datasets, one archive each (`fourds_<dataset>.zip`): three retained 600-epoch starts, 18 separately adapted and 9 MTT states, the saved validation and test logits of every retained, native and MTT scoring route, and the scoring and selection records; indexed by `fourds_index.json`. | `verify_fourds.py` (release asset) checks archive hashes and extracted files. |
 
-Checkpoints of the four additional datasets (CIFAR-10, BloodMNIST64, EuroSAT RGB and PlantWild; 39 per dataset) are being packaged and will appear as a further release. The language-model weights of the earlier companion are derived from a third-party model and are not redistributed. No dataset images or corpora are included in any release; see [DATA.md](DATA.md).
+The language-model weights of the earlier companion are derived from a third-party model and are not redistributed. No dataset images or corpora are included in any release; see [DATA.md](DATA.md).
 
 ## Recompute the results
 
@@ -34,7 +35,7 @@ The numerical figure commands export PDF, SVG and PNG without requiring LaTeX. O
 | CIFAR-100 A/B cohorts and fixed-checkpoint runtime replay (R3) | `revision_round3/` | `reproduce_revision3.py --figures` |
 | Retained cross-window evaluation and timing (R2.1) | `revision_round2/` | `reproduce_all.py --figures` |
 | Earlier language trajectories and execution measurements | `experiment/orthogonal_pilot_20260907/` | `reproduce_all.py --figures` |
-| Additional datasets, replication starts and MTT (construction, adaptation, scoring, resource programs; per-start result records) | `extensions/` | `extensions/recompute.py`; see [extensions/README.md](extensions/README.md) |
+| Additional datasets, replication starts and MTT (construction, adaptation, scoring, resource programs; per-start result records; saved logits are in release `model-assets-v3`) | `extensions/` | `extensions/recompute.py`; see [extensions/README.md](extensions/README.md) |
 | Figure programs and reference numerical inputs | `figure_source/` | The commands above |
 
 R3 contains 380 vision scoring paths and 126 runtime replays of earlier fixed checkpoints. Initializations A and B use five and three paired adaptation seeds. Calibration subsets are sensitivity conditions, not additional training seeds. The language diagnostic is a separate cohort.
