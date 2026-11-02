@@ -1,0 +1,33 @@
+{
+  "dataset": "bloodmnist64",
+  "rates": {
+    "native2": 2e-05,
+    "native4": 1.25e-06,
+    "mtt": 2e-05
+  },
+  "development_seeds": [
+    34611,
+    34612
+  ],
+  "formal_seeds": {
+    "formal1": 34621,
+    "formal2": 34622,
+    "formal3": 34623
+  },
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "original_development_gate_passed": false,
+  "fixed_replication_reports_all_signs": true,
+  "windows": [
+    2,
+    4
+  ],
+  "BN_policies": [
+    "raw",
+    "matched"
+  ]
+}

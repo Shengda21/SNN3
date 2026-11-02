@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/xyshi2000/SpikingResformer",
+  "commit": "41408b4ef306bb932bd0db4c111136d930ee2e57",
+  "commit_author_date": "2024-03-22T08:00:06Z",
+  "commit_message": "Initial commit",
+  "api_url": "https://api.github.com/repos/xyshi2000/SpikingResformer/commits/41408b4ef306",
+  "source_url": "https://raw.githubusercontent.com/xyshi2000/SpikingResformer/41408b4ef306/configs/direct_training/cifar100.yaml?x=1",
+  "method": "Tavily extract advanced format=markdown",
+  "parameters": {
+    "seed": 12450,
+    "epochs": 600,
+    "batch_size": 128,
+    "T": 4,
+    "lr": 0.0005,
+    "weight_decay": 0.01
+  },
+  "official_git_blob_sha1": {
+    "configs/direct_training/cifar100.yaml": "4403bc89b5297913b48d72ddcdd081fd220719ab",
+    "main.py": "ddbce78b593604e79a82ca7f073d24126f417526"
+  },
+  "note": "YAML content verified live at the fixed official initial commit. The YAML itself contains seed 12450; this value alone is not evidence of local modification.",
+  "local_yaml_sha256": "9d3092e6cf94a2fd01b8642ccc93253023cf98c4a1cf6c35164d9a1fd4059e63",
+  "local_yaml_bytes": 357,
+  "yaml_matches_fixed_commit_git_blob_SHA1": true,
+  "local_vendor_comparison": {
+    "configs/direct_training/cifar100.yaml": {
+      "exists": true,
+      "git_blob_SHA1": "4403bc89b5297913b48d72ddcdd081fd220719ab",
+      "expected_official_git_blob_SHA1": "4403bc89b5297913b48d72ddcdd081fd220719ab"
+    },
+    "main.py": {
+      "exists": true,
+      "git_blob_SHA1": "e872331d98651155cfe11543741d11f60d389d9f",
+      "expected_official_git_blob_SHA1": "ddbce78b593604e79a82ca7f073d24126f417526"
+    }
+  },
+  "official_main_recovered_from_same_initial_commit_API_addition_patch": true,
+  "official_main_sha256": "5a573a68cfe29c37b596414d2c0dc6b3c19230dab18d0fc50c63d0e74d4ae9d4",
+  "official_main_matches_fixed_commit_git_blob_SHA1": true
+}

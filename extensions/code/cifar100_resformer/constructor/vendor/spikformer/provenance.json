@@ -1,0 +1,41 @@
+{
+  "repository": "https://github.com/ZK-Zhou/spikformer",
+  "commit": "621268981827af47aa666c1b5f774de4281d90ad",
+  "retrieval": "official fixed-commit source extracted by primary_sources; terminal LF restored and git blob SHA1 matched against official Git tree API",
+  "original_byte_identity_verified": true,
+  "patches": [
+    {
+      "file": "model_compatible.py",
+      "change": "only import clock_driven.MultiStepLIFNode through scripts/spikformer_compat.py"
+    }
+  ],
+  "task_transfer": "CIFAR-10 model class reused for CIFAR-100 with num_classes=100; official CIFAR-100 config is not claimed",
+  "architecture": "4 blocks, 384 hidden dimensions, 12 heads, mlp ratio4, 32x32 input, patch4",
+  "pending": "server original-vs-compatible neuron/full model functional parity and CuPy kernels",
+  "files": [
+    {
+      "path": "model_original.py",
+      "bytes": 10813,
+      "sha256": "84f4169cb3e4f25bc11e41e257f8195540fe78a6b6b3ad8ab85b605611071081",
+      "git_blob_SHA1": "c87bc7afbc70f331781b99be58483a813d5b657c"
+    },
+    {
+      "path": "model_compatible.py",
+      "bytes": 10798,
+      "sha256": "07287fe2a7e9075f738d4827460fe0e988e1b4988a00a4a1cfa226d1706da133",
+      "git_blob_SHA1": "503f74fac667707435d5edb1260e4d8272adff34"
+    },
+    {
+      "path": "cifar10_original.yml",
+      "bytes": 777,
+      "sha256": "18f71399fc34a58d7425fd32fe6e5b33cfffbe6b8e32979ebcebd2be0092a829",
+      "git_blob_SHA1": "c22855f72d1bc1dc58496779ef5235dddccf192a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1069,
+      "sha256": "7a2a84154f0b63dbf8390c3573fa238a56b6f9117a521b60f8fcd8eba0f3c137",
+      "git_blob_SHA1": "d135e22004c63a015849d5fa059191aa7a9a23a8"
+    }
+  ]
+}

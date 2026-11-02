@@ -1,0 +1,25 @@
+{
+  "dataset": "cifar100_resformer",
+  "architecture": "resformer",
+  "constructor_cohort": "C-conf",
+  "construction_epochs": 600,
+  "formal_seeds": {
+    "formal1": 23651,
+    "formal2": 23652,
+    "formal3": 23653
+  },
+  "development_seeds": [
+    23611,
+    23612
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "rates": {},
+  "execution_scope": "conditional_and_fit_only",
+  "input_size": 32,
+  "classes": 100
+}

@@ -1,0 +1,464 @@
+{
+  "gate_passed": false,
+  "endpoint_gate_passed": false,
+  "full_budget_accuracy_target_met": false,
+  "full_budget_CE_target_met": true,
+  "conditions": [
+    {
+      "K": 512,
+      "window": 2,
+      "BN": "raw",
+      "comparator": "S0",
+      "CE_gain": [
+        0.3186896813498591,
+        0.27332910131260524,
+        0.2709958068052096
+      ],
+      "accuracy_gain": [
+        0.0028,
+        -0.0036,
+        0.0042
+      ],
+      "mean_CE_gain": 0.287671529822558,
+      "mean_accuracy_gain": 0.0011333333333333332
+    },
+    {
+      "K": 512,
+      "window": 2,
+      "BN": "raw",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.1969138049700268,
+        0.15602064834812526,
+        0.19032943669535365
+      ],
+      "accuracy_gain": [
+        0.0052,
+        -0.003,
+        0.0028
+      ],
+      "mean_CE_gain": 0.18108796333783525,
+      "mean_accuracy_gain": 0.0016666666666666666
+    },
+    {
+      "K": 512,
+      "window": 2,
+      "BN": "matched",
+      "comparator": "S0",
+      "CE_gain": [
+        0.12467646102467578,
+        0.10161756463239582,
+        0.1261273010044848
+      ],
+      "accuracy_gain": [
+        0.0014,
+        -0.0022,
+        0.0054
+      ],
+      "mean_CE_gain": 0.11747377555385213,
+      "mean_accuracy_gain": 0.0015333333333333334
+    },
+    {
+      "K": 512,
+      "window": 2,
+      "BN": "matched",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.09657765767028503,
+        0.07055914632872709,
+        0.09647052393397151
+      ],
+      "accuracy_gain": [
+        -0.0006,
+        -0.0032,
+        0.001
+      ],
+      "mean_CE_gain": 0.08786910931099455,
+      "mean_accuracy_gain": -0.0009333333333333333
+    },
+    {
+      "K": 512,
+      "window": 4,
+      "BN": "raw",
+      "comparator": "S0",
+      "CE_gain": [
+        0.18790590526617218,
+        0.1424293403272361,
+        0.1649134551266572
+      ],
+      "accuracy_gain": [
+        -0.0008,
+        -0.004,
+        0.002
+      ],
+      "mean_CE_gain": 0.1650829002400218,
+      "mean_accuracy_gain": -0.0009333333333333333
+    },
+    {
+      "K": 512,
+      "window": 4,
+      "BN": "raw",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.12564850059050559,
+        0.11622541280196419,
+        0.14448680273659023
+      ],
+      "accuracy_gain": [
+        0.0054,
+        0.0016,
+        0.0036
+      ],
+      "mean_CE_gain": 0.12878690537635334,
+      "mean_accuracy_gain": 0.0035333333333333336
+    },
+    {
+      "K": 512,
+      "window": 4,
+      "BN": "matched",
+      "comparator": "S0",
+      "CE_gain": [
+        0.09571062395143332,
+        0.0891238524205292,
+        0.089862607542052
+      ],
+      "accuracy_gain": [
+        -0.0022,
+        -0.0036,
+        -0.0012
+      ],
+      "mean_CE_gain": 0.09156569463800483,
+      "mean_accuracy_gain": -0.002333333333333333
+    },
+    {
+      "K": 512,
+      "window": 4,
+      "BN": "matched",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.09354039099228595,
+        0.09282909492133062,
+        0.09272029752037572
+      ],
+      "accuracy_gain": [
+        0.0014,
+        -0.0004,
+        0.0012
+      ],
+      "mean_CE_gain": 0.09302992781133076,
+      "mean_accuracy_gain": 0.0007333333333333332
+    },
+    {
+      "K": 1024,
+      "window": 2,
+      "BN": "raw",
+      "comparator": "S0",
+      "CE_gain": [
+        0.33313729135964204,
+        0.3005076952722834,
+        0.28282169677130564
+      ],
+      "accuracy_gain": [
+        0.0064,
+        0.0034,
+        0.006
+      ],
+      "mean_CE_gain": 0.3054888944677437,
+      "mean_accuracy_gain": 0.005266666666666667
+    },
+    {
+      "K": 1024,
+      "window": 2,
+      "BN": "raw",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.20006039703699424,
+        0.21344089804421193,
+        0.20442764424718898
+      ],
+      "accuracy_gain": [
+        0.0036,
+        0.0048,
+        0.0086
+      ],
+      "mean_CE_gain": 0.20597631310946504,
+      "mean_accuracy_gain": 0.005666666666666666
+    },
+    {
+      "K": 1024,
+      "window": 2,
+      "BN": "matched",
+      "comparator": "S0",
+      "CE_gain": [
+        0.1369525074279219,
+        0.12939453421185385,
+        0.1355061653739671
+      ],
+      "accuracy_gain": [
+        0.0044,
+        0.0052,
+        0.006
+      ],
+      "mean_CE_gain": 0.13395106900458095,
+      "mean_accuracy_gain": 0.0052
+    },
+    {
+      "K": 1024,
+      "window": 2,
+      "BN": "matched",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.1157491549193431,
+        0.09703360227692884,
+        0.10083293505204177
+      ],
+      "accuracy_gain": [
+        0.006,
+        0.0022,
+        0.005
+      ],
+      "mean_CE_gain": 0.10453856408277123,
+      "mean_accuracy_gain": 0.0044
+    },
+    {
+      "K": 1024,
+      "window": 4,
+      "BN": "raw",
+      "comparator": "S0",
+      "CE_gain": [
+        0.19473495425311843,
+        0.16579046224630714,
+        0.1842574593385829
+      ],
+      "accuracy_gain": [
+        -0.003,
+        -0.0012,
+        0.001
+      ],
+      "mean_CE_gain": 0.18159429194600282,
+      "mean_accuracy_gain": -0.0010666666666666667
+    },
+    {
+      "K": 1024,
+      "window": 4,
+      "BN": "raw",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.12698312457761285,
+        0.1724381224536253,
+        0.1646516782578868
+      ],
+      "accuracy_gain": [
+        -0.0036,
+        0.0034,
+        0.002
+      ],
+      "mean_CE_gain": 0.15469097509637497,
+      "mean_accuracy_gain": 0.0006
+    },
+    {
+      "K": 1024,
+      "window": 4,
+      "BN": "matched",
+      "comparator": "S0",
+      "CE_gain": [
+        0.10521975518692417,
+        0.09101025206860758,
+        0.10832098923686237
+      ],
+      "accuracy_gain": [
+        0.0008,
+        -0.0012,
+        0.0014
+      ],
+      "mean_CE_gain": 0.10151699883079804,
+      "mean_accuracy_gain": 0.0003333333333333334
+    },
+    {
+      "K": 1024,
+      "window": 4,
+      "BN": "matched",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.10784486805505095,
+        0.09690937626512408,
+        0.10514543045636215
+      ],
+      "accuracy_gain": [
+        0.0038,
+        -0.0008,
+        0.0036
+      ],
+      "mean_CE_gain": 0.10329989159217906,
+      "mean_accuracy_gain": 0.0022
+    },
+    {
+      "K": 2048,
+      "window": 2,
+      "BN": "raw",
+      "comparator": "S0",
+      "CE_gain": [
+        0.32933904016949894,
+        0.2993492871546442,
+        0.28522994908381727
+      ],
+      "accuracy_gain": [
+        0.0048,
+        0.0002,
+        0.0038
+      ],
+      "mean_CE_gain": 0.30463942546932016,
+      "mean_accuracy_gain": 0.0029333333333333334
+    },
+    {
+      "K": 2048,
+      "window": 2,
+      "BN": "raw",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.20157360127580448,
+        0.20581035259659675,
+        0.18548927241666865
+      ],
+      "accuracy_gain": [
+        0.0038,
+        0.0026,
+        -0.0008
+      ],
+      "mean_CE_gain": 0.19762440876302328,
+      "mean_accuracy_gain": 0.0018666666666666666
+    },
+    {
+      "K": 2048,
+      "window": 2,
+      "BN": "matched",
+      "comparator": "S0",
+      "CE_gain": [
+        0.13621290835869412,
+        0.12870154093687258,
+        0.13761587415107604
+      ],
+      "accuracy_gain": [
+        0.0036,
+        0.001,
+        0.0038
+      ],
+      "mean_CE_gain": 0.13417677448221424,
+      "mean_accuracy_gain": 0.0028
+    },
+    {
+      "K": 2048,
+      "window": 2,
+      "BN": "matched",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.11240089559975078,
+        0.096766252081042,
+        0.0996715100178023
+      ],
+      "accuracy_gain": [
+        0.0046,
+        -0.0002,
+        0.0004
+      ],
+      "mean_CE_gain": 0.10294621923286502,
+      "mean_accuracy_gain": 0.0016
+    },
+    {
+      "K": 2048,
+      "window": 4,
+      "BN": "raw",
+      "comparator": "S0",
+      "CE_gain": [
+        0.20396770637033054,
+        0.16535415612655638,
+        0.1904444490226617
+      ],
+      "accuracy_gain": [
+        0.0008,
+        -0.0018,
+        0.0042
+      ],
+      "mean_CE_gain": 0.1865887705065162,
+      "mean_accuracy_gain": 0.0010666666666666667
+    },
+    {
+      "K": 2048,
+      "window": 4,
+      "BN": "raw",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.14326737587574592,
+        0.16191143215284545,
+        0.16107033514428956
+      ],
+      "accuracy_gain": [
+        0.0038,
+        0.008,
+        0.007
+      ],
+      "mean_CE_gain": 0.15541638105762698,
+      "mean_accuracy_gain": 0.006266666666666667
+    },
+    {
+      "K": 2048,
+      "window": 4,
+      "BN": "matched",
+      "comparator": "S0",
+      "CE_gain": [
+        0.10257756079592581,
+        0.10243079139527195,
+        0.10693091948919337
+      ],
+      "accuracy_gain": [
+        -0.002,
+        0.0016,
+        -0.0012
+      ],
+      "mean_CE_gain": 0.10397975722679705,
+      "mean_accuracy_gain": -0.0005333333333333333
+    },
+    {
+      "K": 2048,
+      "window": 4,
+      "BN": "matched",
+      "comparator": "reuse2",
+      "CE_gain": [
+        0.1062198489068476,
+        0.10592875844474281,
+        0.1067335363224958
+      ],
+      "accuracy_gain": [
+        0.0014,
+        0.0046,
+        0.0018
+      ],
+      "mean_CE_gain": 0.10629404789136207,
+      "mean_accuracy_gain": 0.0026
+    }
+  ],
+  "endpoints": [
+    {
+      "BN": "raw",
+      "checks": {
+        "T4_accuracy_strictly_above_reuse": true,
+        "T4_accuracy_retains_S0": true,
+        "T2_accuracy_retains_reuse": true,
+        "T2_accuracy_retains_S0": true,
+        "joint_CE_strictly_better_than_reuse": true
+      },
+      "passed": true
+    },
+    {
+      "BN": "matched",
+      "checks": {
+        "T4_accuracy_strictly_above_reuse": true,
+        "T4_accuracy_retains_S0": false,
+        "T2_accuracy_retains_reuse": true,
+        "T2_accuracy_retains_S0": true,
+        "joint_CE_strictly_better_than_reuse": true
+      },
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "run_id": "revision2_20261020",
+  "status": "prospective_draft_pending_verifiable_local_commit_and_GPU_execution",
+  "instruction_source": "投稿版本.R1/修改意见1020.md",
+  "data": {"dataset": "CIFAR100", "split_seed": 20260907, "train": 45000, "validation": 5000, "test": 10000, "previous_test_results_known": true},
+  "native_rates": [0.00000125, 0.0000025, 0.000005, 0.00002, 0.00008, 0.0002, 0.0005],
+  "mtt_rates": [0.000005, 0.00002, 0.00008, 0.0002, 0.0005],
+  "budgets": [512, 1024, 2048],
+  "updates": 2048,
+  "calibration": {"seed": 9640, "examples": 2048, "batch": 64, "training_only": true},
+  "cohorts": {
+    "C-conf": {
+      "architecture": "resformer", "construction_seed": 12650, "construction_epochs": 600,
+      "construction_batch": 128, "construction_accumulation": 1, "construction_lr": 0.0005,
+      "construction_optimizer": "timm create_optimizer_v2 AdamW as in the locally retained upstream-style main.py",
+      "construction_schedule": "official fixed-commit main.py timm cosine; warmup 3, warmup_lr 1e-5, min_lr 1e-5, cooldown 10; reference YAML/main verified by Git blob SHA1",
+      "screen_seeds": [11011, 11012], "formal_seeds": [11021, 11022, 11023],
+      "methods": ["native2", "native4", "mtt"],
+      "primary_family": ["P2_raw", "G44_raw", "P4_BN", "J", "MTT_minus_dual_e2", "MTT_minus_dual_e4"],
+      "claim_scope": "one independently constructed long-training start; not isolated causal identification of maturity"
+    },
+    "F-arch": {
+      "architecture": "spikformer", "construction_seed": 12750, "construction_epochs": 30,
+      "construction_batch": 64, "construction_accumulation": 2, "construction_lr": 0.0005,
+      "construction_optimizer": "research AdamW, weight_decay=0.01",
+      "construction_schedule": "research five-epoch warmup and cosine to 1% of peak rate",
+      "screen_seeds": [13011, 13012], "formal_seeds": [13021, 13022, 13023],
+      "methods": ["native2", "native4"],
+      "primary_family": ["P2_raw", "G44_raw", "P4_BN"],
+      "claim_scope": "official fixed-commit CIFAR-10 Spikformer-4-384 model ported to 100 classes through documented neuron API compatibility; model/yaml/license Git blob SHA1 verified; full GPU validation pending; not an official CIFAR-100 configuration"
+    }
+  },
+  "selection": {"native": "native_expanded: seven-rate mean native raw validation CE across two screen seeds", "dual_strategy": "dual_native_common: same native criterion restricted to the common five rates; distinct selected T/rate/seed trajectories are retained and deduplicated by roles", "mtt": "mtt_joint: mean matched-BN validation CE over e=2,4 then over two screen seeds on the common five rates", "tie_rule": "exact tie lower rate", "checkpoint": "maximum validation accuracy; first exact tie", "test_used_for_selection": false},
+  "adaptation": {"effective_batch": 128, "microbatch": 64, "workers": 6, "optimizer": "AdamW", "weight_decay": 0.01, "clip_norm": 1.0, "precision": "FP32; TF32 disabled", "schedule": "constant"},
+  "mtt": {"stages": 3, "T_inclusive": [2,4], "configurations_per_update": 3, "loss_reduction": "sum over configurations; divide only for two microbatches", "interstage_transfer": "official table_spwn sum/repeat"},
+  "A_E3": {"policy_id": "A-conf-BN-selection", "old_policy_id": "A-conf-raw-selection", "old_selected_rate": 0.00008, "screen_seeds": [9611,9612], "formal_seeds": [10021,10022,10023], "preserve_old_results": true, "rerun_only_if_selected_rate_changes": true},
+  "statistics": {"unit": "paired adaptation seed conditional on each retained start", "n_per_new_cohort": 3, "tests": "two-sided paired Student t", "multiplicity": "Holm separately within C six-test and F three-test families", "cross_cohort": "descriptive only; A-expl and A-conf share the same starting checkpoint", "null_rule": "failure to reject is not equivalence and does not establish benefit confined to short starts", "J_definition": "delta P4_BN minus delta P4_raw, 512 to 2048"},
+  "equal_time": {"scope": "descriptive measured checkpoints only; no interpolated CE", "direct_new_MTT_time_matched_state": false},
+  "runtime": {"python": "3.12", "torch": "2.7.1", "torchvision": "0.22.1", "cuda": "12.8", "minimum_free_GiB": 80, "minimum_GPU_GiB": 23},
+  "not_executed": ["all GPU experiments", "clean-environment checkpoint replay", "public registration or GitHub Release"],
+  "no_4096_extension": true
+}

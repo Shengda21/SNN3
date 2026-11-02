@@ -1,0 +1,102 @@
+{
+  "run_id": "public_cifar10",
+  "status": "reproduction_protocol",
+  "data": {
+    "dataset": "CIFAR10",
+    "split_seed": 20261030,
+    "train": 45000,
+    "validation": 5000,
+    "test": 10000,
+    "previous_test_results_known": false
+  },
+  "native_rates": [
+    1.25e-06,
+    2.5e-06,
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "mtt_rates": [
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "calibration": {
+    "seed": 9640,
+    "examples": 2048,
+    "batch": 64,
+    "training_only": true
+  },
+  "cohorts": {
+    "C-conf": {
+      "architecture": "resformer",
+      "construction_epochs": 600,
+      "construction_batch": 128,
+      "construction_accumulation": 1,
+      "construction_lr": 0.0005,
+      "construction_optimizer": "timm create_optimizer_v2 AdamW as in the locally retained upstream-style main.py",
+      "construction_schedule": "official fixed-commit main.py timm cosine; warmup 3, warmup_lr 1e-5, min_lr 1e-5, cooldown 10; reference YAML/main verified by Git blob SHA1",
+      "methods": [
+        "construction_only"
+      ],
+      "claim_scope": "four independent CIFAR10 starts; one development and three formal",
+      "construction_seed": 22650,
+      "construction_seed_scope": "Default for zero-optimizer-step acceptance/development fixture; construct.py injects construction_roles[selected role] before every scientific constructor."
+    }
+  },
+  "adaptation": {
+    "effective_batch": 128,
+    "microbatch": 64,
+    "workers": 6,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "precision": "FP32; TF32 disabled",
+    "schedule": "constant"
+  },
+  "mtt": {
+    "stages": 3,
+    "T_inclusive": [
+      2,
+      4
+    ],
+    "configurations_per_update": 3,
+    "loss_reduction": "sum over configurations; divide only for two microbatches",
+    "interstage_transfer": "official table_spwn sum/repeat"
+  },
+  "no_4096_extension": true,
+  "hardware_policy": {
+    "campaign": "independent RTX 5090 campaign"
+  },
+  "construction_roles": {
+    "development": 22650,
+    "formal1": 22651,
+    "formal2": 22652,
+    "formal3": 22653
+  },
+  "normalization": {
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "std": [
+      0.247,
+      0.2435,
+      0.2616
+    ]
+  },
+  "execution": {
+    "status": "reader_replication"
+  }
+}

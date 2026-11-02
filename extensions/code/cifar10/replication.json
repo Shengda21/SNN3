@@ -1,0 +1,33 @@
+{
+  "dataset": "cifar10",
+  "rates": {
+    "native2": 8e-05,
+    "native4": 2e-05,
+    "mtt": 2e-05
+  },
+  "development_seeds": [
+    24611,
+    24612
+  ],
+  "formal_seeds": {
+    "formal1": 24621,
+    "formal2": 24622,
+    "formal3": 24623
+  },
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "original_development_gate_passed": false,
+  "fixed_replication_reports_all_signs": true,
+  "windows": [
+    2,
+    4
+  ],
+  "BN_policies": [
+    "raw",
+    "matched"
+  ]
+}

@@ -1,1 +1,4 @@
 * -text
+# Preserve upstream source bytes used by the retained source-identity checks.
+extensions/code/**/vendor/** whitespace=-trailing-space,-blank-at-eof
+extensions/code/**/upstream/** whitespace=-trailing-space,-blank-at-eof

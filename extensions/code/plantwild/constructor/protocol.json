@@ -1,0 +1,133 @@
+{
+  "run_id": "public_plantwild",
+  "status": "reproduction_protocol",
+  "data": {
+    "dataset": "PlantWild_v1_clean",
+    "train": 12741,
+    "validation": 1787,
+    "test": 3677,
+    "input_size": 64,
+    "classes": 89,
+    "official_split": false,
+    "native64": false
+  },
+  "native_rates": [
+    1.25e-06,
+    2.5e-06,
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "mtt_rates": [
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "calibration": {
+    "seed": 9640,
+    "examples": 2048,
+    "batch": 64,
+    "training_only": true
+  },
+  "cohorts": {
+    "C-conf": {
+      "architecture": "resformer",
+      "construction_epochs": 600,
+      "construction_batch": 16,
+      "construction_accumulation": 8,
+      "construction_lr": 0.0005,
+      "construction_optimizer": "timm create_optimizer_v2 AdamW as in the locally retained upstream-style main.py",
+      "construction_schedule": "official fixed-commit main.py timm cosine; warmup 3, warmup_lr 1e-5, min_lr 1e-5, cooldown 10; reference YAML/main verified by Git blob SHA1",
+      "methods": [
+        "construction_only"
+      ],
+      "claim_scope": "PlantWild_v1_clean one development and three independent formal starts; fixed adaptation budgets acrossT2/T4",
+      "construction_seed": 32650,
+      "construction_seed_scope": "Default for zero-optimizer-step acceptance/development fixture; construct.py injects construction_roles[selected role] before every scientific constructor."
+    }
+  },
+  "adaptation": {
+    "effective_batch": 128,
+    "microbatch": 16,
+    "workers": 6,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "precision": "FP32; TF32 disabled",
+    "schedule": "constant"
+  },
+  "mtt": {
+    "stages": 3,
+    "T_inclusive": [
+      2,
+      4
+    ],
+    "configurations_per_update": 3,
+    "loss_reduction": "sum3pattern objectives; each physicalmicrobatch weighted bylen(y)/128, not averagedoverpatterns",
+    "interstage_transfer": "official table_spwn sum/repeat"
+  },
+  "no_4096_extension": true,
+  "hardware_policy": {
+    "campaign": "independent RTX 5090 campaign"
+  },
+  "construction_roles": {
+    "development": 32650,
+    "formal1": 32651,
+    "formal2": 32652,
+    "formal3": 32653
+  },
+  "normalization": {
+    "schema": "image64_training_data_v1",
+    "dataset": "plantwild_v1",
+    "software_fixture": false,
+    "source_manifest_sha256": "1d561aaeaec75c6954fab0d71ee15cc2437963c7480a2d68e1db11537c0066ee",
+    "files": {
+      "train_images.npy": "514a7e77c09bfc7bf018ebebf9c623a9972858ea04008f448bdcbc072bd640a4",
+      "train_labels.npy": "36d24f880b0d54f2163e84de97c62469e8586d799b65b197e45c32a9326d4f67",
+      "source_records.json": "782fd5ac5a11dc3760c558c385e2568c202286e19a7b6d0317d09b8b7fa3fb19"
+    },
+    "mean": [
+      0.48675907125810297,
+      0.5455230538790565,
+      0.36961117714195907
+    ],
+    "std": [
+      0.25779585540437133,
+      0.24207613753523632,
+      0.2776440387508612
+    ],
+    "counts": {
+      "train": 12741,
+      "validation": 1787,
+      "test": 3677
+    },
+    "classes": 89,
+    "input_size": 64,
+    "input": "EXIF_RGB_fullframe_BILINEAR64",
+    "normalization_sha256": "6c7635ff62573b98b643bfab5ed72160b7161e9febf3f330d3b1a7a8d89984d3",
+    "validation_images_read": false,
+    "test_images_read": false,
+    "source_global_IDs_preserved_in_mapping": true
+  },
+  "execution": {
+    "status": "reader_replication",
+    "microbatch": 16,
+    "calibration_batch": 64,
+    "BN_equivalent_to_CIFAR64_or128": false,
+    "full_path_gpu_acceptance_required": true,
+    "evaluation_batch": 64,
+    "AMP_commit_accounting": "600epochs with99 logical128attempts/epoch; actualcommits/skips recorded"
+  },
+  "training_receipt_sha256": "fa94a6ce2c4298d624dc971e183f039805b60eb899043e52683785b12d274923",
+  "data_manifest_sha256": "1d561aaeaec75c6954fab0d71ee15cc2437963c7480a2d68e1db11537c0066ee"
+}

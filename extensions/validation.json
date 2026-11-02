@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "GPU_execution_during_public_packaging": false,
+  "end_to_end_public_GPU_rerun": false,
+  "offline_profiles": [
+    {
+      "profile": "bloodmnist64",
+      "score_packets": 156,
+      "official_MTT_transfer_pairs": 9,
+      "status": "passed"
+    },
+    {
+      "profile": "cifar10",
+      "score_packets": 156,
+      "official_MTT_transfer_pairs": 9,
+      "status": "passed"
+    },
+    {
+      "profile": "cifar100_resformer",
+      "score_packets": 48,
+      "official_MTT_transfer_pairs": 9,
+      "status": "passed"
+    },
+    {
+      "profile": "cifar100_spikformer",
+      "score_packets": 48,
+      "official_MTT_transfer_pairs": 9,
+      "status": "passed"
+    },
+    {
+      "profile": "eurosat",
+      "score_packets": 156,
+      "official_MTT_transfer_pairs": 9,
+      "status": "passed"
+    },
+    {
+      "profile": "plantwild",
+      "score_packets": 156,
+      "official_MTT_transfer_pairs": 9,
+      "status": "passed"
+    }
+  ],
+  "real_score_packet_names_checked": 720,
+  "constructor_terminal_and_S0_path_contracts_checked": 6,
+  "scientific_AST_objects_identical": 197,
+  "native_actual_producer_consumer_prefix_checks": {
+    "status": "passed",
+    "count": 12,
+    "datasets": [
+      "cifar10",
+      "bloodmnist64",
+      "eurosat",
+      "plantwild"
+    ],
+    "methods": [
+      "native2",
+      "native4",
+      "mtt"
+    ],
+    "actual_producer": "Campaign.native",
+    "actual_consumer": "native.run to guard_training boundary",
+    "stubs": "runtime/checkpoint/hardware identity and symlink operations; original selection/schema/seed/rate/args guards executed",
+    "GPU_execution": false
+  },
+  "once_guard_scopes": [
+    39,
+    12
+  ],
+  "once_guard_tests": [
+    "first attempt allowed",
+    "same-process internal reentry allowed",
+    "different output refused",
+    "different process same route refused"
+  ],
+  "resource_producer_consumer_checks": [
+    {
+      "physical_gpu": 0,
+      "producer_plan_to_consumer": "passed",
+      "stages": 2,
+      "GPU_executed": false
+    },
+    {
+      "physical_gpu": 1,
+      "producer_plan_to_consumer": "passed",
+      "stages": 2,
+      "GPU_executed": false
+    }
+  ],
+  "scalar_aggregation_comparison": {
+    "status": "passed",
+    "unique_test_aggregate_cells": 208,
+    "scope": "public scalar-record aggregation agrees with canonical tables; not new GPU/raw-array verification"
+  },
+  "model_assets": "complete checkpoints and raw prediction archives not distributed by this update; existing small BN deltas are not full models",
+  "code_entry_sha256": "fb0038966c40dddc39d5fa5e96b9e1df1798062c25910b39216fd1ecb0b5fb6a"
+}

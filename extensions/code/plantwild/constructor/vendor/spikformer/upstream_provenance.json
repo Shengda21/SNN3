@@ -1,0 +1,58 @@
+{
+  "repository": "https://github.com/ZK-Zhou/spikformer",
+  "commit": "621268981827af47aa666c1b5f774de4281d90ad",
+  "commit_author_date": "2024-01-23T08:54:58Z",
+  "commit_message": "Update README.md",
+  "retrieval_method": "Tavily extract advanced format=markdown; preserves indentation and operators. Text extraction was rejected because it strips Python syntax.",
+  "retrieved_date": "2026-10-20",
+  "model_two_fixed_commit_urls_identical": true,
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/ZK-Zhou/spikformer/621268981827af47aa666c1b5f774de4281d90ad/cifar10/model.py?x=1",
+      "characters": 10810
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ZK-Zhou/spikformer/621268981827af47aa666c1b5f774de4281d90ad/LICENSE?x=1",
+      "characters": 1068
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ZK-Zhou/spikformer/621268981827af47aa666c1b5f774de4281d90ad/cifar10/cifar10.yml?x=1",
+      "characters": 777
+    }
+  ],
+  "caveat": "Trailing newlines were restored until each local file matched official Git blob SHA1 from fixed-commit recursive tree API; full byte identity verified for model/config/license. No own research commit or GPU validation claimed.",
+  "local_files": [
+    {
+      "path": "cifar10/model.py",
+      "sha256": "84f4169cb3e4f25bc11e41e257f8195540fe78a6b6b3ad8ab85b605611071081",
+      "bytes": 10813,
+      "git_blob_SHA1": "c87bc7afbc70f331781b99be58483a813d5b657c",
+      "expected_official_git_blob_SHA1": "c87bc7afbc70f331781b99be58483a813d5b657c"
+    },
+    {
+      "path": "cifar10/cifar10.yml",
+      "sha256": "18f71399fc34a58d7425fd32fe6e5b33cfffbe6b8e32979ebcebd2be0092a829",
+      "bytes": 777,
+      "git_blob_SHA1": "c22855f72d1bc1dc58496779ef5235dddccf192a",
+      "expected_official_git_blob_SHA1": "c22855f72d1bc1dc58496779ef5235dddccf192a"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "7a2a84154f0b63dbf8390c3573fa238a56b6f9117a521b60f8fcd8eba0f3c137",
+      "bytes": 1069,
+      "git_blob_SHA1": "d135e22004c63a015849d5fa059191aa7a9a23a8",
+      "expected_official_git_blob_SHA1": "d135e22004c63a015849d5fa059191aa7a9a23a8"
+    }
+  ],
+  "verification": {
+    "python_ast_parse": true,
+    "yaml_safe_load": true,
+    "layer": 4,
+    "dim": 384,
+    "heads": 12,
+    "dataset": "torch/cifar10",
+    "MIT_license_present": true,
+    "all_three_files_match_official_git_blob_SHA1": true,
+    "official_tree_api": "https://api.github.com/repos/ZK-Zhou/spikformer/git/trees/d6a7d98259ecd1d338b4a32283331d877522ae12?recursive=1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "dataset": "cifar100_spikformer",
+  "architecture": "spikformer",
+  "constructor_cohort": "F-arch",
+  "construction_epochs": 30,
+  "formal_seeds": {
+    "formal1": 23751,
+    "formal2": 23752,
+    "formal3": 23753
+  },
+  "development_seeds": [
+    23711,
+    23712
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "rates": {},
+  "execution_scope": "conditional_and_fit_only",
+  "input_size": 32,
+  "classes": 100
+}

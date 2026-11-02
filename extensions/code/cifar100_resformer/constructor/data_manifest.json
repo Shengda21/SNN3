@@ -1,0 +1,12 @@
+[
+  {
+    "path": "cifar-100-python.tar.gz",
+    "bytes": 169001437,
+    "sha256": "85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7"
+  },
+  {
+    "path": "CIFAR100_split.json",
+    "bytes": 338935,
+    "sha256": "a2ef28d27231ef3837319f83c2e829e95302624f98ff9701a4e93759d41975b4"
+  }
+]

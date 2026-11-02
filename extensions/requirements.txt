@@ -1,0 +1,10 @@
+# Linux GPU execution environment used for the added experiments.
+# Install torch/torchvision from the CUDA 12.8 wheel index separately.
+numpy==2.1.3
+Pillow==13.0.0
+cupy-cuda12x==13.6.0
+timm==0.9.16
+spikingjelly==0.0.0.0.14
+scipy==1.18.1
+PyYAML==6.0.2
+tensorboard==2.18.0

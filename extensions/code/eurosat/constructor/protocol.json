@@ -1,0 +1,133 @@
+{
+  "run_id": "public_eurosat",
+  "status": "reproduction_protocol",
+  "data": {
+    "dataset": "EuroSAT_RGB",
+    "train": 18900,
+    "validation": 4050,
+    "test": 4050,
+    "input_size": 64,
+    "classes": 10,
+    "official_split": false,
+    "native64": true
+  },
+  "native_rates": [
+    1.25e-06,
+    2.5e-06,
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "mtt_rates": [
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "calibration": {
+    "seed": 9640,
+    "examples": 2048,
+    "batch": 64,
+    "training_only": true
+  },
+  "cohorts": {
+    "C-conf": {
+      "architecture": "resformer",
+      "construction_epochs": 600,
+      "construction_batch": 16,
+      "construction_accumulation": 8,
+      "construction_lr": 0.0005,
+      "construction_optimizer": "timm create_optimizer_v2 AdamW as in the locally retained upstream-style main.py",
+      "construction_schedule": "official fixed-commit main.py timm cosine; warmup 3, warmup_lr 1e-5, min_lr 1e-5, cooldown 10; reference YAML/main verified by Git blob SHA1",
+      "methods": [
+        "construction_only"
+      ],
+      "claim_scope": "EuroSAT_RGB one development and three independent formal starts; fixed adaptation budgets acrossT2/T4",
+      "construction_seed": 32650,
+      "construction_seed_scope": "Default for zero-optimizer-step acceptance/development fixture; construct.py injects construction_roles[selected role] before every scientific constructor."
+    }
+  },
+  "adaptation": {
+    "effective_batch": 128,
+    "microbatch": 16,
+    "workers": 6,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "precision": "FP32; TF32 disabled",
+    "schedule": "constant"
+  },
+  "mtt": {
+    "stages": 3,
+    "T_inclusive": [
+      2,
+      4
+    ],
+    "configurations_per_update": 3,
+    "loss_reduction": "sum3pattern objectives; each physicalmicrobatch weighted bylen(y)/128, not averagedoverpatterns",
+    "interstage_transfer": "official table_spwn sum/repeat"
+  },
+  "no_4096_extension": true,
+  "hardware_policy": {
+    "campaign": "independent RTX 5090 campaign"
+  },
+  "construction_roles": {
+    "development": 32650,
+    "formal1": 32651,
+    "formal2": 32652,
+    "formal3": 32653
+  },
+  "normalization": {
+    "schema": "image64_training_data_v1",
+    "dataset": "eurosat_rgb",
+    "software_fixture": false,
+    "source_manifest_sha256": "378bcea18e2dbd46c3736f86cd0b4406f25e75a9d0b77b1c101a31fbcc71236b",
+    "files": {
+      "train_images.npy": "690957453e1cf5c496260f9431cc428faa6b9f14b8fd5ded7a1ba8e0d20f331b",
+      "train_labels.npy": "be237301bf5b753fbdde0a16615111c703756540bc856b72491de30d2e186f51",
+      "source_records.json": "83b20ecd0657e1085f81181749a586107bebbacb6f6811f9b11f5695e68badd9"
+    },
+    "mean": [
+      0.3445573201864658,
+      0.380491852101083,
+      0.40792972736692795
+    ],
+    "std": [
+      0.20256820338229237,
+      0.13682509329393983,
+      0.11540600489121089
+    ],
+    "counts": {
+      "train": 18900,
+      "validation": 4050,
+      "test": 4050
+    },
+    "classes": 10,
+    "input_size": 64,
+    "input": "native64",
+    "normalization_sha256": "e13cfcecdd14ac4d8e7a5f982e9d1d28c47060ff274f37a241265a2320f30701",
+    "validation_images_read": false,
+    "test_images_read": false,
+    "source_global_IDs_preserved_in_mapping": true
+  },
+  "execution": {
+    "status": "reader_replication",
+    "microbatch": 16,
+    "calibration_batch": 64,
+    "BN_equivalent_to_CIFAR64_or128": false,
+    "full_path_gpu_acceptance_required": true,
+    "evaluation_batch": 64,
+    "AMP_commit_accounting": "600epochs with147 logical128attempts/epoch; actualcommits/skips recorded"
+  },
+  "training_receipt_sha256": "1315ead98bb6a0decf30cbddf6ded9d0964cad8e3a3c73d36beab66c07237ea6",
+  "data_manifest_sha256": "378bcea18e2dbd46c3736f86cd0b4406f25e75a9d0b77b1c101a31fbcc71236b"
+}

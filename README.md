@@ -2,6 +2,12 @@
 
 Code and recorded experimental outputs for comparing a shared starting checkpoint, a checkpoint adapted at two timesteps, and a checkpoint adapted at four timesteps. Each candidate is evaluated at both inference windows. The vision experiments also examine recalibration of batch-normalization statistics while keeping model weights fixed.
 
+## Additional datasets and conditional method
+
+[extensions/README.md](extensions/README.md) documents complete construction, adaptation, fitting and evaluation entrypoints for CIFAR-10, BloodMNIST64, EuroSAT RGB and PlantWild v1, plus the CIFAR-100 bank-covariant conditional method on Resformer and Spikformer. It also includes per-board resource measurement programs and small complete per-start result records. Run `python extensions/validate_offline.py` for CPU interface checks and `python extensions/recompute.py` to summarize the included route records. Supplied prediction arrays can be independently checked with `--prediction-root`.
+
+The added-dataset fixed replications completed all declared routes. EuroSAT improves mean accuracy and CE over all four references at every saved condition; PlantWild improves accuracy throughout, with mixed CE differences. The original all-condition validation criteria remain unmet, and all gains and losses are retained in the result records. Full checkpoints and raw prediction archives are not hosted by this update. The new local execution adapters have CPU checks; packaging did not introduce another end-to-end GPU run. See the extension documentation for exact data splits, environments, commands and scope.
+
 ## Recompute the results
 
 Python 3.12 is recommended. From the repository root:

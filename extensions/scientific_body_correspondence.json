@@ -1,0 +1,1386 @@
+{
+  "status": "passed",
+  "verified_objects": 197,
+  "scope": "Optimization, averaging, fitting, bank transport and original C100 construction bodies; public path/data/architecture/execution-authority bindings are separate. CPU AST comparison is not a new GPU run.",
+  "objects": [
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "base_module",
+      "AST_sha256": "ce2e96628f5d5e494f181575b8b85b8ac44a4b82ca0a2a6694f60191228c303d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "feature_module",
+      "AST_sha256": "45afd3ef14da6569ba42fbfde203015379ceb4448b26cee4c055503d91eb06af",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "sha",
+      "AST_sha256": "e14d82db76ff2a0182ec7004b6cf1675accb06d3f2431c48d0d22593b339c816",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "parameter_grads",
+      "AST_sha256": "8fcef9147dde9a98a7f01720bda19dd803e892b2e44f7ba183ff34295a3cc642",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "cpu_tree",
+      "AST_sha256": "90e6b412ad9256aac6a2f4d0863ceb5aa23ba98fe1ae4ef959d50fd4f5baada7",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "fingerprint",
+      "AST_sha256": "46a6f85b0dbab0251fd87734839f1639b8f81da1bcd3582286babead74afcc8f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "group_info",
+      "AST_sha256": "6f7a2e06d0b7902667e3e16cf08b88e76e7c210eec1b63acb7af21f68794ce2b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "restore_optimizers",
+      "AST_sha256": "62538ca8f19364f01e78be0bbb332414cf314f3666743c7884280f1052e30901",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "build",
+      "AST_sha256": "fd569d442aff4cb200433c5e6ca1799c03044458352759c6e35eab9a16a1fdaf",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "prepare_banks",
+      "AST_sha256": "ca2f2880bcdd3d3b9d0b3bda7fe346dd369f550e4b454ef14e7facdd305b7cee",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "phase",
+      "AST_sha256": "4a490909997d8f8fda5c193aa7d2223b5036bbabfcbc7989de4917eb84d1c7ed",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "one_attempt",
+      "AST_sha256": "3feed2f900019386c10c89df7789a112d4254f67561707183cbdbb04c76eda89",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce.py",
+      "object": "pack",
+      "AST_sha256": "d37ef150dad96fb0df43f00def86b5159436dd6c83d022211d52702e3d8f695e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "tail_average.py",
+      "object": "TailAverage",
+      "AST_sha256": "a31d439a6fc3f2be5e4b2488f11f4898a6e07c5b0023f969813f6524ba3c71e2",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "inventory",
+      "AST_sha256": "21e77c4b6ad6b1833f8073a4954f868706ccb0b8209afb9f73418d535e326b3b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "_exact",
+      "AST_sha256": "8c5446fb9827a8ff2a71af5373b7ce06df62a79542a9875e7dde495f0f84b1df",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "_matches_raw",
+      "AST_sha256": "bd16622abde81278d612c01f3ee589f5e8f1db41502a17088b467c187fca0974",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "WindowBank",
+      "AST_sha256": "815c30721e76de7b0780d00cce5bb4b7c7bff650387ad893e797946b391b0b75",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "require_distinct_matched_bank",
+      "AST_sha256": "eb85ec3a7706ac40e4ceaa1f94ebb13b14e1a29b7cfa70437a58c4b46bb4c5a0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "installed",
+      "AST_sha256": "448a8677930234bab564db2b168c0d7888914f86a6018e9b5ecf769c3019c959",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "attach",
+      "AST_sha256": "4ff47b2d111066d03437ed75e3f082d688e75cacf813c1966bcc4e29415052d8",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "complete_view_gradient",
+      "AST_sha256": "214794c2065788edab30c52c2ea0dbfc88ca9874f0ca04ea80a92c2d73741b37",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "window_bn.py",
+      "object": "calibration_no_read_guard",
+      "AST_sha256": "75c605497a0d210e70e067eb77cdcd732664b68f18075f322567c9e30eac6c6f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "require",
+      "AST_sha256": "1b719f94b8207df3f0887702338f5dfd1e2fdbf618ffea36e3da4444ca8af06b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "surrogate_nodes",
+      "AST_sha256": "d3846d4ea4d9a802759d5de5a1368c8f02913f5791b2a71d2089a5e03734ae0e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "clear_cache",
+      "AST_sha256": "4df7d556215d35393e677eb1fe468690155e121919dc47f0ef2e63c52fb67ba1",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "dssa_flags",
+      "AST_sha256": "aa78af4f5b53ebea75c9f3eef8ba00daeafd51820b57122cf451a28552965ea9",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "persistent_buffers_names",
+      "AST_sha256": "669fad374818ed0f0897d86ded648752925d1a183e4aed8a7f7d04b4ed7e4051",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "set_locked_mode",
+      "AST_sha256": "1ae913285a81f2fba8e13ab177355d2f529cf339057546ca52fd7a63a2777b9d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "state_snapshot",
+      "AST_sha256": "bf1d0dbb723bad1b7cd1439c8ebb5d698c6b10071ee861c6bcee64621fe971b0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "assert_state",
+      "AST_sha256": "a262f1d14544a9fda21a566802b5e1236280d4f00848867e65a13369de0ea83d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "state.py",
+      "object": "restore_state",
+      "AST_sha256": "c1274bd3664439565c01850e620aa29ecf2c32a38f31dd52b6cba37f611634c3",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce_temperature.py",
+      "object": "evaluate",
+      "AST_sha256": "762a67eef144287a03f6788165ed252bc63b56b8ae312e010de80bd3d960ca59",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce_temperature.py",
+      "object": "fit",
+      "AST_sha256": "fde498ad4bfecb3cbf288afd526c956ee77d00af7eedb75a753238a864869660",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "ce_temperature.py",
+      "object": "analyze",
+      "AST_sha256": "0551d87bb49e8fb1684f70e27fb5f7fccafc1d855b4dfdc30b7d0deb4beca03f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "temperature_wrapper.py",
+      "object": "PositiveScales",
+      "AST_sha256": "887089efed0c340edd3e96f23c6741e96a7a0cd1d2fedb0201b0b4e264925721",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "temperature_wrapper.py",
+      "object": "attach",
+      "AST_sha256": "1ca9c9054c6aeb1f6e62c8a52b0eee8ad2c19cd4677b7527aa9694ca4947ee99",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "temperature_wrapper.py",
+      "object": "load_deployment",
+      "AST_sha256": "6b1c4d60f58d5f268493f8aa3e8165ad935ba556afc6a18cc80d45ed7f26fd2f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "bridge.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "bridge.py",
+      "object": "transported_values",
+      "AST_sha256": "d9dfb5d29723f82d15b6c206aafd5b4b250774b6083889f6d2847c5f81ddce3f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "fit_pack.py",
+      "object": "inputs",
+      "AST_sha256": "f68e42387af5e6e9db781d64612a931772bdd35e4b01dd29e869d44bdd1d2000",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "fit_pack.py",
+      "object": "run",
+      "AST_sha256": "ead50f3ef6bbc7317d380f26756e17ce580b056eed3772a3943de2cba4fc3aa8",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "train.py",
+      "object": "train",
+      "AST_sha256": "c7395756265c881a91fec88560e5311f416418b8d4405105d24b62c9720409b6",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar10",
+      "module": "native.py",
+      "object": "run",
+      "AST_sha256": "e54ca8d0a4c9b69f72d2f4154b07030580d32e20fe21b161c4cffaa02f7a7dc5",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "equal_tree",
+      "AST_sha256": "713e772d88e816bc66ec14b18c0592447bbe4d63959f4322d8d5e86e65219225",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "base_module",
+      "AST_sha256": "ce2e96628f5d5e494f181575b8b85b8ac44a4b82ca0a2a6694f60191228c303d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "feature_module",
+      "AST_sha256": "45afd3ef14da6569ba42fbfde203015379ceb4448b26cee4c055503d91eb06af",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "sha",
+      "AST_sha256": "e14d82db76ff2a0182ec7004b6cf1675accb06d3f2431c48d0d22593b339c816",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "parameter_grads",
+      "AST_sha256": "8fcef9147dde9a98a7f01720bda19dd803e892b2e44f7ba183ff34295a3cc642",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "cpu_tree",
+      "AST_sha256": "90e6b412ad9256aac6a2f4d0863ceb5aa23ba98fe1ae4ef959d50fd4f5baada7",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "fingerprint",
+      "AST_sha256": "46a6f85b0dbab0251fd87734839f1639b8f81da1bcd3582286babead74afcc8f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "group_info",
+      "AST_sha256": "6f7a2e06d0b7902667e3e16cf08b88e76e7c210eec1b63acb7af21f68794ce2b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "restore_optimizers",
+      "AST_sha256": "62538ca8f19364f01e78be0bbb332414cf314f3666743c7884280f1052e30901",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "build",
+      "AST_sha256": "fd569d442aff4cb200433c5e6ca1799c03044458352759c6e35eab9a16a1fdaf",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "prepare_banks",
+      "AST_sha256": "2dc979299caf149775fa3522aeccc867620512e0ef42d8c97589603fd8e98e49",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "phase",
+      "AST_sha256": "49ce06429f5235bd83024b2e05251f1d96808362d1756a9b179587bbb4fa3551",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "one_attempt",
+      "AST_sha256": "1cffdacc6a5b43c358548eb86565c3fe7be30da911834d72df12d4690b1d8e48",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce.py",
+      "object": "pack",
+      "AST_sha256": "d37ef150dad96fb0df43f00def86b5159436dd6c83d022211d52702e3d8f695e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "tail_average.py",
+      "object": "TailAverage",
+      "AST_sha256": "a31d439a6fc3f2be5e4b2488f11f4898a6e07c5b0023f969813f6524ba3c71e2",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "inventory",
+      "AST_sha256": "21e77c4b6ad6b1833f8073a4954f868706ccb0b8209afb9f73418d535e326b3b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "_exact",
+      "AST_sha256": "8c5446fb9827a8ff2a71af5373b7ce06df62a79542a9875e7dde495f0f84b1df",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "_matches_raw",
+      "AST_sha256": "bd16622abde81278d612c01f3ee589f5e8f1db41502a17088b467c187fca0974",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "WindowBank",
+      "AST_sha256": "815c30721e76de7b0780d00cce5bb4b7c7bff650387ad893e797946b391b0b75",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "require_distinct_matched_bank",
+      "AST_sha256": "eb85ec3a7706ac40e4ceaa1f94ebb13b14e1a29b7cfa70437a58c4b46bb4c5a0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "installed",
+      "AST_sha256": "448a8677930234bab564db2b168c0d7888914f86a6018e9b5ecf769c3019c959",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "attach",
+      "AST_sha256": "4ff47b2d111066d03437ed75e3f082d688e75cacf813c1966bcc4e29415052d8",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "complete_view_gradient",
+      "AST_sha256": "214794c2065788edab30c52c2ea0dbfc88ca9874f0ca04ea80a92c2d73741b37",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "window_bn.py",
+      "object": "calibration_no_read_guard",
+      "AST_sha256": "75c605497a0d210e70e067eb77cdcd732664b68f18075f322567c9e30eac6c6f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "require",
+      "AST_sha256": "1b719f94b8207df3f0887702338f5dfd1e2fdbf618ffea36e3da4444ca8af06b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "surrogate_nodes",
+      "AST_sha256": "d3846d4ea4d9a802759d5de5a1368c8f02913f5791b2a71d2089a5e03734ae0e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "clear_cache",
+      "AST_sha256": "4df7d556215d35393e677eb1fe468690155e121919dc47f0ef2e63c52fb67ba1",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "dssa_flags",
+      "AST_sha256": "aa78af4f5b53ebea75c9f3eef8ba00daeafd51820b57122cf451a28552965ea9",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "persistent_buffers_names",
+      "AST_sha256": "669fad374818ed0f0897d86ded648752925d1a183e4aed8a7f7d04b4ed7e4051",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "set_locked_mode",
+      "AST_sha256": "1ae913285a81f2fba8e13ab177355d2f529cf339057546ca52fd7a63a2777b9d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "state_snapshot",
+      "AST_sha256": "bf1d0dbb723bad1b7cd1439c8ebb5d698c6b10071ee861c6bcee64621fe971b0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "assert_state",
+      "AST_sha256": "a262f1d14544a9fda21a566802b5e1236280d4f00848867e65a13369de0ea83d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "state.py",
+      "object": "restore_state",
+      "AST_sha256": "c1274bd3664439565c01850e620aa29ecf2c32a38f31dd52b6cba37f611634c3",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce_temperature.py",
+      "object": "evaluate",
+      "AST_sha256": "762a67eef144287a03f6788165ed252bc63b56b8ae312e010de80bd3d960ca59",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce_temperature.py",
+      "object": "fit",
+      "AST_sha256": "fde498ad4bfecb3cbf288afd526c956ee77d00af7eedb75a753238a864869660",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "ce_temperature.py",
+      "object": "analyze",
+      "AST_sha256": "0551d87bb49e8fb1684f70e27fb5f7fccafc1d855b4dfdc30b7d0deb4beca03f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "temperature_wrapper.py",
+      "object": "PositiveScales",
+      "AST_sha256": "887089efed0c340edd3e96f23c6741e96a7a0cd1d2fedb0201b0b4e264925721",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "temperature_wrapper.py",
+      "object": "attach",
+      "AST_sha256": "1ca9c9054c6aeb1f6e62c8a52b0eee8ad2c19cd4677b7527aa9694ca4947ee99",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "temperature_wrapper.py",
+      "object": "load_deployment",
+      "AST_sha256": "6b1c4d60f58d5f268493f8aa3e8165ad935ba556afc6a18cc80d45ed7f26fd2f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "bridge.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "bridge.py",
+      "object": "transported_values",
+      "AST_sha256": "d9dfb5d29723f82d15b6c206aafd5b4b250774b6083889f6d2847c5f81ddce3f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "fit_pack.py",
+      "object": "inputs",
+      "AST_sha256": "f68e42387af5e6e9db781d64612a931772bdd35e4b01dd29e869d44bdd1d2000",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "fit_pack.py",
+      "object": "run",
+      "AST_sha256": "728fd5d20f6d583eaffc0a0c96b947890e848ea871315948ac08a6e8cc4d2287",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "train.py",
+      "object": "train",
+      "AST_sha256": "15a4e42d48dd64b5a5ee62a0f3126b32cace3fa99f0838970e7bc7caa10ff293",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "bloodmnist64",
+      "module": "native.py",
+      "object": "run",
+      "AST_sha256": "acbfe8d128b492484556f0b17897c3d1de640049ec27ca21014a820b818aac7d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "equal_tree",
+      "AST_sha256": "713e772d88e816bc66ec14b18c0592447bbe4d63959f4322d8d5e86e65219225",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "base_module",
+      "AST_sha256": "ce2e96628f5d5e494f181575b8b85b8ac44a4b82ca0a2a6694f60191228c303d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "feature_module",
+      "AST_sha256": "45afd3ef14da6569ba42fbfde203015379ceb4448b26cee4c055503d91eb06af",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "sha",
+      "AST_sha256": "e14d82db76ff2a0182ec7004b6cf1675accb06d3f2431c48d0d22593b339c816",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "parameter_grads",
+      "AST_sha256": "8fcef9147dde9a98a7f01720bda19dd803e892b2e44f7ba183ff34295a3cc642",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "cpu_tree",
+      "AST_sha256": "90e6b412ad9256aac6a2f4d0863ceb5aa23ba98fe1ae4ef959d50fd4f5baada7",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "fingerprint",
+      "AST_sha256": "46a6f85b0dbab0251fd87734839f1639b8f81da1bcd3582286babead74afcc8f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "group_info",
+      "AST_sha256": "6f7a2e06d0b7902667e3e16cf08b88e76e7c210eec1b63acb7af21f68794ce2b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "restore_optimizers",
+      "AST_sha256": "62538ca8f19364f01e78be0bbb332414cf314f3666743c7884280f1052e30901",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "build",
+      "AST_sha256": "fd569d442aff4cb200433c5e6ca1799c03044458352759c6e35eab9a16a1fdaf",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "prepare_banks",
+      "AST_sha256": "2dc979299caf149775fa3522aeccc867620512e0ef42d8c97589603fd8e98e49",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "phase",
+      "AST_sha256": "49ce06429f5235bd83024b2e05251f1d96808362d1756a9b179587bbb4fa3551",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "one_attempt",
+      "AST_sha256": "1cffdacc6a5b43c358548eb86565c3fe7be30da911834d72df12d4690b1d8e48",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce.py",
+      "object": "pack",
+      "AST_sha256": "d37ef150dad96fb0df43f00def86b5159436dd6c83d022211d52702e3d8f695e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "tail_average.py",
+      "object": "TailAverage",
+      "AST_sha256": "a31d439a6fc3f2be5e4b2488f11f4898a6e07c5b0023f969813f6524ba3c71e2",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "inventory",
+      "AST_sha256": "21e77c4b6ad6b1833f8073a4954f868706ccb0b8209afb9f73418d535e326b3b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "_exact",
+      "AST_sha256": "8c5446fb9827a8ff2a71af5373b7ce06df62a79542a9875e7dde495f0f84b1df",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "_matches_raw",
+      "AST_sha256": "bd16622abde81278d612c01f3ee589f5e8f1db41502a17088b467c187fca0974",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "WindowBank",
+      "AST_sha256": "815c30721e76de7b0780d00cce5bb4b7c7bff650387ad893e797946b391b0b75",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "require_distinct_matched_bank",
+      "AST_sha256": "eb85ec3a7706ac40e4ceaa1f94ebb13b14e1a29b7cfa70437a58c4b46bb4c5a0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "installed",
+      "AST_sha256": "448a8677930234bab564db2b168c0d7888914f86a6018e9b5ecf769c3019c959",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "attach",
+      "AST_sha256": "4ff47b2d111066d03437ed75e3f082d688e75cacf813c1966bcc4e29415052d8",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "complete_view_gradient",
+      "AST_sha256": "214794c2065788edab30c52c2ea0dbfc88ca9874f0ca04ea80a92c2d73741b37",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "window_bn.py",
+      "object": "calibration_no_read_guard",
+      "AST_sha256": "75c605497a0d210e70e067eb77cdcd732664b68f18075f322567c9e30eac6c6f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "require",
+      "AST_sha256": "1b719f94b8207df3f0887702338f5dfd1e2fdbf618ffea36e3da4444ca8af06b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "surrogate_nodes",
+      "AST_sha256": "d3846d4ea4d9a802759d5de5a1368c8f02913f5791b2a71d2089a5e03734ae0e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "clear_cache",
+      "AST_sha256": "4df7d556215d35393e677eb1fe468690155e121919dc47f0ef2e63c52fb67ba1",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "dssa_flags",
+      "AST_sha256": "aa78af4f5b53ebea75c9f3eef8ba00daeafd51820b57122cf451a28552965ea9",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "persistent_buffers_names",
+      "AST_sha256": "669fad374818ed0f0897d86ded648752925d1a183e4aed8a7f7d04b4ed7e4051",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "set_locked_mode",
+      "AST_sha256": "1ae913285a81f2fba8e13ab177355d2f529cf339057546ca52fd7a63a2777b9d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "state_snapshot",
+      "AST_sha256": "bf1d0dbb723bad1b7cd1439c8ebb5d698c6b10071ee861c6bcee64621fe971b0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "assert_state",
+      "AST_sha256": "a262f1d14544a9fda21a566802b5e1236280d4f00848867e65a13369de0ea83d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "state.py",
+      "object": "restore_state",
+      "AST_sha256": "c1274bd3664439565c01850e620aa29ecf2c32a38f31dd52b6cba37f611634c3",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce_temperature.py",
+      "object": "evaluate",
+      "AST_sha256": "762a67eef144287a03f6788165ed252bc63b56b8ae312e010de80bd3d960ca59",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce_temperature.py",
+      "object": "fit",
+      "AST_sha256": "fde498ad4bfecb3cbf288afd526c956ee77d00af7eedb75a753238a864869660",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "ce_temperature.py",
+      "object": "analyze",
+      "AST_sha256": "0551d87bb49e8fb1684f70e27fb5f7fccafc1d855b4dfdc30b7d0deb4beca03f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "temperature_wrapper.py",
+      "object": "PositiveScales",
+      "AST_sha256": "887089efed0c340edd3e96f23c6741e96a7a0cd1d2fedb0201b0b4e264925721",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "temperature_wrapper.py",
+      "object": "attach",
+      "AST_sha256": "1ca9c9054c6aeb1f6e62c8a52b0eee8ad2c19cd4677b7527aa9694ca4947ee99",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "temperature_wrapper.py",
+      "object": "load_deployment",
+      "AST_sha256": "6b1c4d60f58d5f268493f8aa3e8165ad935ba556afc6a18cc80d45ed7f26fd2f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "bridge.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "bridge.py",
+      "object": "transported_values",
+      "AST_sha256": "d9dfb5d29723f82d15b6c206aafd5b4b250774b6083889f6d2847c5f81ddce3f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "fit_pack.py",
+      "object": "inputs",
+      "AST_sha256": "f68e42387af5e6e9db781d64612a931772bdd35e4b01dd29e869d44bdd1d2000",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "fit_pack.py",
+      "object": "run",
+      "AST_sha256": "89a01b455ff682fa73631bfcad44ee97cf22f2399e942cea1eb4f5eccf340a25",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "train.py",
+      "object": "train",
+      "AST_sha256": "02cf6c2499c3a51bb5f5f5ab76886aa8b61729b863c3790dd5f71ab956330e6d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "eurosat",
+      "module": "native.py",
+      "object": "run",
+      "AST_sha256": "acbfe8d128b492484556f0b17897c3d1de640049ec27ca21014a820b818aac7d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "equal_tree",
+      "AST_sha256": "713e772d88e816bc66ec14b18c0592447bbe4d63959f4322d8d5e86e65219225",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "base_module",
+      "AST_sha256": "ce2e96628f5d5e494f181575b8b85b8ac44a4b82ca0a2a6694f60191228c303d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "feature_module",
+      "AST_sha256": "45afd3ef14da6569ba42fbfde203015379ceb4448b26cee4c055503d91eb06af",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "sha",
+      "AST_sha256": "e14d82db76ff2a0182ec7004b6cf1675accb06d3f2431c48d0d22593b339c816",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "parameter_grads",
+      "AST_sha256": "8fcef9147dde9a98a7f01720bda19dd803e892b2e44f7ba183ff34295a3cc642",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "cpu_tree",
+      "AST_sha256": "90e6b412ad9256aac6a2f4d0863ceb5aa23ba98fe1ae4ef959d50fd4f5baada7",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "fingerprint",
+      "AST_sha256": "46a6f85b0dbab0251fd87734839f1639b8f81da1bcd3582286babead74afcc8f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "group_info",
+      "AST_sha256": "6f7a2e06d0b7902667e3e16cf08b88e76e7c210eec1b63acb7af21f68794ce2b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "restore_optimizers",
+      "AST_sha256": "62538ca8f19364f01e78be0bbb332414cf314f3666743c7884280f1052e30901",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "build",
+      "AST_sha256": "fd569d442aff4cb200433c5e6ca1799c03044458352759c6e35eab9a16a1fdaf",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "prepare_banks",
+      "AST_sha256": "2dc979299caf149775fa3522aeccc867620512e0ef42d8c97589603fd8e98e49",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "phase",
+      "AST_sha256": "49ce06429f5235bd83024b2e05251f1d96808362d1756a9b179587bbb4fa3551",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "one_attempt",
+      "AST_sha256": "1cffdacc6a5b43c358548eb86565c3fe7be30da911834d72df12d4690b1d8e48",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce.py",
+      "object": "pack",
+      "AST_sha256": "d37ef150dad96fb0df43f00def86b5159436dd6c83d022211d52702e3d8f695e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "tail_average.py",
+      "object": "TailAverage",
+      "AST_sha256": "a31d439a6fc3f2be5e4b2488f11f4898a6e07c5b0023f969813f6524ba3c71e2",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "inventory",
+      "AST_sha256": "21e77c4b6ad6b1833f8073a4954f868706ccb0b8209afb9f73418d535e326b3b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "_exact",
+      "AST_sha256": "8c5446fb9827a8ff2a71af5373b7ce06df62a79542a9875e7dde495f0f84b1df",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "_matches_raw",
+      "AST_sha256": "bd16622abde81278d612c01f3ee589f5e8f1db41502a17088b467c187fca0974",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "WindowBank",
+      "AST_sha256": "815c30721e76de7b0780d00cce5bb4b7c7bff650387ad893e797946b391b0b75",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "require_distinct_matched_bank",
+      "AST_sha256": "eb85ec3a7706ac40e4ceaa1f94ebb13b14e1a29b7cfa70437a58c4b46bb4c5a0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "installed",
+      "AST_sha256": "448a8677930234bab564db2b168c0d7888914f86a6018e9b5ecf769c3019c959",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "attach",
+      "AST_sha256": "4ff47b2d111066d03437ed75e3f082d688e75cacf813c1966bcc4e29415052d8",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "complete_view_gradient",
+      "AST_sha256": "214794c2065788edab30c52c2ea0dbfc88ca9874f0ca04ea80a92c2d73741b37",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "window_bn.py",
+      "object": "calibration_no_read_guard",
+      "AST_sha256": "75c605497a0d210e70e067eb77cdcd732664b68f18075f322567c9e30eac6c6f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "require",
+      "AST_sha256": "1b719f94b8207df3f0887702338f5dfd1e2fdbf618ffea36e3da4444ca8af06b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "surrogate_nodes",
+      "AST_sha256": "d3846d4ea4d9a802759d5de5a1368c8f02913f5791b2a71d2089a5e03734ae0e",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "clear_cache",
+      "AST_sha256": "4df7d556215d35393e677eb1fe468690155e121919dc47f0ef2e63c52fb67ba1",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "dssa_flags",
+      "AST_sha256": "aa78af4f5b53ebea75c9f3eef8ba00daeafd51820b57122cf451a28552965ea9",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "persistent_buffers_names",
+      "AST_sha256": "669fad374818ed0f0897d86ded648752925d1a183e4aed8a7f7d04b4ed7e4051",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "set_locked_mode",
+      "AST_sha256": "1ae913285a81f2fba8e13ab177355d2f529cf339057546ca52fd7a63a2777b9d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "state_snapshot",
+      "AST_sha256": "bf1d0dbb723bad1b7cd1439c8ebb5d698c6b10071ee861c6bcee64621fe971b0",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "assert_state",
+      "AST_sha256": "a262f1d14544a9fda21a566802b5e1236280d4f00848867e65a13369de0ea83d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "state.py",
+      "object": "restore_state",
+      "AST_sha256": "c1274bd3664439565c01850e620aa29ecf2c32a38f31dd52b6cba37f611634c3",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce_temperature.py",
+      "object": "evaluate",
+      "AST_sha256": "762a67eef144287a03f6788165ed252bc63b56b8ae312e010de80bd3d960ca59",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce_temperature.py",
+      "object": "fit",
+      "AST_sha256": "fde498ad4bfecb3cbf288afd526c956ee77d00af7eedb75a753238a864869660",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "ce_temperature.py",
+      "object": "analyze",
+      "AST_sha256": "0551d87bb49e8fb1684f70e27fb5f7fccafc1d855b4dfdc30b7d0deb4beca03f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "temperature_wrapper.py",
+      "object": "PositiveScales",
+      "AST_sha256": "887089efed0c340edd3e96f23c6741e96a7a0cd1d2fedb0201b0b4e264925721",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "temperature_wrapper.py",
+      "object": "attach",
+      "AST_sha256": "1ca9c9054c6aeb1f6e62c8a52b0eee8ad2c19cd4677b7527aa9694ca4947ee99",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "temperature_wrapper.py",
+      "object": "load_deployment",
+      "AST_sha256": "6b1c4d60f58d5f268493f8aa3e8165ad935ba556afc6a18cc80d45ed7f26fd2f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "bridge.py",
+      "object": "require",
+      "AST_sha256": "93e0a4c9266d69e5db1191886a3ce8b12e5bd29128cb026fe00f7074cac4e86b",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "bridge.py",
+      "object": "transported_values",
+      "AST_sha256": "d9dfb5d29723f82d15b6c206aafd5b4b250774b6083889f6d2847c5f81ddce3f",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "fit_pack.py",
+      "object": "inputs",
+      "AST_sha256": "f68e42387af5e6e9db781d64612a931772bdd35e4b01dd29e869d44bdd1d2000",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "fit_pack.py",
+      "object": "run",
+      "AST_sha256": "c9c536ee3842ad19612a4f8ad3fb69e810470e634311f55464d01bac6276cc8d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "train.py",
+      "object": "train",
+      "AST_sha256": "3226d51eabf3580b857c7ec58208ce91dc435845ad23b69f2516ce21ef5edcb4",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "plantwild",
+      "module": "native.py",
+      "object": "run",
+      "AST_sha256": "acbfe8d128b492484556f0b17897c3d1de640049ec27ca21014a820b818aac7d",
+      "correspondence": "identical retained scientific object"
+    },
+    {
+      "profile": "cifar100_resformer",
+      "module": "ce.py",
+      "object": "one_attempt",
+      "AST_sha256": "3feed2f900019386c10c89df7789a112d4254f67561707183cbdbb04c76eda89",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_resformer",
+      "module": "ce.py",
+      "object": "build",
+      "AST_sha256": "fd569d442aff4cb200433c5e6ca1799c03044458352759c6e35eab9a16a1fdaf",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_resformer",
+      "module": "ce.py",
+      "object": "prepare_banks",
+      "AST_sha256": "ca2f2880bcdd3d3b9d0b3bda7fe346dd369f550e4b454ef14e7facdd305b7cee",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_resformer",
+      "module": "tail_average.py",
+      "object": "TailAverage",
+      "AST_sha256": "a31d439a6fc3f2be5e4b2488f11f4898a6e07c5b0023f969813f6524ba3c71e2",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_resformer",
+      "module": "constructor/scripts/train_job.py",
+      "object": "construct",
+      "AST_sha256": "e373f73d82bb02df9f2535361dba5b9bdea64407a6f17072f3e1db40dfcbd689",
+      "correspondence": "identical original CIFAR100 constructor including cohort-specific optimizer/schedule"
+    },
+    {
+      "profile": "cifar100_spikformer",
+      "module": "ce.py",
+      "object": "one_attempt",
+      "AST_sha256": "3feed2f900019386c10c89df7789a112d4254f67561707183cbdbb04c76eda89",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_spikformer",
+      "module": "ce.py",
+      "object": "build",
+      "AST_sha256": "fd569d442aff4cb200433c5e6ca1799c03044458352759c6e35eab9a16a1fdaf",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_spikformer",
+      "module": "ce.py",
+      "object": "prepare_banks",
+      "AST_sha256": "ca2f2880bcdd3d3b9d0b3bda7fe346dd369f550e4b454ef14e7facdd305b7cee",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_spikformer",
+      "module": "tail_average.py",
+      "object": "TailAverage",
+      "AST_sha256": "a31d439a6fc3f2be5e4b2488f11f4898a6e07c5b0023f969813f6524ba3c71e2",
+      "correspondence": "identical original CIFAR100 scientific primitive"
+    },
+    {
+      "profile": "cifar100_spikformer",
+      "module": "constructor/scripts/train_job.py",
+      "object": "construct",
+      "AST_sha256": "e373f73d82bb02df9f2535361dba5b9bdea64407a6f17072f3e1db40dfcbd689",
+      "correspondence": "identical original CIFAR100 constructor including cohort-specific optimizer/schedule"
+    }
+  ]
+}

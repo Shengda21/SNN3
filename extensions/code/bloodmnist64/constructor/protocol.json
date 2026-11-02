@@ -1,0 +1,127 @@
+{
+  "run_id": "public_bloodmnist64",
+  "status": "reproduction_protocol",
+  "data": {
+    "dataset": "BloodMNIST64",
+    "train": 11959,
+    "validation": 1712,
+    "test": 3421,
+    "input_size": 64,
+    "classes": 8,
+    "official_split": true
+  },
+  "native_rates": [
+    1.25e-06,
+    2.5e-06,
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "mtt_rates": [
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "updates": 2048,
+  "calibration": {
+    "seed": 9640,
+    "examples": 2048,
+    "batch": 64,
+    "training_only": true
+  },
+  "cohorts": {
+    "C-conf": {
+      "architecture": "resformer",
+      "construction_epochs": 600,
+      "construction_batch": 16,
+      "construction_accumulation": 8,
+      "construction_lr": 0.0005,
+      "construction_optimizer": "timm create_optimizer_v2 AdamW as in the locally retained upstream-style main.py",
+      "construction_schedule": "official fixed-commit main.py timm cosine; warmup 3, warmup_lr 1e-5, min_lr 1e-5, cooldown 10; reference YAML/main verified by Git blob SHA1",
+      "methods": [
+        "construction_only"
+      ],
+      "claim_scope": "BloodMNIST64 one development and three independent formal starts; fixed adaptation budgets acrossT2/T4",
+      "construction_seed": 32650,
+      "construction_seed_scope": "Default for zero-optimizer-step acceptance/development fixture; construct.py injects construction_roles[selected role] before every scientific constructor."
+    }
+  },
+  "adaptation": {
+    "effective_batch": 128,
+    "microbatch": 16,
+    "workers": 6,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "precision": "FP32; TF32 disabled",
+    "schedule": "constant"
+  },
+  "mtt": {
+    "stages": 3,
+    "T_inclusive": [
+      2,
+      4
+    ],
+    "configurations_per_update": 3,
+    "loss_reduction": "sum3pattern objectives; each physicalmicrobatch weighted bylen(y)/128, not averagedoverpatterns",
+    "interstage_transfer": "official table_spwn sum/repeat"
+  },
+  "no_4096_extension": true,
+  "hardware_policy": {
+    "campaign": "independent RTX 5090 campaign"
+  },
+  "construction_roles": {
+    "development": 32650,
+    "formal1": 32651,
+    "formal2": 32652,
+    "formal3": 32653
+  },
+  "normalization": {
+    "dataset": "BloodMNIST64",
+    "archive_md5": "2b94928a2ae4916078ca51e05b6b800b",
+    "archive_sha256": "4865e31d7fc4142e6f9a49c52b407b512dbe202e4ab7dd3915f824988e6cb0e6",
+    "train_samples": 11959,
+    "classes": 8,
+    "input_size": 64,
+    "layout": "NHWC RGB uint8",
+    "mean": [
+      0.7960542314255182,
+      0.6595968463787725,
+      0.696349035665329
+    ],
+    "std": [
+      0.22328311165456988,
+      0.25463025848323717,
+      0.0947356967991977
+    ],
+    "normalization_scope": "all official training pixels only; float64 population moments after /255",
+    "members_read": [
+      "train_images",
+      "train_labels"
+    ],
+    "validation_arrays_read": false,
+    "test_arrays_read": false,
+    "files": {
+      "train_images.npy": "a2bb699f09c641a09e4bc7fad84c53e37099806b54f474c3f6922d714e3f1d22",
+      "train_labels.npy": "b7fdecf57776d339fda98a591a166e60b3430f91918ed14a90bedfce7a997c0f"
+    }
+  },
+  "execution": {
+    "status": "reader_replication",
+    "microbatch": 16,
+    "calibration_batch": 64,
+    "BN_equivalent_to_CIFAR64_or128": false,
+    "full_path_gpu_acceptance_required": true,
+    "evaluation_batch": 64,
+    "AMP_commit_accounting": "600epochs has55800logicalattempts/start; actualGradScalercommits/skips counted by optimizerposthook and saved separately"
+  }
+}

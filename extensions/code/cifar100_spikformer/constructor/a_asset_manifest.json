@@ -1,0 +1,82 @@
+{
+  "kind": "A_existing_raw_selected_MTT_screens_and_retained_start",
+  "screen_sources": [
+    {
+      "seed": 9611,
+      "lr": 5e-06,
+      "path": "mtt_screen/mtt_s9611_lr5e-06/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "58ca5184994dadd6138382c242ca4f107e6b8d0b56a374a67763a47d9d65a28c"
+    },
+    {
+      "seed": 9611,
+      "lr": 2e-05,
+      "path": "mtt_screen/mtt_s9611_lr2e-05/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "84d6eaf62f3cbe536e39fa6b73a037423890f2ce83ab446d075e47c528a314d1"
+    },
+    {
+      "seed": 9611,
+      "lr": 8e-05,
+      "path": "mtt_screen/mtt_s9611_lr8e-05/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "11e1f55f7bd979ef874d153b1cf8cba66d055297f99137572d15b272d276d202"
+    },
+    {
+      "seed": 9611,
+      "lr": 0.0002,
+      "path": "mtt_screen/mtt_s9611_lr0.0002/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "cd7b900fb7ddc3e074054e7f0d57406ff05a8cfda2e6c659483b7dfd2f235d3a"
+    },
+    {
+      "seed": 9611,
+      "lr": 0.0005,
+      "path": "mtt_screen/mtt_s9611_lr0.0005/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "4085e35653ffe45166000cc61be800d333a6d6d50232ac0b88b88e63ba8af0e3"
+    },
+    {
+      "seed": 9612,
+      "lr": 5e-06,
+      "path": "mtt_screen/mtt_s9612_lr5e-06/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "51379c5977742612892ab854d4c353b19bb7e1ef346c89da9fde107acae4070f"
+    },
+    {
+      "seed": 9612,
+      "lr": 2e-05,
+      "path": "mtt_screen/mtt_s9612_lr2e-05/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "14aa1cbe4c82dc09c239064c13524c0a2628ef0b5e0b1fbe2b1aa8b90c50577e"
+    },
+    {
+      "seed": 9612,
+      "lr": 8e-05,
+      "path": "mtt_screen/mtt_s9612_lr8e-05/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "2cc4311ee53f7e68516f181754e662e83cc251041b5bd9a4f4c75e14619eefdf"
+    },
+    {
+      "seed": 9612,
+      "lr": 0.0002,
+      "path": "mtt_screen/mtt_s9612_lr0.0002/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "359f8231fde3715bee43c9e203e5bb4b6976518dcd220559360246428c5ea5ac"
+    },
+    {
+      "seed": 9612,
+      "lr": 0.0005,
+      "path": "mtt_screen/mtt_s9612_lr0.0005/step2048.pt",
+      "bytes": 44371948,
+      "sha256": "7cd42aa02fd1169c88216c9cfa524c4cb12d98fddfaf1dbd3fbe303dbe3bc867"
+    }
+  ],
+  "retained_start": {
+    "path": "starts/S0_A.pt",
+    "bytes": 44358320,
+    "sha256": "feac529c1cb8ba8998e51b4a36e3df1ea8e12cfe9ac95f03aae01f31635f9504"
+  },
+  "old_raw_selected_rate": 8e-05,
+  "scientific_role": "inputs for a new calibrated validation selection; not new results"
+}
