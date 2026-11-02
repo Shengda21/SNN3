@@ -3,7 +3,6 @@
 ## Included in this repository
 
 - Per-item loss sums, target counts, predictions and labels used to calculate the reported quality measures, for every scoring route of the CIFAR-100 cohorts, the six replication starts and the four additional datasets.
-- Saved validation and test logits for the four additional datasets, from which the temperature-calibrated cross-entropy of the manuscript is computed.
 - Recorded training and timing observations, paired-seed contrasts, uncertainty intervals and aggregate tables.
 - Split and sampling information, scoring configurations, source identities and analysis programs.
 - Figure programs and the numerical inputs needed by the CPU reproduction commands.
@@ -16,8 +15,9 @@ Checkpoints are published as GitHub Releases of this repository (see the table i
 
 - `model-assets-v1`: the R3 companion (A/B cohorts) and the vision subset of the R2.1 companion.
 - `model-assets-v2`: the 464-route CIFAR-100 collection (A/B, C-conf, F-arch, A-cal) and the six replication starts C'1--3 and F'1--3.
+- `model-assets-v3`: the four additional datasets (CIFAR-10, BloodMNIST64, EuroSAT RGB, PlantWild): retained starts, adapted and MTT states, the saved validation and test logits of every scoring route (from which the manuscript's temperature-calibrated cross-entropy is computed) and the scoring records.
 
-Pending: the checkpoints and BN banks of the four additional datasets (39 per dataset). Not redistributed: the language-model weights derived from the third-party SmoothSpike model, and every dataset archive.
+Not redistributed: the language-model weights derived from the third-party SmoothSpike model, and every dataset archive.
 
 All released checkpoints, BN banks and the result records in this repository are licensed under CC BY-NC 4.0 (`LICENSE-DATA.md`); the code is MIT-licensed (`LICENSE`).
 
