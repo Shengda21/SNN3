@@ -17,7 +17,9 @@ Checkpoints are published as GitHub Releases of this repository (see the table i
 - `model-assets-v1`: the R3 companion (A/B cohorts) and the vision subset of the R2.1 companion.
 - `model-assets-v2`: the 464-route CIFAR-100 collection (A/B, C-conf, F-arch, A-cal) and the six replication starts C'1--3 and F'1--3.
 
-Pending: the checkpoints and BN banks of the four additional datasets (156 per dataset). Not redistributed: the language-model weights derived from the third-party SmoothSpike model, and every dataset archive.
+Pending: the checkpoints and BN banks of the four additional datasets (39 per dataset). Not redistributed: the language-model weights derived from the third-party SmoothSpike model, and every dataset archive.
+
+All released checkpoints, BN banks and the result records in this repository are licensed under CC BY-NC 4.0 (`LICENSE-DATA.md`); the code is MIT-licensed (`LICENSE`).
 
 ## Original datasets
 
