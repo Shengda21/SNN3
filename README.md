@@ -11,7 +11,7 @@ Checkpoints are distributed as GitHub Releases of this repository. Each release 
 | [`model-assets-v1`](https://github.com/Shengda21/SNN3/releases/tag/model-assets-v1) | `revision3_model_assets.zip`: the R3 companion (A/B-cohort scoring checkpoints, shared initialization, BN deltas, calibration subsets; 261 files). `vision_model_assets_r2_1.zip`: the vision subset of the earlier R2.1 companion (20 adapted checkpoints and the shared T4 initialization). | `python verify_revision3_assets.py --archive revision3_model_assets.zip`; `assets_vision_subset.json` inside the second archive lists its members. |
 | `model-assets-v2` | The 464-route CIFAR-100 collection (A/B cohorts, C-conf, F-arch, A-cal: 92 checkpoints and 184 BN banks in `public_part_*.zip`, indexed by `public_index.json`) and the six independent replication starts C'1--3 and F'1--3 (42 checkpoints and 126 BN banks in `native42_part_*.zip`, indexed by `native42_index.json`). | `verify_public.py` (inside the shards) and `verify_native42.py` (release asset) check shard hashes and extracted files. |
 
-Checkpoints of the four additional datasets (CIFAR-10, BloodMNIST64, EuroSAT RGB and PlantWild; 156 per dataset) are being packaged and will appear as further releases. The language-model weights of the earlier companion are derived from a third-party model and are not redistributed. No dataset images or corpora are included in any release; see [DATA.md](DATA.md).
+Checkpoints of the four additional datasets (CIFAR-10, BloodMNIST64, EuroSAT RGB and PlantWild; 39 per dataset) are being packaged and will appear as a further release. The language-model weights of the earlier companion are derived from a third-party model and are not redistributed. No dataset images or corpora are included in any release; see [DATA.md](DATA.md).
 
 ## Recompute the results
 
@@ -58,3 +58,7 @@ Fixed-checkpoint replay needs the released archives above and the original datas
 R3, the extensions and the replication starts were run with PyTorch 2.7.1, CUDA 12.8 and CuPy 13.6.0 on RTX 5090 GPUs. The earlier cohort used PyTorch 2.6.0 and CUDA 12.4. Environment records accompany each cohort. New GPU runs can differ numerically across runtimes and keep their own result identity.
 
 This repository contains experimental materials. Manuscript files, author biographies and photographs are not included.
+
+## Licence
+
+The program code is released under the MIT licence (`LICENSE`). The experimental outputs in this repository and the model checkpoints and BN statistic banks in the Releases are released under CC BY-NC 4.0 (`LICENSE-DATA.md`). Copyright (c) 2026 Shengda Liu and Tingting Su. Third-party components keep their own licences (`THIRD_PARTY.md`); datasets are not redistributed.
