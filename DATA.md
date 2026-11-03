@@ -6,6 +6,7 @@
 - Recorded training and timing observations, paired-seed contrasts, uncertainty intervals and aggregate tables.
 - Split and sampling information, scoring configurations, source identities and analysis programs.
 - Figure programs and the numerical inputs needed by the CPU reproduction commands.
+- The per-route temperatures and temperature-calibrated losses of the 536 CIFAR-100 routes of the 22-start comparison, with the agreement between the re-exported and the recorded scores (`rescoring/`).
 
 The NPZ files contain experimental outputs and sampling records. They do not contain source images or text.
 
@@ -16,6 +17,7 @@ Checkpoints are published as GitHub Releases of this repository (see the table i
 - `model-assets-v1`: the R3 companion (A/B cohorts) and the vision subset of the R2.1 companion.
 - `model-assets-v2`: the 464-route CIFAR-100 collection (A/B, C-conf, F-arch, A-cal) and the six replication starts C'1--3 and F'1--3.
 - `model-assets-v3`: the four additional datasets (CIFAR-10, BloodMNIST64, EuroSAT RGB, PlantWild): retained starts, adapted and MTT states, the saved validation and test logits of every scoring route (from which the manuscript's temperature-calibrated cross-entropy is computed) and the scoring records.
+- `model-assets-v4`: the validation and test logits of the 548 CIFAR-100 scoring routes, re-exported from the checkpoints and BN banks of `model-assets-v2` with the released loaders on one RTX 5090; the CIFAR-100 scoring archives had saved per-example losses, predictions and labels but not logits. `rescoring/` holds the export program, the per-route temperatures and the agreement with the recorded scores.
 
 Not redistributed: the language-model weights derived from the third-party SmoothSpike model, and every dataset archive.
 
