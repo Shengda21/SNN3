@@ -7,3 +7,6 @@ __pycache__/
 *.safetensors
 *.parquet
 .DS_Store
+# figure sources and reference outputs of the revised manuscript
+!manuscript_figures/**/*.pdf
+!manuscript_figures/**/*.tex

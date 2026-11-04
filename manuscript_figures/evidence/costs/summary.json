@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "attempts": 236,
+  "container_attempts_excluded_from_sums": 31,
+  "nonoverlapping_recorded_command_seconds": 69231.43189382553,
+  "gpu_command_seconds_including_setup": 69169.09393262863,
+  "device_energy_joules_measured_intervals": 29253799.05242392,
+  "gpu_attempts_without_energy": 0,
+  "failed_attempts_retained": 1,
+  "scope": "new-run subprocess GPU-device energy, includes idle; excludes pip/upload and unobserved intervals; not whole-system energy",
+  "nested_containers": "extension_queue/candidate_costs use measured children; concurrent language children are excluded and their observed whole-device group interval is counted once",
+  "training_only_times": "complete.json training_seconds is each job elapsed training time; concurrent language times are shared-device times, not isolated costs; use group wall time for rental and throughput",
+  "multiple_devices": "Independent jobs have per-physical-device power records. Sum of job seconds is device-work, not rental elapsed time when GPUs overlap. Prior and new server identities are recorded in environment/migration_verified.json.",
+  "language_execution_override": {
+    "language_concurrency": 7,
+    "scientific_protocol_unchanged": true,
+    "device_count": 1,
+    "precision": "FP32; TF32disabled",
+    "batch": 8,
+    "microbatch": 2,
+    "accumulation": 4,
+    "selection_and_seeds_unchanged": true,
+    "inference_benchmarks_remain_isolated": true,
+    "whole_device_cost_counted_once_per_group": true,
+    "diagnostic_state_bitwise_equal": true,
+    "diagnostic_throughput_speedup": 4.651768288714108,
+    "diagnostic_background_existing_job": true,
+    "diagnostic_total_active_training_processes": 7,
+    "training_times_scope": "per-job elapsed time under shared GPU allocation, not isolated method cost",
+    "reason": "User requested high GPU utilization; single-process language training was CPU launch limited",
+    "changed_at": 1792170316.3983269,
+    "physical_devices": [
+      0,
+      1
+    ],
+    "one_training_job_per_physical_device": true,
+    "server_hourly_rate_CNY": 5.57
+  }
+}

@@ -6,4 +6,6 @@
 - The additional experiment sources under `extensions/code/` retain the SpikingResformer and Spikformer MIT notices in their corresponding `constructor/vendor/` trees. The Spikformer compatibility file preserves the upstream model body while adapting the neuron import.
 - The temporal-transfer `table_spwn` reference from Temporal Flexibility in SNNs is retained with its original MIT notice under each applicable `constructor/upstream/temporal_flexibility_in_SNN-main/` directory. The adapter uses the original sum/repeat table.
 
-No repository-wide license is assigned by this release. Existing third-party notices apply to the corresponding files; they do not license the other materials.
+- The four icons of Figure 1 in `manuscript_figures/manuscript_source/figures/icons/` are from [Lucide](https://lucide.dev/) under the ISC licence, included there as `LICENSE`; `asset_manifest.json` records their sources.
+
+The licences of this repository are given in `LICENSE` and `LICENSE-DATA.md`. The third-party notices above apply to the corresponding files.

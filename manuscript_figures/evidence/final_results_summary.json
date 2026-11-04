@@ -1,0 +1,381 @@
+{
+  "status": "final_outputs_checked",
+  "source_archive": "export/reports_without_full_weights.zip",
+  "source_archive_sha256": "be7967f9e027c63ee38c94bcfc8beb4b806e3cdc94eedbba05bb61f78f2735ac",
+  "strategy_means": [
+    {
+      "strategy": "single_T2",
+      "normalization": "raw",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.4438355221058727,
+      "accuracy_mean": 0.6521666666666667,
+      "training_seconds_mean": 366.5116044154468,
+      "search_training_seconds": 3640.2644549213583,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "single_T2",
+      "normalization": "raw",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.3917863421635315,
+      "accuracy_mean": 0.6555,
+      "training_seconds_mean": 366.5116044154468,
+      "search_training_seconds": 3640.2644549213583,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "single_T2",
+      "normalization": "matched_BN",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.3844406904543363,
+      "accuracy_mean": 0.6537333333333334,
+      "training_seconds_mean": 366.5116044154468,
+      "search_training_seconds": 3640.2644549213583,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "single_T2",
+      "normalization": "matched_BN",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.2730375965121306,
+      "accuracy_mean": 0.6694,
+      "training_seconds_mean": 366.5116044154468,
+      "search_training_seconds": 3640.2644549213583,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "single_T4",
+      "normalization": "raw",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.6037784434146714,
+      "accuracy_mean": 0.6321,
+      "training_seconds_mean": 561.9824190830113,
+      "search_training_seconds": 5612.30746491882,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "single_T4",
+      "normalization": "raw",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.3660123541703817,
+      "accuracy_mean": 0.6754,
+      "training_seconds_mean": 561.9824190830113,
+      "search_training_seconds": 5612.30746491882,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "single_T4",
+      "normalization": "matched_BN",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.581932858593859,
+      "accuracy_mean": 0.6378333333333334,
+      "training_seconds_mean": 561.9824190830113,
+      "search_training_seconds": 5612.30746491882,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "single_T4",
+      "normalization": "matched_BN",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.294660945071898,
+      "accuracy_mean": 0.6783666666666667,
+      "training_seconds_mean": 561.9824190830113,
+      "search_training_seconds": 5612.30746491882,
+      "weight_bytes": 44372524,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "MTT_single",
+      "normalization": "raw",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.5836814358102858,
+      "accuracy_mean": 0.6370333333333333,
+      "training_seconds_mean": 1337.1550105254476,
+      "search_training_seconds": 13377.876054770546,
+      "weight_bytes": 44371948,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "MTT_single",
+      "normalization": "raw",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.4207245162595685,
+      "accuracy_mean": 0.6667666666666666,
+      "training_seconds_mean": 1337.1550105254476,
+      "search_training_seconds": 13377.876054770546,
+      "weight_bytes": 44371948,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "MTT_single",
+      "normalization": "matched_BN",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.3971084321499512,
+      "accuracy_mean": 0.6525333333333333,
+      "training_seconds_mean": 1337.1550105254476,
+      "search_training_seconds": 13377.876054770546,
+      "weight_bytes": 44371948,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "MTT_single",
+      "normalization": "matched_BN",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.2920576225237028,
+      "accuracy_mean": 0.6754666666666667,
+      "training_seconds_mean": 1337.1550105254476,
+      "search_training_seconds": 13377.876054770546,
+      "weight_bytes": 44371948,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "independent_T2_T4",
+      "normalization": "raw",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.4438355221058727,
+      "accuracy_mean": 0.6521666666666667,
+      "training_seconds_mean": 928.4940234984582,
+      "search_training_seconds": 9252.571919840178,
+      "weight_bytes": 88745048,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "independent_T2_T4",
+      "normalization": "raw",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.3660123541703817,
+      "accuracy_mean": 0.6754,
+      "training_seconds_mean": 928.4940234984582,
+      "search_training_seconds": 9252.571919840178,
+      "weight_bytes": 88745048,
+      "BN_bank_bytes": 0
+    },
+    {
+      "strategy": "independent_T2_T4",
+      "normalization": "matched_BN",
+      "T": 2,
+      "n": 3,
+      "ce_mean": 1.3844406904543363,
+      "accuracy_mean": 0.6537333333333334,
+      "training_seconds_mean": 928.4940234984582,
+      "search_training_seconds": 9252.571919840178,
+      "weight_bytes": 88745048,
+      "BN_bank_bytes": 420434
+    },
+    {
+      "strategy": "independent_T2_T4",
+      "normalization": "matched_BN",
+      "T": 4,
+      "n": 3,
+      "ce_mean": 1.294660945071898,
+      "accuracy_mean": 0.6783666666666667,
+      "training_seconds_mean": 928.4940234984582,
+      "search_training_seconds": 9252.571919840178,
+      "weight_bytes": 88745048,
+      "BN_bank_bytes": 420434
+    }
+  ],
+  "primary_tests": [
+    {
+      "contrast": "G44_raw_K2048",
+      "n_adaptation_seeds": "3",
+      "independent_starting_checkpoints": "1",
+      "mean": "0.0064539179477124025",
+      "sd": "0.034201340664172485",
+      "pointwise_low": "-0.07850692218857855",
+      "pointwise_high": "0.09141475808400334",
+      "familywise_Bonferroni_low": "-0.20850007245475194",
+      "familywise_Bonferroni_high": "0.22140790835017676",
+      "p_unadjusted": "0.7748217302999485",
+      "p_Holm": "0.7748217302999485"
+    },
+    {
+      "contrast": "J_512_to_2048",
+      "n_adaptation_seeds": "3",
+      "independent_starting_checkpoints": "1",
+      "mean": "0.03222105473252945",
+      "sd": "0.011554844721740551",
+      "pointwise_low": "0.0035172292058345024",
+      "pointwise_high": "0.06092488025922441",
+      "familywise_Bonferroni_low": "-0.040400659305155615",
+      "familywise_Bonferroni_high": "0.10484276877021452",
+      "p_unadjusted": "0.04029422497407114",
+      "p_Holm": "0.12088267492221341"
+    },
+    {
+      "contrast": "MTT_minus_dual_CE_e2",
+      "n_adaptation_seeds": "3",
+      "independent_starting_checkpoints": "1",
+      "mean": "0.13984591370441302",
+      "sd": "0.040158156391519116",
+      "pointwise_low": "0.040087522977872825",
+      "pointwise_high": "0.2396043044309532",
+      "familywise_Bonferroni_low": "-0.112546413494791",
+      "familywise_Bonferroni_high": "0.39223824090361703",
+      "p_unadjusted": "0.02640319944844099",
+      "p_Holm": "0.10561279779376397"
+    },
+    {
+      "contrast": "MTT_minus_dual_CE_e4",
+      "n_adaptation_seeds": "3",
+      "independent_starting_checkpoints": "1",
+      "mean": "0.05471216208918683",
+      "sd": "0.02838707444173069",
+      "pointwise_low": "-0.015805240057780306",
+      "pointwise_high": "0.12522956423615397",
+      "familywise_Bonferroni_low": "-0.1236994091710551",
+      "familywise_Bonferroni_high": "0.23312373334942876",
+      "p_unadjusted": "0.07921702417519046",
+      "p_Holm": "0.1584340483503809"
+    },
+    {
+      "contrast": "P2_raw_K2048",
+      "n_adaptation_seeds": "3",
+      "independent_starting_checkpoints": "1",
+      "mean": "0.1599429213087986",
+      "sd": "0.011130455086450549",
+      "pointwise_low": "0.13229333807960353",
+      "pointwise_high": "0.1875925045379937",
+      "familywise_Bonferroni_low": "0.0899884783142804",
+      "familywise_Bonferroni_high": "0.2298973643033168",
+      "p_unadjusted": "0.0016103656355540125",
+      "p_Holm": "0.009662193813324074"
+    },
+    {
+      "contrast": "P4_BN_K2048",
+      "n_adaptation_seeds": "3",
+      "independent_starting_checkpoints": "1",
+      "mean": "-0.02162334855976737",
+      "sd": "0.0021302919177092483",
+      "pointwise_low": "-0.026915287049585842",
+      "pointwise_high": "-0.016331410069948895",
+      "familywise_Bonferroni_low": "-0.035012143839170215",
+      "familywise_Bonferroni_high": "-0.008234553280364524",
+      "p_unadjusted": "0.003219657825675933",
+      "p_Holm": "0.016098289128379663"
+    }
+  ],
+  "download": {
+    "status": "all_required_results_downloaded_and_verified",
+    "files": 764,
+    "bytes": 111794952339,
+    "finished": 1792221798.0551853,
+    "server_shutdown_performed": false,
+    "transport": "replacement-server SFTP"
+  },
+  "local_scientific_checks": {
+    "status": "passed",
+    "time": 1792221800.1296072,
+    "files": 764,
+    "bytes": 111794952339,
+    "checkpoint_inventory_rows": 759,
+    "report_archive_crc_and_hash_passed": true,
+    "scientific_report_statuses_passed": [
+      "extensions/analysis/summary.json",
+      "extensions/analysis/strategy_cost_scope.json",
+      "figure_rebuild/source_data.json",
+      "costs/summary.json",
+      "r2/analysis/verification.json",
+      "r3/analysis/summary.json",
+      "environment/mtt_runtime_check.json"
+    ],
+    "all_models_verified_by_download_receipt": true,
+    "shutdown_wrapper_sha256": "0358e83eeeaf542aa98f64ba9e339c91df46f1e025892d52dba159f4fb1cf027"
+  },
+  "shutdown": {
+    "status": "stop_requested_service_unreachable",
+    "time": 1792221941.456281,
+    "request": {
+      "time": 1792221800.8440561,
+      "method": "verified AutoDL supervisor stop core",
+      "supervisor_pid": 900,
+      "local_proof": {
+        "files": 764,
+        "bytes": 111794952339,
+        "status": "all local checks passed"
+      }
+    },
+    "SSH_service_stop_observed": true,
+    "provider_billing_status_independently_confirmed": false
+  },
+  "closure": {
+    "status": "all_experiments_and_transfers_verified_shutdown_core_executed",
+    "checked_utc": "2026-10-17T08:40:54.374146+00:00",
+    "download_files": 764,
+    "download_bytes": 111794952339,
+    "full_file_byte_and_SHA256_verification_receipt": "DOWNLOAD_VERIFIED.json",
+    "independent_local_scientific_verification": "LOCAL_SCIENTIFIC_VERIFIED.json",
+    "current_manifest_paths_sizes_and_receipts_rechecked": true,
+    "shutdown_record": "SERVER_SHUTDOWN.json",
+    "SSH_service_stop_observed": true,
+    "provider_billing_status_independently_confirmed": false,
+    "automation_id": "automation-4",
+    "automation_status_verified": "PAUSED",
+    "no_manuscript_edits_performed": true
+  },
+  "reviewer_coverage": {
+    "Reviewer2": {
+      "experiment_support_added": [
+        "three-stage MTT-style finite-budget baseline",
+        "current candidate training/search/storage/inference measurements",
+        "three fresh paired adaptation seeds",
+        "six prespecified contrasts with Holm and Bonferroni reporting"
+      ],
+      "remaining_evidence_gaps": [
+        "no added heterogeneous vision architecture/dataset",
+        "one initialization in new formal extension; three adaptation seeds",
+        "no equal GPU-time quality comparison",
+        "MTT continuation transplant is not original from-scratch recipe",
+        "energy scope limited to observed GPU-device intervals; no whole-system or per-forward energy claim"
+      ],
+      "pending_revision_delivery": [
+        "Fig1 reconstruction and presentation edits",
+        "figure provenance and accurate AI participation declaration",
+        "public checkpoint release and independent replay validation",
+        "full academic wording and logic revision; response letter"
+      ]
+    },
+    "Reviewer5": {
+      "experiment_support_added": [
+        "upward LR expansion to 2e-4 and 5e-4 completed; both native windows still choose 2e-5"
+      ],
+      "remaining_evidence_gaps": [
+        "no mature/converged starting checkpoint comparison",
+        "no longer adaptation budget; endpoint remains2048updates"
+      ],
+      "pending_revision_delivery": [
+        "explain construction versus published accuracy using aligned configurations",
+        "scope all empirical conclusions to tested training states and budgets"
+      ]
+    }
+  },
+  "claim_assessment": {
+    "T2_raw_adaptation_benefit": "supported; new formal mean0.159943 and Holm p0.009662",
+    "BN_changes_four_step_CE_comparison": "supported in new formal comparison; S2 lower by0.021623 and Holm p0.016098; A/B remain separately reported",
+    "raw_T4_gain_over_initial": "not resolved; new formal mean+0.006454, Holm p0.774822; does not prove no gain/equivalence",
+    "normalization_by_budget_J": "positive means retained, new formal Holm p0.120883 so not corrected-significant replication",
+    "MTT_versus_dual_raw": "MTT higher mean CE at both windows, Holm p0.105613/0.158434, no significant-superiority or equivalence conclusion",
+    "MTT_versus_dual_matched_BN": "descriptive only; gaps shrink, T4 MTT slightly lower CE but lower accuracy"
+  }
+}

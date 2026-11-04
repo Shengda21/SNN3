@@ -1,0 +1,55 @@
+{
+  "family": "Lucide",
+  "revision": "1ef60af944de207e0d5176905a0759ba12e6ee8d",
+  "license_url": "https://raw.githubusercontent.com/lucide-icons/lucide/1ef60af944de207e0d5176905a0759ba12e6ee8d/LICENSE",
+  "assets": [
+    {
+      "asset_id": "database",
+      "semantic_role": "saved checkpoints and acquisition update counts",
+      "type": "public SVG",
+      "family": "Lucide",
+      "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/1ef60af944de207e0d5176905a0759ba12e6ee8d/icons/database.svg",
+      "license": "ISC; see LICENSE (includes Feather MIT notice)",
+      "editability": "SVG paths; vector PDF embedded in TikZ",
+      "source_path": "database.svg",
+      "derived_path": "database.pdf",
+      "modifications": "No crop or geometry changes. PDF conversion resolves currentColor to #222222; 4 mm placement, except the 5 mm selection funnel."
+    },
+    {
+      "asset_id": "funnel",
+      "semantic_role": "validation-only learning-rate selection",
+      "type": "public SVG",
+      "family": "Lucide",
+      "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/1ef60af944de207e0d5176905a0759ba12e6ee8d/icons/funnel.svg",
+      "license": "ISC; see LICENSE (includes Feather MIT notice)",
+      "editability": "SVG paths; vector PDF embedded in TikZ",
+      "source_path": "funnel.svg",
+      "derived_path": "funnel.pdf",
+      "modifications": "No crop or geometry changes. PDF conversion resolves currentColor to #222222; 4 mm placement, except the 5 mm selection funnel."
+    },
+    {
+      "asset_id": "timer",
+      "semantic_role": "measured training, search, calibration and inference time",
+      "type": "public SVG",
+      "family": "Lucide",
+      "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/1ef60af944de207e0d5176905a0759ba12e6ee8d/icons/timer.svg",
+      "license": "ISC; see LICENSE (includes Feather MIT notice)",
+      "editability": "SVG paths; vector PDF embedded in TikZ",
+      "source_path": "timer.svg",
+      "derived_path": "timer.pdf",
+      "modifications": "No crop or geometry changes. PDF conversion resolves currentColor to #222222; 4 mm placement, except the 5 mm selection funnel."
+    },
+    {
+      "asset_id": "cpu",
+      "semantic_role": "measured peak device memory",
+      "type": "public SVG",
+      "family": "Lucide",
+      "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/1ef60af944de207e0d5176905a0759ba12e6ee8d/icons/cpu.svg",
+      "license": "ISC; see LICENSE (includes Feather MIT notice)",
+      "editability": "SVG paths; vector PDF embedded in TikZ",
+      "source_path": "cpu.svg",
+      "derived_path": "cpu.pdf",
+      "modifications": "No crop or geometry changes. PDF conversion resolves currentColor to #222222; 4 mm placement, except the 5 mm selection funnel."
+    }
+  ]
+}

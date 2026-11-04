@@ -39,12 +39,41 @@ The numerical figure commands export PDF, SVG and PNG without requiring LaTeX. O
 | Additional datasets, replication starts and MTT (construction, adaptation, scoring, resource programs; per-start result records; saved logits are in release `model-assets-v3`) | `extensions/` | `extensions/recompute.py`; see [extensions/README.md](extensions/README.md) |
 | CIFAR-100 logit re-export and temperature calibration (export program, per-route temperatures and calibrated losses of the 536 routes of the 22-start comparison, agreement with the recorded scores; the logits are in release `model-assets-v4`) | `rescoring/` | `rescoring/calibrate_cifar100.py`; see [rescoring/README.md](rescoring/README.md) |
 | Figure programs and reference numerical inputs | `figure_source/` | The commands above |
+| Figures of the revised manuscript: programs, recorded inputs and reference outputs | `manuscript_figures/` | See [Manuscript figures](#manuscript-figures) |
 
 R3 contains 380 vision scoring paths and 126 runtime replays of earlier fixed checkpoints. Initializations A and B use five and three paired adaptation seeds. Calibration subsets are sensitivity conditions, not additional training seeds. The language diagnostic is a separate cohort.
 
 ## Additional datasets and replication starts
 
 [extensions/README.md](extensions/README.md) documents the construction, adaptation, MTT, scoring and resource-measurement programs for CIFAR-10, BloodMNIST64, EuroSAT RGB and PlantWild v1, together with the small per-start result records. Each dataset has three independent 600-epoch SpikingResformer constructions; every retained, two-step, four-step and MTT source is scored at 512, 1,024 and 2,048 updates, at both inference windows and under both BN policies, with validation and test logits saved. The same directory contains the programs of a conditional-adaptation construction that was explored during the revision; that construction is not part of the manuscript, and its result records are retained only as a complete account of the executed runs.
+
+## Manuscript figures
+
+`manuscript_figures/` contains the programs that draw the figures of the revised manuscript, the recorded inputs they read and the reference PDF and PNG outputs, in the directory layout of the manuscript source. From that directory:
+
+```sh
+python manuscript_source/scripts/build_revision_figures.py --figures-only
+python evidence/independent_starts_analysis_20261102/e5_fig_table.py --figure-only
+python manuscript_source/scripts/build_time_figure.py
+python manuscript_source/scripts/build_budget_figure.py
+python evidence/completed_revision2_20261028/construction_and_Acal/plot_development_construction.py
+```
+
+The programs run on a CPU with the packages of `requirements-analysis.txt` and write PDF, PNG and SVG files: Figure S2 next to its program, the others to `manuscript_source/figures/`. Figure 1 is TikZ; run `pdflatex fig1_standalone.tex` in `manuscript_source/figures/`. `build_revision_figures.py` also loads `r3/analysis/quality_scores.csv`, `extensions/selection.json`, `costs/summary.json` and `final_results_summary.json` at start; with `--figures-only` it writes figures only. Figure numbers follow the revised manuscript, and input paths are relative to `manuscript_figures/evidence/`.
+
+| Figure | Output | Inputs | Program |
+|---|---|---|---|
+| 1. Candidate construction, state operations, cross-evaluation and resource accounting | `fig1_standalone` | Definitions of Sections 3 and 4 of the manuscript | `manuscript_source/figures/fig1_overview.tex`, compiled by `fig1_standalone.tex`; icons in `manuscript_source/figures/icons/` |
+| 2. Source contrasts and gains across budgets in A-expl and B-expl | `result_core` | `r3/analysis/contrast_intervals.csv` | `manuscript_source/scripts/build_revision_figures.py` |
+| 3. Final-budget accuracy and CE contrasts of the 22 starts | `result_starts` | `independent_starts_analysis_20261102/table9_K2048_per_start.csv` | `evidence/independent_starts_analysis_20261102/e5_fig_table.py` |
+| 4. Normalization, budget and metric dependence of the four-step contrast | `result_normalization` | `r3/analysis/interaction_intervals.csv`, `r3/analysis/contrasts_by_seed.csv`, `extensions/analysis/primary_intervals_multiplicity.csv`, `extensions/analysis/strategy_quality_costs_by_seed.csv`, `extensions/analysis/visual_correctness_CE_decomposition.csv` | `manuscript_source/scripts/build_revision_figures.py` |
+| 5. Complete states of A-conf in the two-window CE plane | `result_states` | `extensions/analysis/complete_state_plane.csv` | `manuscript_source/scripts/build_revision_figures.py` |
+| 6. Quality and cost of MTT and independent strategies in A-conf | `result_strategies` | `extensions/analysis/strategy_quality_costs_by_seed.csv` | `manuscript_source/scripts/build_revision_figures.py` |
+| 7. Test CE against cumulative training-loop time in A-conf | `result_actual_training_time` | `revision2_preparation/quality_time_by_seed.csv`, `revision2_preparation/quality_time_summary.csv` | `manuscript_source/scripts/build_time_figure.py` |
+| S1. Absolute CE of S2 and S4 in A-expl and B-expl | `result_absolute_budget` | `budget_figure/quality_by_seed.csv`, a lossless subset of `r3/analysis/quality_scores.csv` | `manuscript_source/scripts/build_budget_figure.py` |
+| S2. Construction validation accuracy and CE of starts C and F | `development_construction_validation` | `completed_revision2_20261028/existing_eight_construction_curves_20261027.csv`, development rows of construction seeds 12650 and 12750 | `evidence/completed_revision2_20261028/construction_and_Acal/plot_development_construction.py` |
+
+Figure 7 pairs each saved state with its recorded optimizer-loop seconds; the independent strategy sums the paired two-step and four-step trajectories, and the times exclude rate search, validation, checkpoint I/O and BN recalibration.
 
 ## Files and protocols
 

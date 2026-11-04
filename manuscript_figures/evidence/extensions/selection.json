@@ -1,0 +1,1052 @@
+{
+  "native_expanded": {
+    "2": 2e-05,
+    "4": 2e-05
+  },
+  "single_joint": {
+    "2": 2e-05,
+    "4": 2e-05
+  },
+  "dual_native_common": {
+    "2": 2e-05,
+    "4": 2e-05
+  },
+  "mtt_joint": 8e-05,
+  "uses_test": false,
+  "strategy_common_rates": [
+    5e-06,
+    2e-05,
+    8e-05,
+    0.0002,
+    0.0005
+  ],
+  "screen_rows": [
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 1.25e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T2_lr1.25e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.5113468727548607,
+          "accuracy": 0.6504,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.400561216679029,
+          "accuracy": 0.6606,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.455954044716945,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 1.25e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T2_lr1.25e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.5289183879494201,
+          "accuracy": 0.637,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.435078566217143,
+          "accuracy": 0.6526,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4819984770832817,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 2.5e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T2_lr2.5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4798365123232826,
+          "accuracy": 0.646,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3886916892283596,
+          "accuracy": 0.6566,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4342641007758212,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 2.5e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T2_lr2.5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4972858437936754,
+          "accuracy": 0.647,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4197732567447239,
+          "accuracy": 0.6542,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4585295502691995,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 5e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T2_lr5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4631264685161411,
+          "accuracy": 0.6444,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3762078921588137,
+          "accuracy": 0.661,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4196671803374774,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 5e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T2_lr5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.484268694726005,
+          "accuracy": 0.6448,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4111801554106642,
+          "accuracy": 0.656,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4477244250683348,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 2e-05,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T2_lr2e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4471978353201411,
+          "accuracy": 0.652,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3782699596981984,
+          "accuracy": 0.6604,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.41273389750917,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 2e-05,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T2_lr2e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4619671657647937,
+          "accuracy": 0.651,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3987131541264244,
+          "accuracy": 0.6604,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.430340159945609,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 8e-05,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T2_lr8e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4539802943369373,
+          "accuracy": 0.6562,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.391139653902594,
+          "accuracy": 0.6708,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4225599741197656,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 8e-05,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T2_lr8e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4790709711663426,
+          "accuracy": 0.6486,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.430905362442974,
+          "accuracy": 0.6538,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4549881668046583,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 0.0002,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9611_T2_lr0.0002/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.4894351024378092,
+          "accuracy": 0.6382,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4652045248409733,
+          "accuracy": 0.6424,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4773198136393912,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 0.0002,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9612_T2_lr0.0002/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.502342051140964,
+          "accuracy": 0.645,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4704816866271198,
+          "accuracy": 0.6484,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.486411868884042,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 0.0005,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9611_T2_lr0.0005/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.587859850730747,
+          "accuracy": 0.6108,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.5842079160402995,
+          "accuracy": 0.6056,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5860338833855234,
+      "uses_test": false
+    },
+    {
+      "method": "native2",
+      "T": 2,
+      "lr": 0.0005,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9612_T2_lr0.0005/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.633479641362373,
+          "accuracy": 0.6042,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.6324166421733797,
+          "accuracy": 0.594,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.6329481417678764,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 1.25e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T4_lr1.25e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6499752891898156,
+          "accuracy": 0.626,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3794206834902056,
+          "accuracy": 0.6706,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5146979863400105,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 1.25e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T4_lr1.25e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6638074721299112,
+          "accuracy": 0.6248,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4033762494293973,
+          "accuracy": 0.6692,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5335918607796541,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 2.5e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T4_lr2.5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6394682483743876,
+          "accuracy": 0.6228,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3753911409766413,
+          "accuracy": 0.6736,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5074296946755146,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 2.5e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T4_lr2.5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6684157407026738,
+          "accuracy": 0.6196,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4013594929380342,
+          "accuracy": 0.6682,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.534887616820354,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 5e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T4_lr5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6302258705544286,
+          "accuracy": 0.627,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.365545920033846,
+          "accuracy": 0.674,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.4978858952941372,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 5e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T4_lr5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6614059305114672,
+          "accuracy": 0.6232,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3991216342266648,
+          "accuracy": 0.6678,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5302637823690661,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 2e-05,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T4_lr2e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.623769651515968,
+          "accuracy": 0.626,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3702240912942683,
+          "accuracy": 0.6748,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.496996871405118,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 2e-05,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T4_lr2e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6415487780688331,
+          "accuracy": 0.6226,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3842644266431219,
+          "accuracy": 0.6688,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5129066023559776,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 8e-05,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9611_T4_lr8e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6372109486665576,
+          "accuracy": 0.623,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.3807404596342239,
+          "accuracy": 0.6744,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5089757041503908,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 8e-05,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/screen/s9612_T4_lr8e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6399531210450455,
+          "accuracy": 0.6242,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.397377525212802,
+          "accuracy": 0.6748,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5186653231289238,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 0.0002,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9611_T4_lr0.0002/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.7397621577404438,
+          "accuracy": 0.6006,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.430683977596555,
+          "accuracy": 0.6592,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5852230676684993,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 0.0002,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9612_T4_lr0.0002/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.7321285313848407,
+          "accuracy": 0.6096,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4375777496424504,
+          "accuracy": 0.6632,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5848531405136455,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 0.0005,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9611_T4_lr0.0005/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.8818264917526395,
+          "accuracy": 0.557,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4995481415932066,
+          "accuracy": 0.6296,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.690687316672923,
+      "uses_test": false
+    },
+    {
+      "method": "native4",
+      "T": 4,
+      "lr": 0.0005,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/ext_screen/s9612_T4_lr0.0005/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.9115470352655277,
+          "accuracy": 0.5702,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.5557085055778967,
+          "accuracy": 0.6184,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.7336277704217122,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 5e-06,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9611_lr5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.7822117723676376,
+          "accuracy": 0.6078,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.504152703498071,
+          "accuracy": 0.653,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.6431822379328542,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 5e-06,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9612_lr5e-06/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6901464479163288,
+          "accuracy": 0.6188,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4375474433573894,
+          "accuracy": 0.6616,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.563846945636859,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 2e-05,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9611_lr2e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.7129273755958303,
+          "accuracy": 0.6232,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4919992485980502,
+          "accuracy": 0.6608,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.6024633120969403,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 2e-05,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9612_lr2e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6778744028048589,
+          "accuracy": 0.6212,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4585635249091313,
+          "accuracy": 0.6606,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.568218963856995,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 8e-05,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9611_lr8e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.667473634982109,
+          "accuracy": 0.6192,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4784522710645571,
+          "accuracy": 0.6622,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.572962953023333,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 8e-05,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9612_lr8e-05/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6487512716599275,
+          "accuracy": 0.6298,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.476293222507881,
+          "accuracy": 0.6662,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5625222470839044,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 0.0002,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9611_lr0.0002/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6925512379513121,
+          "accuracy": 0.6192,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.4921856884518172,
+          "accuracy": 0.6552,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5923684632015647,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 0.0002,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9612_lr0.0002/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.6579839371006937,
+          "accuracy": 0.6244,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.478490530224936,
+          "accuracy": 0.6584,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.5682372336628148,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 0.0005,
+      "seed": 9611,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9611_lr0.0005/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.7590161140684037,
+          "accuracy": 0.5972,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.563412090646755,
+          "accuracy": 0.6222,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.6612141023575795,
+      "uses_test": false
+    },
+    {
+      "method": "mtt",
+      "T": null,
+      "lr": 0.0005,
+      "seed": 9612,
+      "checkpoint": "/root/autodl-tmp/snn_unified_20261016/r3/models/mtt_screen/mtt_s9612_lr0.0005/step2048.pt",
+      "validation": {
+        "2": {
+          "ce": 1.764617697102204,
+          "accuracy": 0.5974,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        },
+        "4": {
+          "ce": 1.5707320818761363,
+          "accuracy": 0.6312,
+          "samples": 5000,
+          "precision": "fp32",
+          "batch": 64,
+          "split": "validation"
+        }
+      },
+      "joint_ce": 1.6676748894891702,
+      "uses_test": false
+    }
+  ],
+  "test_history": "previously inspected historical sets; selection for this run uses validation only"
+}
